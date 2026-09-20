@@ -8,6 +8,8 @@
 
 > Case ID: 001_video-prompt-compression
 
+> 🌐 **其他語言：** 🇬🇧 [English](README.md) &nbsp;|&nbsp; 🇨🇳 [简体中文](README.zh-CN.md)
+
 將影片提示詞壓縮為更短、更高密度的表達，同時保護動作鏈、時間關係、鏡頭邏輯與主體連續性。
 
 ## Case 結構
