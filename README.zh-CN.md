@@ -1,46 +1,50 @@
+<div align="center">
+
+<img src="assets/logo-zh-CN.svg" alt="Qiqu.Lab — 奇趣实验室" width="720">
+
+<p><strong>AI Prompt Engineering 创意实验室</strong><br><sub>沉淀可复用的 AI Skills、Cases、Templates 与评测方法。</sub></p>
+
+</div>
+
+> 🌐 **其他语言：** <img src="assets/logo-en.svg" width="76" alt="English"> [English](README.md) &nbsp;|&nbsp; <img src="assets/logo-zh-TW.svg" width="76" alt="繁體中文"> [繁體中文](README.zh-TW.md)
+
 # Qiqu.Lab — 奇趣实验室
 
-> 一个面向 AI Prompt Engineering 的实践型 Skill 实验室。
+Qiqu.Lab 是一个面向实践的 AI Skill 仓库，用于将有效的 AI 工作方法整理为**可复用的 Skill 与配套资源**。
 
-🌐 **其他语言：** [English](README.md) · [繁體中文](README.zh-TW.md)
+| ⚡ Core Skills | ▣ Skill Cases | ▤ Templates | 💡 Examples | ▥ Evaluation |
+|---|---|---|---|---|
+| 方法论 | 应用案例 | 可复用模板 | 实践参考 | 质量评测 |
 
-## 项目简介
+## 🚀 快速开始
 
-Qiqu.Lab 将可复用的 AI 工作方法沉淀为 **Core Skills、Skill Cases、Templates、Examples 与 Evaluation**，用于持续实践、测试和迭代。
-
-## 快速开始
-
-**理解方法论** → [skills/](skills/) · [skills.md](skills.md)  
-**使用完整 Case** → [cases/](cases/) → 按编号选择  
-**创建新 Skill** → [skills/skill-builder.md](skills/skill-builder.md) + [templates/skill-template.md](templates/skill-template.md)
+**探索** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
+**创建** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
 ### 当前 Case
 
-**001 · Video Prompt Compression** → [cases/001_video-prompt-compression/](cases/001_video-prompt-compression/)
+**001 · Video Prompt Compression** → [打开 Case](cases/001_video-prompt-compression/)
 
-## 架构
-
-~~~text
-Core Skill → Skill Case → Template → Example → Evaluation → Iteration
-~~~
-
-## Case 编号规则
-
-cases/ 下统一采用 **三位顺序编号 + kebab-case**：
+## 📁 仓库结构
 
 ~~~text
-001_video-prompt-compression → 002_xxx → 003_xxx → …
+Skills4QiquLab/
+├── README.md
+├── README.zh-CN.md
+├── README.zh-TW.md
+├── skills/
+├── templates/
+├── assets/
+└── cases/
+    └── 001_video-prompt-compression/
 ~~~
 
-编号表示 Case 建立顺序，今后新增 Case 自动使用下一个编号。
+> **Case 编号规则：** cases/ 下统一使用 NNN_skill-name/，例如 001_video-prompt-compression → 002_xxx → 003_xxx → …
 
-## 索引
+## 📚 索引
 
-- [Skills Index](skills.md)
-- [Core Skills](skills/)
-- [Skill Cases](cases/)
-- [Global Templates](templates/)
+[Skills Index](skills.md) · [Core Skills](skills/) · [Skill Cases](cases/) · [Global Templates](templates/)
 
-## License
+## 📄 License
 
-MIT
+MIT License · [LICENSE](LICENSE)
