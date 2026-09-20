@@ -1,51 +1,18 @@
 # Skills4QiquLab
 
-> 一个面向 AI 工作流的可复用 Skill 实验室：把反复出现的任务沉淀为可执行、可复用、可评测、可迭代的 Skill。
+> 一个面向 AI 工作流的可复用 Skill 实验室：将重复任务沉淀为可执行、可复用、可评测、可迭代的工程资产。
 
-**Skill 方法论 → Case 完整项目 → 模板 → 示例 → Evaluation → 迭代**
+**Core Skill → Case → Template → Example → Evaluation → Iteration**
 
-## 项目定位
+## 项目结构
 
-Skills4QiquLab 不做简单的 Prompt 收藏，而是把重复出现的 AI 工作转化为可维护的工程资产。
-
-一个成熟的 Skill 分为两层：
-
-- Core Skill / 方法论：抽象任务的原则、边界、流程与评测方法，位于 skills/
-- Skill Case / 完整项目：把某个 Skill 落地成可直接使用、测试和迭代的项目，位于 cases/
-
-因此，skills/ 负责“方法论”，cases/ 负责“工程化落地”。
-
-## 核心工作流
-
-**发现重复任务 → 抽象 Skill → 建立 Case → 添加模板 → 添加示例 → Evaluation → 迭代**
-
-## 快速开始
-
-### 1. 查找方法论
-
-进入 skills.md 查看 Core Skills 索引。
-
-### 2. 直接使用完整 Case
-
-成熟项目位于 cases/。当前第一个完整 Case：
-
-cases/video-prompt-compression/
-
-### 3. 创建新的 Skill
-
-推荐顺序：
-
-**明确问题 → 定义边界 → 编写 Core Skill → 创建 Case → 模板化 → 示例化 → 建立 Evaluation → 实际测试 → 迭代**
-
-## 仓库结构
-
-~~~text
+```text
 Skills4QiquLab/
 ├── README.md
 ├── LICENSE
 ├── skills.md
 │
-├── skills/                         # Skill 方法论 / Core Skills
+├── skills/                         # Core Skills：通用方法论
 │   ├── prompt-compression.md
 │   ├── prompt-optimization.md
 │   ├── prompt-reverse-engineering.md
@@ -58,30 +25,46 @@ Skills4QiquLab/
 ├── templates/                      # 全仓库通用模板
 │   └── skill-template.md
 │
-└── cases/                          # 完整 Skill 项目
+└── cases/                          # 完整、可独立维护的 Skill Case
     └── video-prompt-compression/
         ├── README.md
         ├── SKILL.md
         ├── templates/
+        │   ├── skill-template.md
+        │   └── video-prompt-template.md
         ├── examples/
+        │   ├── basic.md
+        │   ├── continuous-action.md
+        │   └── failure-cases.md
         ├── evaluation/
+        │   ├── evaluation-rubric.md
+        │   └── reverse-expansion.md
         └── assets/
             └── svg/
-~~~
+                ├── video-prompt-compression.svg
+                └── template.svg
+```
+
+## 两层架构
+
+**skills/** 只负责可迁移的 Core Skill 方法论；**cases/** 负责将一个成熟 Skill 完整落地为可使用、可测试、可评测、可迭代的项目。
+
+因此，通用规则不与具体案例混在一起；Case 内的模板、示例、评测和视觉资产也保持自包含。
+
+## 使用方式
+
+查找方法论 → `skills.md` → 进入对应 Core Skill。
+
+直接使用完整项目 → `cases/` → 阅读 Case 的 `README.md` / `SKILL.md`。
+
+创建新的 Skill → `skills/skill-builder.md` + `templates/skill-template.md` → 建立新的 Case。
 
 ## 设计原则
 
-**方法论与案例分离**：Core Skill 保持抽象，Case 负责具体落地。
-
-**语义优先**：优化目标不是“越短越好”，而是以任务结果和关键约束为先。
-
-**可评测**：成功案例、失败案例、Evaluation 与实际执行结果共同构成 Skill 的质量依据。
-
-**可迭代**：Case 是持续测试与升级的最小工程单元。
-
-## 如何贡献
-
-新增 Skill 时，优先判断它是否具有稳定的输入、输出、边界和可重复流程。满足条件后，先建立 Core Skill，再建立对应 Case。
+- **方法论与案例分离**：Core Skill 保持抽象，Case 负责具体落地。
+- **语义与结果优先**：不要为了形式上的压缩或简化破坏任务本身的关键约束。
+- **可评测**：通过示例、失败案例和 Evaluation 验证 Skill，而不是只看文档是否完整。
+- **可迭代**：Case 是持续测试和升级的最小工程单元。
 
 ## 路线图
 

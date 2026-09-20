@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#fff"/>
+<text x="70" y="72" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#172033">Video Prompt Compression — Working Template</text>
+<text x="70" y="112" font-family="Arial,sans-serif" font-size="20" fill="#536176">Original → Constraints → Compression → Semantic Check → Risk</text>
+<g font-family="monospace" font-size="21" fill="#26364a">
+<text x="90" y="185">01  Original Prompt</text>
+<text x="90" y="250">02  Compression Level: L0 / L1 / L2 / L3</text>
+<text x="90" y="315">03  Hard Constraints: subject / action / time / camera / causality</text>
+<text x="90" y="380">04  Compressed Prompt</text>
+<text x="90" y="445">05  Semantic Check: preserved / weakened / lost / invented</text>
+<text x="90" y="510">06  Reverse Expansion: recover the original semantic commitments</text>
+<text x="90" y="575">07  Risk: identify unsafe compression or continuity loss</text>
+</g>
+<rect x="70" y="660" width="1260" height="100" rx="14" fill="#eef5ff" stroke="#b8cff5"/>
+<text x="700" y="700" text-anchor="middle" font-family="Arial,sans-serif" font-size="21" fill="#173b70">Rule: compress wording, not the semantics required by the video.</text>
+<text x="700" y="735" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" fill="#536176">A shorter prompt is not automatically a better prompt.</text>
+</svg>

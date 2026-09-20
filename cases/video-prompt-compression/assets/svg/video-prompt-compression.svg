@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<rect width="1400" height="900" fill="#fff"/>
+<text x="70" y="72" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#172033">Video Prompt Compression — Case Architecture</text>
+<text x="70" y="112" font-family="Arial,sans-serif" font-size="20" fill="#536176">A self-contained Skill Case: execute → examples → evaluate → iterate</text>
+<rect x="70" y="160" width="1260" height="90" rx="14" fill="#eef5ff" stroke="#b8cff5"/>
+<text x="100" y="195" font-family="monospace" font-size="24" fill="#173b70">cases/video-prompt-compression/</text>
+<text x="100" y="228" font-family="monospace" font-size="18" fill="#43546b">README.md   SKILL.md</text>
+<rect x="70" y="285" width="390" height="430" rx="14" fill="#f7f2ff" stroke="#cdb8f5"/>
+<text x="100" y="325" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#7040b8">templates/</text>
+<text x="105" y="370" font-family="monospace" font-size="18" fill="#26364a">skill-template.md</text>
+<text x="105" y="405" font-family="monospace" font-size="18" fill="#26364a">video-prompt-template.md</text>
+<text x="100" y="455" font-family="Arial,sans-serif" font-size="17" fill="#536176">可直接套用的结构与</text>
+<text x="100" y="482" font-family="Arial,sans-serif" font-size="17" fill="#536176">视频 Prompt 工作模板。</text>
+<rect x="505" y="285" width="390" height="430" rx="14" fill="#effaf4" stroke="#9fd5b6"/>
+<text x="535" y="325" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#16834b">examples/</text>
+<text x="540" y="370" font-family="monospace" font-size="18" fill="#26364a">basic.md</text>
+<text x="540" y="405" font-family="monospace" font-size="18" fill="#26364a">continuous-action.md</text>
+<text x="540" y="440" font-family="monospace" font-size="18" fill="#26364a">failure-cases.md</text>
+<text x="535" y="490" font-family="Arial,sans-serif" font-size="17" fill="#536176">正例、连续动作与失败模式，</text>
+<text x="535" y="517" font-family="Arial,sans-serif" font-size="17" fill="#536176">用于回归测试。</text>
+<rect x="940" y="285" width="390" height="430" rx="14" fill="#fff7ed" stroke="#efc28c"/>
+<text x="970" y="325" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#a85a00">evaluation/</text>
+<text x="975" y="370" font-family="monospace" font-size="18" fill="#26364a">evaluation-rubric.md</text>
+<text x="975" y="405" font-family="monospace" font-size="18" fill="#26364a">reverse-expansion.md</text>
+<text x="970" y="455" font-family="Arial,sans-serif" font-size="17" fill="#536176">验证语义保真、动作连续性、</text>
+<text x="970" y="482" font-family="Arial,sans-serif" font-size="17" fill="#536176">时间与镜头逻辑。</text>
+<rect x="70" y="755" width="1260" height="65" rx="12" fill="#172033"/>
+<text x="700" y="797" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#fff">Core Skill → Case → Template → Example → Evaluation → Iteration</text>
+</svg>
