@@ -18,6 +18,10 @@
 
 </div>
 
+## Visual Showcase
+
+**[Open the Qiqu.Lab Showcase](docs/index.html)** — browse Cases and Skills as an interactive presentation layer. The repository remains the source of truth; the visual gallery is the discovery/remix layer.
+
 ## Community
 
 No standalone public group is currently listed. Use [Issues](https://github.com/0xf4vul/Skills4QiquLab/issues) for discussion, feedback, and requests; use [Pull Requests](https://github.com/0xf4vul/Skills4QiquLab/pulls) for contributions.
