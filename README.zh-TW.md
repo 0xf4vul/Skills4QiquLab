@@ -9,7 +9,7 @@
 <p>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/network/members"><img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks"></a>
-<a href="https://github.com/0xf4vul/Skills4QiquLab/tree/main/skills"><img src="https://img.shields.io/github.com/badge/Skills-8-4c9aff?style=flat-square"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/tree/main/skills"><img src="https://img.shields.io/badge/Skills-8-4c9aff?style=flat-square"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/tree/main/cases"><img src="https://img.shields.io/badge/Cases-2-7c5cff?style=flat-square"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/commits/main"><img src="https://img.shields.io/github/last-commit/0xf4vul/Skills4QiquLab?style=flat-square&label=更新"></a>
