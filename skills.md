@@ -1,20 +1,40 @@
 # Skills Index
 
-Use this page as the fast entry point into the collection.
+本页是仓库的快速入口，区分 Core Skills（方法论）与 Skill Cases（完整项目）。
 
-| Skill | Use when | Key principle |
+## Core Skills
+
+| Skill | 用途 | 入口 |
 |---|---|---|
-| [Prompt Compression](skills/prompt-compression.md) | A prompt is too long or repetitive | Remove redundancy, preserve semantic constraints |
-| [Prompt Optimization](skills/prompt-optimization.md) | A prompt works but is inconsistent | Improve structure, clarity, and execution |
-| [Prompt Reverse Engineering](skills/prompt-reverse-engineering.md) | You have a strong prompt and want a reusable pattern | Extract structure instead of copying wording |
-| [Video Prompt Compression](skills/video-prompt-compression.md) | A video prompt needs to be shorter | Preserve temporal and visual semantics |
-| [Video Prompt Optimization](skills/video-prompt-optimization.md) | A video prompt needs stronger execution | Clarify subject, action, camera, time, and constraints |
-| [Web Research](skills/web-research.md) | Research requires multiple sources | Search → verify → compare → synthesize |
-| [X Research](skills/x-research.md) | Researching X accounts, people, or topics | Discover → filter → verify → compare evidence |
-| [Skill Builder](skills/skill-builder.md) | Turning repeated work into a Skill | Define → constrain → test → iterate |
+| Prompt Compression | 压缩 Prompt，同时保持关键语义约束 | skills/prompt-compression.md |
+| Prompt Optimization | 优化 Prompt 的结构、清晰度与执行稳定性 | skills/prompt-optimization.md |
+| Prompt Reverse Engineering | 从优秀 Prompt 中提取可复用结构 | skills/prompt-reverse-engineering.md |
+| Video Prompt Compression | 压缩视频 Prompt，同时保护动作、时间与镜头语义 | skills/video-prompt-compression.md |
+| Video Prompt Optimization | 优化视频 Prompt 的动作、镜头与执行清晰度 | skills/video-prompt-optimization.md |
+| Web Research | 将开放式搜索转化为结构化证据研究 | skills/web-research.md |
+| X Research | 对 X 账号、人物、主题进行检索、核验与分析 | skills/x-research.md |
+| Skill Builder | 把重复工作抽象为可测试、可迭代的 Skill | skills/skill-builder.md |
 
-## Selection rule
+## Skill Cases
 
-If the task repeats, has recognizable inputs/outputs, and benefits from consistent execution, consider making a Skill.
+| Case | 状态 | 入口 |
+|---|---|---|
+| Video Prompt Compression | Active | cases/video-prompt-compression/ |
 
-If the task depends heavily on one-off judgment, changing context, or unavailable evidence, keep it as a workflow or prompt rather than forcing it into a Skill.
+## 如何选择
+
+**想理解方法 → skills/；想直接使用完整 Skill → cases/；想创建新的 Skill → skills/skill-builder.md + templates/skill-template.md。**
+
+## Case 标准结构
+
+~~~text
+Case/
+├── README.md
+├── SKILL.md
+├── templates/
+├── examples/
+├── evaluation/
+└── assets/
+~~~
+
+一个 Case 应当能够独立完成：**理解 → 执行 → 示例 → 评测 → 迭代**。
