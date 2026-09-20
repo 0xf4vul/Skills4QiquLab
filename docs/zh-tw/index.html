@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qiqu.Lab — AI 方法論, made reusable</title>
+<style>
+:root{--bg:#f6f5f1;--paper:#fff;--ink:#111;--muted:#777;--line:#deddd8;--soft:#eeece6;--accent:#111;--shadow:0 18px 60px #0000000b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.55 Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+.wrap{max-width:1320px;margin:auto;padding:24px 28px 80px}.top{display:flex;align-items:center;justify-content:space-between;padding:6px 0 34px}.brand{font-weight:800;letter-spacing:-.03em}.brand span{color:#999;font-weight:500}.nav{display:flex;gap:22px;color:#666}.nav a:hover{color:#111}
+.hero{padding:72px 0 54px;border-bottom:1px solid var(--line)}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:10px;color:#888;margin-bottom:14px}.hero h1{font-size:clamp(54px,8vw,108px);line-height:.9;letter-spacing:-.075em;max-width:980px;margin:0 0 30px}.hero p{max-width:700px;color:var(--muted);font-size:17px;margin:0}.flow{display:flex;flex-wrap:wrap;align-items:center;gap:7px;margin-top:32px}.flow span{background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:7px 11px}.flow b{font-weight:400;color:#aaa}
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:28px 0 16px}.tabs{display:flex;gap:6px;flex-wrap:wrap}.tab{border:1px solid var(--line);background:transparent;border-radius:99px;padding:8px 13px;color:#666}.tab.active,.tab:hover{background:#111;color:#fff;border-color:#111}.search{width:260px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:10px 14px;outline:none}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--paper);border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);transition:.2s}.card:hover{transform:translateY(-3px)}.visual{height:190px;background:linear-gradient(135deg,#e8e5dd,#faf9f6);display:flex;align-items:center;justify-content:center;padding:22px}.visual .poster{width:76%;height:100%;border:1px solid #bbb;background:#161616;color:#fff;border-radius:12px;padding:18px;display:flex;flex-direction:column;justify-content:space-between}.poster .big{font-size:28px;line-height:1;letter-spacing:-.06em}.poster .line{height:1px;background:#666}.body{padding:20px}.meta{display:flex;justify-content:space-between;color:#999;font-size:11px}.card h3{font-size:22px;letter-spacing:-.04em;margin:20px 0 7px}.card p{color:var(--muted);min-height:44px;margin:0 0 18px}.chips{display:flex;gap:6px;flex-wrap:wrap}.chip{font-size:11px;padding:4px 8px;border-radius:99px;background:var(--soft);color:#666}.actions{display:flex;gap:8px;margin-top:18px}.btn{border:1px solid #111;background:#111;color:#fff;border-radius:99px;padding:9px 13px}.btn.alt{background:#fff;color:#111;border-color:var(--line)}
+.section{padding:64px 0;border-top:1px solid var(--line);margin-top:58px}.section h2{font-size:40px;letter-spacing:-.055em;margin:0 0 25px}.architecture{display:grid;grid-template-columns:1fr 1fr;gap:16px}.arch{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px}.arch h3{margin:0 0 8px}.arch p{color:var(--muted);margin:0}.mini-flow{display:flex;gap:7px;flex-wrap:wrap;margin-top:20px}.mini-flow span{border:1px solid var(--line);padding:7px 10px;border-radius:8px;background:#fafafa}
+.modal{position:fixed;inset:0;background:#0008;display:none;align-items:center;justify-content:center;padding:24px;z-index:20}.modal.show{display:flex}.dialog{width:min(1050px,100%);max-height:90vh;overflow:auto;background:#f8f7f3;border-radius:24px;border:1px solid #fff3;box-shadow:0 30px 100px #0005}.dialog-head{display:flex;justify-content:space-between;padding:20px 24px;border-bottom:1px solid var(--line)}.close{border:0;background:transparent;font-size:24px}.detail{display:grid;grid-template-columns:1fr 1.2fr}.detail-art{min-height:500px;background:#ebe8e0;padding:34px;display:flex;align-items:center;justify-content:center}.detail-art .poster{width:80%;height:80%;max-width:380px}.detail-copy{padding:34px}.detail-copy h2{font-size:42px;letter-spacing:-.06em;margin:8px 0}.label{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#888;margin:22px 0 7px}.prompt{background:#111;color:#eee;border-radius:14px;padding:16px;white-space:pre-wrap;font:12px/1.65 ui-monospace,SFMono-Regular,monospace}.remix{margin-top:16px;width:100%;min-height:130px;border:1px solid var(--line);border-radius:14px;padding:14px;background:#fff;outline:none}.status{font-size:12px;color:#777;margin-top:9px}
+footer{padding-top:55px;color:#999;font-size:12px}
+@media(max-width:900px){.grid{grid-template-columns:1fr 1fr}.detail{grid-template-columns:1fr}.detail-art{min-height:300px}.architecture{grid-template-columns:1fr}}@media(max-width:620px){.wrap{padding:18px}.grid{grid-template-columns:1fr}.nav{display:none}.hero{padding-top:45px}.search{width:100%}.toolbar{align-items:stretch;flex-direction:column}.hero h1{font-size:58px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+<header class="top"><a class="brand" href="#">Qiqu.Lab <span>/ Skills4QiquLab</span></a><nav class="nav"><a href="#gallery">案例庫</a><a href="#methods">方法論</a><a href="#loop">閉環</a><span class="lang"><a href="../index.html">EN</a> · <a href="../zh-cn/index.html">简中</a> · <a href="../zh-tw/index.html">繁中</a></span><a href="https://github.com/0xf4vul/Skills4QiquLab">GitHub ↗</a></nav></header>
+
+<section class="hero">
+<div class="eyebrow">AI 實踐工作流 · 視覺化執行層</div>
+<h1>讓想法成為<br>可複用的系統。</h1>
+<p>從真實案例出發，查看方法、複用模板、生成新結果，再把經過驗證的成果回流社群。</p>
+<div class="flow"><span>案例</span><b>→</b><span>Prompt</span><b>→</b><span>標籤</span><b>→</b><span>模板</span><b>→</b><span>複用</span><b>→</b><span>生成</span><b>→</b><span>社群</span></div>
+</section>
+
+<section id="gallery">
+<div class="toolbar"><div class="tabs"><button class="tab active" data-filter="all">全部</button><button class="tab" data-filter="video">影片</button><button class="tab" data-filter="research">研究</button><button class="tab" data-filter="prompt">Prompt</button></div><input id="search" class="search" placeholder="搜尋案例、標籤、方法……"></div>
+<div id="cards" class="grid"></div>
+</section>
+
+<section id="methods" class="section">
+<div class="eyebrow">讓倉庫成為產品介面</div><h2>GitHub 保存方法。<br>Qiqu.Lab 讓方法真正可執行。</h2>
+<div class="architecture">
+<article class="arch"><h3>GitHub · 方法事實源</h3><p>Skills, 案例s, 模板s, examples and evaluation rules stay versioned, reviewable and reusable in the repository.</p><div class="mini-flow"><span>Skills</span><span>案例s</span><span>模板s</span><span>評測</span></div></article>
+<article class="arch"><h3>Qiqu.Lab · 產品層</h3><p>The same assets become discoverable, editable and executable through a visual workflow instead of a folder tree.</p><div class="mini-flow"><span>發現</span><span>複用</span><span>生成</span><span>分享</span></div></article>
+</div>
+</section>
+
+<section id="loop" class="section">
+<div class="eyebrow">閉環</div><h2>社群 is not the destination.<br>It is the input.</h2>
+<div class="architecture">
+<article class="arch"><h3>01 · 發現 → 理解</h3><p>Start from a real result. Open its Prompt, 標籤, 模板 and source Skill.</p></article>
+<article class="arch"><h3>02 · 複用 → 生成</h3><p>Change variables instead of starting from zero. Keep the reusable structure intact.</p></article>
+<article class="arch"><h3>03 · 分享 → 改進</h3><p>Publish the result. Strong remixes become new 案例s and feed the repository back.</p></article>
+<article class="arch"><h3>04 · 倉庫 → 產品</h3><p>Validated methods are versioned in GitHub and automatically become part of the next discovery cycle.</p></article>
+</div>
+</section>
+<footer>Qiqu.Lab · Skills4QiquLab · GitHub 負責沉澱方法庫；本頁面負責視覺化發現、複用與傳播。</footer>
+</main>
+
+<div id="modal" class="modal"><div class="dialog">
+<div class="dialog-head"><strong id="modalKicker">案例</strong><button class="close" onclick="closeModal()">×</button></div>
+<div class="detail"><div class="detail-art" id="detailArt"></div><div class="detail-copy"><div class="eyebrow" id="detailMeta"></div><h2 id="detailTitle"></h2><p id="detailDesc"></p><div class="label">標籤</div><div class="chips" id="detail標籤"></div><div class="label">Prompt</div><div class="prompt" id="detailPrompt"></div><div class="label">複用 this template</div><textarea id="remix" class="remix"></textarea><div class="actions"><button class="btn" onclick="generate()">生成 Preview</button><button class="btn alt" onclick="share()">分享 to 社群</button></div><div id="status" class="status"></div></div></div>
+</div></div>
+
+<script>
+const cases=[
+{id:"001",type:"video",title:"影片 Prompt Compression",desc:"壓縮長影片 Prompt，同時保留動作順序、時間關係、鏡頭邏輯與連續性。",tags:["video","compression","temporal"],meta:"Skill 案例 · 001",prompt:"Preserve the complete action sequence and temporal relationships. Remove redundant wording while keeping subject, camera movement, timing, continuity and hard constraints explicit.",art:"影片\nPROMPT\n壓縮"},
+{id:"002",type:"research",title:"Source-to-KOL 研究",desc:"把分散資料轉化為可驗證、可稽核的創作者發現與評估流程。",tags:["research","sources","KOL"],meta:"Skill 案例 · 002",prompt:"Extract named sources, verify each source independently, distinguish facts from interpretation, and return a traceable research table with source, evidence, confidence and next action.",art:"來源\n→ KOL\n研究"},
+{id:"003",type:"prompt",title:"Prompt 逆向工程",desc:"提取優秀 Prompt 背後的可複用決策結構，而不是照搬表面措辭。",tags:["prompt","reverse-engineering","method"],meta:"Skill Entry",prompt:"Analyze the input prompt by intent, variables, constraints, sequence, evaluation criteria and failure modes. Convert the discovered structure into a reusable template.",art:"PROMPT\n→\n系統"}
+];
+let active="all", current=null;
+const cards=document.getElementById("cards");
+function render(){
+ const q=document.getElementById("search").value.toLower案例();
+ cards.innerHTML=cases.filter(c=>(active==="all"||c.type===active)&&((c.title+c.desc+c.tags.join(" ")).toLower案例().includes(q))).map(c=>`
+ <article class="card"><div class="visual"><div class="poster"><div class="big">${c.art.replace全部("\\n","<br>")}</div><div class="line"></div><small>Qiqu.Lab / ${c.id}</small></div></div><div class="body"><div class="meta"><span>${c.meta}</span><span>↗ remixable</span></div><h3>${c.title}</h3><p>${c.desc}</p><div class="chips">${c.tags.map(t=>`<span class="chip">#${t}</span>`).join("")}</div><div class="actions"><button class="btn" onclick="open案例('${c.id}')">Open 案例</button><button class="btn alt" onclick="open案例('${c.id}','remix')">複用</button></div></div></article>`).join("")||"<p>沒有符合的案例。</p>";
+}
+function open案例(id,mode){current=cases.find(c=>c.id===id);document.getElementById("modal").classList.add("show");document.getElementById("modalMeta").textContent="";document.getElementById("detailMeta").textContent=current.meta+" · "+current.type;document.getElementById("detailTitle").textContent=current.title;document.getElementById("detailDesc").textContent=current.desc;document.getElementById("detail標籤").innerHTML=current.tags.map(t=>`<span class="chip">#${t}</span>`).join("");document.getElementById("detailPrompt").textContent=current.prompt;document.getElementById("remix").value=current.prompt;document.getElementById("detailArt").innerHTML=`<div class="poster"><div class="big">${current.art.replace全部("\\n","<br>")}</div><div class="line"></div><small>案例 ${current.id} · 模板 ready</small></div>`;document.getElementById("status").textContent=mode==="remix"?"模板 loaded — edit variables below.":"";if(mode==="remix")document.getElementById("remix").focus();}
+function closeModal(){document.getElementById("modal").classList.remove("show")}
+function generate(){document.getElementById("status").textContent="已在本地生成預覽——目前原型已可連接圖像/影片生成 API。"}
+function share(){document.getElementById("status").textContent="社群 draft created locally — next step is persistence + auth + publish API."}
+document.querySelector全部(".tab").forEach(b=>b.onclick=()=>{document.querySelector全部(".tab").forEach(x=>x.classList.remove("active"));b.classList.add("active");active=b.dataset.filter;render()});
+document.getElementById("search").oninput=render;
+document.getElementById("modal").onclick=e=>{if(e.target.id==="modal")closeModal()};
+render();
+</script>
+</body></html>
