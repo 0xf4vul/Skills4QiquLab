@@ -1,0 +1,15 @@
+{
+  "case": "001",
+  "version": "1.1.0",
+  "type": "video-prompt-compression",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"action_chain","label":"Action chain","weight":25,"checks":["action","sequence","move","movement"]},
+    {"id":"temporal","label":"Temporal semantics","weight":25,"checks":["temporal","timing","before","after","then","while"]},
+    {"id":"camera","label":"Camera continuity","weight":25,"checks":["camera","shot","pan","zoom","tracking","dolly"]},
+    {"id":"constraints","label":"Constraint preservation","weight":25,"checks":["preserve","constraint","continuity","hard constraint"]}
+  ],
+  "failure_modes": ["Action order collapsed","Temporal relation removed","Camera logic removed","Continuity constraint lost","Over-compression"],
+  "repair": "Restore the failed semantic element before increasing compression."
+}
