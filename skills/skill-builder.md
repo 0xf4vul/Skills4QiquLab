@@ -3,6 +3,10 @@
 ## Purpose
 Turn a repeated task into a reusable, testable AI Skill.
 
+## Use
+
+Use when a repeated task should become a reusable, testable, and maintainable Skill.
+
 ## Workflow
 Repeated task → define trigger → define boundaries → extract workflow → define output contract → add failure modes → build examples → evaluate → iterate.
 

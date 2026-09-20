@@ -3,6 +3,10 @@
 ## Purpose
 Improve a video prompt so a model can execute the intended subject, action, camera, timing, and scene continuity more reliably.
 
+## Use
+
+Use when a video prompt needs clearer actions, timing, camera behavior, or subject continuity.
+
 ## Workflow
 Intent → subject continuity → action chain → temporal structure → camera → environment → style → constraints → validation.
 

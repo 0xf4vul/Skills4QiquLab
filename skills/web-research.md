@@ -3,6 +3,10 @@
 ## Purpose
 Turn an open-ended research question into a traceable evidence workflow.
 
+## Use
+
+Use when an open-ended question requires current, traceable, and cross-checked evidence.
+
 ## Workflow
 Question → scope → search → source filtering → cross-check → extract → synthesize → cite.
 

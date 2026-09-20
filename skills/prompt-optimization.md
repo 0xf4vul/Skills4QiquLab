@@ -3,6 +3,10 @@
 ## Purpose
 Improve prompt clarity and execution reliability without changing the user's intended result.
 
+## Use
+
+Use when a prompt is unclear, unstable, or needs better execution without changing the intended result.
+
 ## Workflow
 Understand intent → extract constraints → identify ambiguity → restructure → add only necessary specificity → validate against the original.
 
