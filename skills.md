@@ -18,8 +18,9 @@
 ## Skill Cases
 
 | 编号 | Case | 状态 | 入口 |
-|---|---|---|---|
+|---:|---|---|---|
 | 001 | Video Prompt Compression | Active | [001_video-prompt-compression/](cases/001_video-prompt-compression/) |
+| 002 | X Account Verification | Active | [002_x-account-verification/](cases/002_x-account-verification/) |
 
 ## Case 命名规则
 

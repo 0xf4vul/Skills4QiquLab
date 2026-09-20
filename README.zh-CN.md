@@ -32,15 +32,14 @@ Qiqu.Lab 是一个面向实践的 AI Skill 仓库，用于将有效的 AI 工作
 ## 🚀 快速开始
 
 **探索** → [Core Skills](skills/) · [Skill 索引](skills.md) · [Cases](cases/)  
-**创建** → [Skill 创建er](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
+**创建** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
-### 当前 Case
+### 精选 Cases
 
-<div align="center">
-<a href="cases/001_video-prompt-compression/"><img src="cases/001_video-prompt-compression/assets/svg/case-logo.svg" alt="001 — Video Prompt Compression" width="620"></a>
-</div>
-
-**001 · Video Prompt Compression** → [打开 Case](cases/001_video-prompt-compression/)
+| Case | 重点 | 入口 |
+|---|---|---|
+| **001 · Video Prompt Compression** | 压缩视频提示词，同时保护动作、时间、镜头与连续性语义。 | [打开 Case](cases/001_video-prompt-compression/) |
+| **002 · X Account Verification** | 核验 X 账号身份、统计近 30 天活跃度，并筛选实用信息源。 | [打开 Case](cases/002_x-account-verification/) |
 
 ## 📁 仓库结构
 
@@ -54,7 +53,8 @@ Skills4QiquLab/
 ├── templates/
 ├── assets/
 └── cases/
-    └── 001_video-prompt-compression/
+    ├── 001_video-prompt-compression/
+    └── 002_x-account-verification/
 ~~~
 
 > **Case 编号与 Logo 规则：** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；Qiqu.Lab Logo 仅用于仓库品牌识别。

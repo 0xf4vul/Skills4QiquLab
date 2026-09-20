@@ -34,13 +34,12 @@ Qiqu.Lab is a practice-oriented AI Skill repository, dedicated to organizing eff
 **Explore** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
 **Build** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
-### Featured Case
+### Featured Cases
 
-<div align="center">
-<a href="cases/001_video-prompt-compression/"><img src="cases/001_video-prompt-compression/assets/svg/case-logo.svg" alt="001 — Video Prompt Compression" width="620"></a>
-</div>
-
-**001 · Video Prompt Compression** → [Open Case](cases/001_video-prompt-compression/)
+| Case | Focus | Entry |
+|---|---|---|
+| **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [Open Case](cases/001_video-prompt-compression/) |
+| **002 · X Account Verification** | Verify X account identity, measure 30-day activity, and filter practical information sources. | [Open Case](cases/002_x-account-verification/) |
 
 ## 📁 Repository Structure
 
@@ -54,7 +53,8 @@ Skills4QiquLab/
 ├── templates/
 ├── assets/
 └── cases/
-    └── 001_video-prompt-compression/
+    ├── 001_video-prompt-compression/
+    └── 002_x-account-verification/
 ~~~
 
 > **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the Qiqu.Lab logo is reserved for repository branding.

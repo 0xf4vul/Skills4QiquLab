@@ -32,15 +32,14 @@ Qiqu.Lab 是一個面向實踐的 AI Skill 儲存庫，用於將有效的 AI 工
 ## 🚀 快速開始
 
 **探索** → [Core Skills](skills/) · [Skill 索引](skills.md) · [Cases](cases/)  
-**建立** → [Skill 建立er](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
+**建立** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
-### 目前 Case
+### 精選 Cases
 
-<div align="center">
-<a href="cases/001_video-prompt-compression/"><img src="cases/001_video-prompt-compression/assets/svg/case-logo.svg" alt="001 — Video Prompt Compression" width="620"></a>
-</div>
-
-**001 · Video Prompt Compression** → [開啟 Case](cases/001_video-prompt-compression/)
+| Case | 重點 | 入口 |
+|---|---|---|
+| **001 · Video Prompt Compression** | 壓縮影片提示詞，同時保護動作、時間、鏡頭與連續性語義。 | [開啟 Case](cases/001_video-prompt-compression/) |
+| **002 · X Account Verification** | 核驗 X 帳號身份、統計近 30 天活躍度，並篩選實用資訊源。 | [開啟 Case](cases/002_x-account-verification/) |
 
 ## 📁 儲存庫結構
 
@@ -54,7 +53,8 @@ Skills4QiquLab/
 ├── templates/
 ├── assets/
 └── cases/
-    └── 001_video-prompt-compression/
+    ├── 001_video-prompt-compression/
+    └── 002_x-account-verification/
 ~~~
 
 > **Case 編號與 Logo 規則：** cases/ 下統一使用 NNN_skill-name/。每個 Case 提供與自身核心主題對應的專屬 Logo；Qiqu.Lab Logo 僅用於儲存庫品牌識別。
