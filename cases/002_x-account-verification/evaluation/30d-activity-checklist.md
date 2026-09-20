@@ -5,21 +5,28 @@
 - [x] CONFIRMED and PROBABLE are separated.
 - [x] Name matching alone never confirms an account.
 
-## Activity gate
-- [x] Execution date and 30D window are explicit.
-- [x] Observed posts are separated from complete totals.
-- [x] Unavailable timeline data is marked Unverified.
-- [x] Search-result counts and follower counts are never used as posting estimates.
+## Timeline acquisition gate
+- [x] Execution date and exact 30D window are explicit.
+- [x] Timeline acquisition is a separate gate from identity verification.
+- [x] Timeline status uses TIMELINE_ACQUIRED / TIMELINE_PARTIAL / TIMELINE_NOT_ACQUIRED / 30D_VERIFIED.
+- [x] A complete count requires the entire target window to be auditable.
+
+## Per-post evidence gate
+- [x] Every counted post must retain a direct platform post URL and/or post ID.
+- [x] Exact timestamp/date is retained.
+- [x] Original / Repost / Quote / Reply are separate fields.
+- [x] Topic classification is attached to the individual evidence row.
+- [x] Other-platform content is never converted into target-platform activity.
 
 ## Content gate
-- [x] AI and Tech are marked Partial when the sample is incomplete.
-- [x] Original / Repost / Quote / Reply are separate fields.
-- [x] Sample evidence is preserved for audit.
+- [x] AI and Tech ratios are marked Partial when the sample is incomplete.
+- [x] Search-result counts, follower counts, blog dates, and third-party summaries are never used as posting estimates.
+- [x] Missing values remain missing rather than being fabricated.
 
 ## Final-source gate
 - [x] Information-source value is not inferred from posting frequency alone.
 - [x] PROBABLE accounts remain outside a strict confirmed-only shortlist.
-- [x] Missing values remain missing rather than being fabricated.
+- [x] Identity status and 30D verification status remain separate.
 
 ## Acceptance criterion
-An exact posts_30d value requires an auditable complete 30-day timeline. Otherwise it must remain Unverified.
+**Only 30D_VERIFIED may output an exact posts_30d / original_30d / repost_30d / quote_30d / reply_30d count.** Otherwise use Unverified or Partial.
