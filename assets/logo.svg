@@ -1,28 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">Qiqu.Lab 奇趣实验室</title>
-<desc id="desc">Playful laboratory-style Qiqu.Lab logo.</desc>
-<defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="18" stdDeviation="9" flood-color="#061A45" flood-opacity=".32"/></filter></defs>
-<g stroke="#081B4B" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
-<path d="M170 210l30-22 23 32-31 23z" fill="#FF9B64"/><path d="M290 155l28-25 32 34-29 25z" fill="#67D9F3"/><path d="M1330 155l20-37 20 37-20 37z" fill="#FFD83D"/><path d="M1435 235q35-55 55 0q20 55 55 0" fill="none" stroke="#45B9EF"/><path d="M1225 110l12 27 29 3-22 18 7 29-26-15-26 15 7-29-22-18 29-3z" fill="#FFC642"/><path d="M270 290l11 26 27 11-27 11-11 27-11-27-27-11 27-11z" fill="#FFD93D"/><path d="M1320 335l9 21 22 9-22 9-9 22-9-22-22-9 22-9z" fill="#FF9E61"/><circle cx="315" cy="645" r="15" fill="#5BD8F3"/><circle cx="1290" cy="685" r="13" fill="#FFD93D"/>
-</g>
-<g stroke="#081B4B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
-<path d="M125 390h105l-17 180q-4 38-35 54h-2q-31-16-35-54z" fill="#EAF9FF"/><path d="M132 440h91" stroke="#52CFF2"/><path d="M151 505q20 18 43 0t35 0" fill="none" stroke="#40B9F0"/><circle cx="155" cy="475" r="8" fill="#FFCC3A" stroke="none"/><circle cx="190" cy="530" r="9" fill="#FF8D67" stroke="none"/><path d="M1375 385h95l-20 183q-4 34-28 50-24-16-28-50z" fill="#F7FBFF"/><path d="M1378 448h90" stroke="#FFAA67"/><path d="M1395 505q18 16 37 0t35 0" fill="none" stroke="#FF8D67"/>
-</g>
-<g transform="translate(690 88)" stroke="#081B4B" stroke-width="9" stroke-linejoin="round"><path d="M20 105q-18-25 3-47 19-20 47-5 7-38 45-38 38 0 46 38 28-15 48 5 20 22 3 47z" fill="#FFF"/><path d="M38 105h140l-14 54H52z" fill="#FFF"/><path d="M62 105h91" stroke="#65D8F2"/></g>
-<g filter="url(#shadow)">
-<path d="M439 851C437 819 435 791 430 765H97V660H391C347 601 261 568 84 548C101 528 124 491 135 464H46V357H708V39C708 25 702 20 682 19L572 20V297H139V-45H253V17H535C551 -14 569 -59 576 -90C662 -90 726 -89 772 -72C817 -54 832 -23 832 37V357H957V464H814L892 538C809 573 681 622 566 660H903V765H554C558 792 561 820 563 851ZM200 464C343 488 428 526 480 582C586 547 704 501 783 464ZM253 204H458V110H253Z" transform="translate(237.50,430.00) scale(0.230000,-0.230000)" fill="#FFD83D" stroke="#071B4D" stroke-width="78.26" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke"/>
-<path d="M716 712V643H849C843 590 835 539 825 491L772 594L693 568V712ZM384 213 410 116 599 187V72H693V223L743 242L725 328L693 317V556C726 493 760 420 790 350C765 271 734 203 697 154C719 139 755 98 771 74C798 111 823 158 845 212C858 174 869 139 877 109L970 145C954 202 925 275 891 351C921 460 942 586 955 722L894 742L876 738H729V813H404V712H443V231ZM599 712V632H536V712ZM599 541V455H536V541ZM599 364V284L536 262V364ZM76 391C81 255 76 98 12 -18C35 -29 74 -66 89 -90C122 -35 143 27 157 92C239 -37 364 -64 559 -64H929C937 -27 957 28 975 55C888 51 633 51 560 51C463 51 384 58 323 85V252H415V356H323V457H417V563H296V644H399V748H296V850H189V748H66V644H189V563H43V457H218V179C202 205 188 236 176 274C178 311 177 349 176 385Z" transform="translate(462.50,430.00) scale(0.230000,-0.230000)" fill="#FFD83D" stroke="#071B4D" stroke-width="78.26" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke"/>
-<path d="M530 66C658 28 789 -33 866 -85L939 10C858 59 716 118 586 155ZM232 545C284 515 348 467 376 434L451 520C419 554 354 597 302 623ZM130 395C183 366 249 321 279 287L351 377C318 409 251 451 198 475ZM77 756V526H196V644H801V526H927V756H588C573 790 551 830 531 862L410 825C422 804 434 780 445 756ZM68 274V174H392C334 103 238 51 76 15C101 -11 131 -57 143 -88C364 -34 478 53 539 174H938V274H575C600 367 606 476 610 601H483C479 470 476 362 446 274Z" transform="translate(687.50,430.00) scale(0.230000,-0.230000)" fill="#39CFF0" stroke="#071B4D" stroke-width="78.26" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke"/>
-<path d="M20 168 40 74C114 91 202 113 288 133L279 221C183 200 87 180 20 168ZM461 349C483 274 507 176 514 112L611 139C601 202 577 299 552 373ZM634 377C650 302 668 204 672 139L768 155C762 219 744 314 726 390ZM85 646C81 533 71 383 58 292H318C308 116 297 43 279 24C269 14 260 12 244 12C225 12 183 13 139 17C155 -10 167 -50 169 -79C217 -81 264 -81 291 -78C323 -74 346 -66 367 -40C397 -5 410 93 422 343C423 356 424 386 424 386H347C359 500 371 675 378 813H46V712H273C267 598 258 474 247 385H169C176 465 183 560 187 640ZM670 686C712 638 760 588 811 544H545C590 587 632 635 670 686ZM652 861C590 733 478 617 361 547C381 524 416 473 429 449C463 472 496 499 529 529V443H839V520C869 495 900 472 930 452C941 485 964 541 984 571C895 618 796 701 730 778L756 825ZM436 56V-46H957V56H837C878 143 923 260 959 361L851 384C827 284 780 148 738 56Z" transform="translate(912.50,430.00) scale(0.230000,-0.230000)" fill="#2DB8F2" stroke="#071B4D" stroke-width="78.26" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke"/>
-<path d="M146 232V129H437V43H58V-62H948V43H560V129H868V232H560V308H437V232ZM420 830C429 812 438 791 446 770H60V577H172V497H320C280 461 244 433 227 422C200 402 179 390 156 386C168 357 185 304 191 283C230 298 285 302 734 338C756 315 775 293 788 275L882 339C845 385 775 448 713 497H832V577H939V770H581C570 800 553 835 536 864ZM596 464 649 419 356 400C397 430 438 463 474 497H648ZM178 599V661H817V599Z" transform="translate(1137.50,430.00) scale(0.230000,-0.230000)" fill="#159FEA" stroke="#071B4D" stroke-width="78.26" stroke-linejoin="round" stroke-linecap="round" paint-order="stroke"/>
-<path d="M911 -27H881Q512 -27 307 177Q102 381 102 745Q102 1108 306.5 1314Q511 1520 870 1520Q1233 1520 1435.5 1316Q1638 1112 1638 745Q1638 493 1530.5 311Q1423 129 1221 37L1522 -299H1155ZM870 1241Q694 1241 597 1111Q500 981 500 745Q500 505 595 377.5Q690 250 870 250Q1047 250 1144 380Q1241 510 1241 745Q1241 981 1144 1111Q1047 1241 870 1241Z" transform="translate(334.31,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M172 1120H530V0H172ZM172 1556H530V1264H172Z" transform="translate(492.83,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M698 887Q584 887 523.5 803Q463 719 463 559Q463 399 523.5 315Q584 231 698 231Q813 231 873.5 315Q934 399 934 559Q934 719 873.5 803Q813 887 698 887ZM934 162Q860 63 771 17Q682 -29 565 -29Q358 -29 225 135.5Q92 300 92 559Q92 818 225 981.5Q358 1145 565 1145Q682 1145 771 1099Q860 1053 934 954V1120H1294V-426H934Z" transform="translate(554.96,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M160 436V1120H520V1008Q520 917 519 779.5Q518 642 518 596Q518 461 525 401.5Q532 342 549 315Q571 280 606.5 261Q642 242 688 242Q800 242 864 328Q928 414 928 567V1120H1286V0H928V162Q847 64 756.5 17.5Q666 -29 557 -29Q363 -29 261.5 90Q160 209 160 436Z" transform="translate(687.96,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M209 387H569V0H209Z" transform="translate(820.22,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M188 1493H573V291H1249V0H188Z" transform="translate(889.40,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M674 504Q562 504 505.5 466Q449 428 449 354Q449 286 494.5 247.5Q540 209 621 209Q722 209 791 281.5Q860 354 860 463V504ZM1221 639V0H860V166Q788 64 698 17.5Q608 -29 479 -29Q305 -29 196.5 72.5Q88 174 88 336Q88 533 223.5 625Q359 717 649 717H860V745Q860 830 793 869.5Q726 909 584 909Q469 909 370 886Q271 863 186 817V1090Q301 1118 417 1132.5Q533 1147 649 1147Q952 1147 1086.5 1027.5Q1221 908 1221 639Z" transform="translate(1007.47,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-<path d="M768 231Q883 231 943.5 315Q1004 399 1004 559Q1004 719 943.5 803Q883 887 768 887Q653 887 591.5 802.5Q530 718 530 559Q530 400 591.5 315.5Q653 231 768 231ZM530 956Q604 1054 694 1100.5Q784 1147 901 1147Q1108 1147 1241 982.5Q1374 818 1374 559Q1374 300 1241 135.5Q1108 -29 901 -29Q784 -29 694 17.5Q604 64 530 162V0H172V1556H530Z" transform="translate(1132.68,650.00) scale(0.092773,-0.092773)" fill="#FFFFFF" stroke="#071B4D" stroke-width="194.02" stroke-linejoin="round" paint-order="stroke"/>
-</g>
-<g fill="#43B6F0" stroke="#081B4B" stroke-width="8" stroke-linejoin="round"><path d="M1450 300v90q-20-16-43-3-28 16-12 39 17 23 48 5 24-14 24-45v-70l52 16v-35z"/></g>
+  <title id="title">Qiqu.Lab 奇趣实验室</title>
+  <desc id="desc">高清矢量版 Qiqu.Lab 奇趣实验室 Logo，基于原始品牌图稿重制。</desc>
+  <defs>
+    <linearGradient id="cnYellow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF45A"/><stop offset="0.55" stop-color="#FFD52E"/><stop offset="1" stop-color="#FFB91F"/>
+    </linearGradient>
+    <linearGradient id="cnBlue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#67E7FF"/><stop offset="0.52" stop-color="#24BCEB"/><stop offset="1" stop-color="#0797E2"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FEFF"/><stop offset="0.45" stop-color="#B8F1FF"/><stop offset="1" stop-color="#55B9F2"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="18" stdDeviation="10" flood-color="#071B4D" flood-opacity=".30"/>
+    </filter>
+    <style>
+      .ink{stroke:#071B4D;stroke-width:18;stroke-linejoin:round;stroke-linecap:round;paint-order:stroke fill}
+      .thin{stroke:#071B4D;stroke-width:9;stroke-linejoin:round;stroke-linecap:round}
+      .cn{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC",sans-serif;font-weight:900}
+      .en{font-family:"Trebuchet MS","Arial Rounded MT Bold",Arial,sans-serif;font-weight:900}
+    </style>
+  </defs>
+
+  <!-- playful confetti -->
+  <g class="thin">
+    <path d="M182 176l38-26 28 42-38 27z" fill="#FF9B69"/>
+    <path d="M335 118l38-27 35 42-38 28z" fill="#7EDBF6"/>
+    <path d="M1260 126l18-43 21 42-20 42z" fill="#FFD542"/>
+    <path d="M1394 155q20-42 40 0t40 0" fill="none" stroke="#3DB7F0" stroke-width="15"/>
+    <path d="M1230 90l13 29 32 4-24 20 8 32-29-17-29 17 8-32-24-20 32-4z" fill="#FFB840"/>
+    <path d="M252 246l13 29 31 12-31 12-13 30-13-30-31-12 31-12z" fill="#FFE14A"/>
+    <path d="M1334 330l11 26 28 11-28 11-11 27-11-27-28-11 28-11z" fill="#FF9D68"/>
+    <circle cx="151" cy="297" r="14" fill="#62C9F2"/>
+    <circle cx="1471" cy="286" r="12" fill="#78DCE8"/>
+    <circle cx="1376" cy="651" r="13" fill="#FFD642"/>
+  </g>
+
+  <!-- laboratory glassware -->
+  <g class="thin" filter="url(#softShadow)">
+    <path d="M111 383h110l-20 169q-5 40-35 55h0q-30-15-35-55z" fill="url(#glass)"/>
+    <path d="M120 438h92" fill="none" stroke="#36B8ED" stroke-width="12"/>
+    <path d="M142 498q22 20 45 0t34 0" fill="none" stroke="#39AEEB" stroke-width="9"/>
+    <circle cx="147" cy="470" r="8" fill="#FFD443" stroke="none"/>
+    <circle cx="184" cy="527" r="9" fill="#FF8E68" stroke="none"/>
+    <path d="M1388 384h100l-19 171q-5 37-31 53-26-16-31-53z" fill="#F9FDFF"/>
+    <path d="M1391 445h94" fill="none" stroke="#FFAC68" stroke-width="12"/>
+    <path d="M1407 503q20 18 40 0t36 0" fill="none" stroke="#FF8E68" stroke-width="9"/>
+  </g>
+
+  <!-- chef hat -->
+  <g class="thin" filter="url(#softShadow)">
+    <path d="M675 191q-24-31 4-58 23-23 57-7 8-48 53-48t54 48q34-17 58 7 27 27 4 58z" fill="#fff"/>
+    <path d="M695 191h169l-17 63H712z" fill="#fff"/>
+    <path d="M720 191h112" stroke="#5BD5F4" stroke-width="9"/>
+  </g>
+
+  <!-- main Chinese mark -->
+  <g filter="url(#softShadow)" class="cn" text-anchor="middle">
+    <text x="355" y="414" font-size="218" class="ink" fill="url(#cnYellow)">奇</text>
+    <text x="555" y="414" font-size="218" class="ink" fill="url(#cnYellow)">趣</text>
+    <text x="765" y="414" font-size="218" class="ink" fill="url(#cnBlue)">实</text>
+    <text x="978" y="414" font-size="218" class="ink" fill="url(#cnBlue)">验</text>
+    <text x="1192" y="414" font-size="218" class="ink" fill="url(#cnBlue)">室</text>
+  </g>
+
+  <!-- small face accent -->
+  <g class="thin">
+    <circle cx="1094" cy="251" r="34" fill="#fff"/>
+    <circle cx="1110" cy="251" r="5" fill="#071B4D" stroke="none"/>
+    <path d="M1135 250q17-20 31 0" fill="none" stroke-width="7"/>
+    <circle cx="1080" cy="279" r="7" fill="#FF8D91" stroke="none"/>
+    <circle cx="1138" cy="279" r="7" fill="#FF8D91" stroke="none"/>
+  </g>
+
+  <!-- Qiqu.Lab wordmark -->
+  <g class="en" text-anchor="middle" filter="url(#softShadow)">
+    <text x="800" y="626" font-size="154" class="ink" fill="#fff" stroke-width="20">Qiqu.Lab</text>
+  </g>
+
+  <!-- candy / pastry accents -->
+  <g class="thin">
+    <path d="M1170 574l75-33 78 25-25 72-107-6z" fill="#FFB1B9"/>
+    <path d="M1203 584q45-28 90 0l-13 35h-92z" fill="#FFE36C"/>
+    <circle cx="1277" cy="563" r="24" fill="#B96D43"/>
+    <circle cx="1310" cy="588" r="22" fill="#FF91A6"/>
+    <path d="M1309 466q18-29 37 0t38 0" fill="none" stroke="#FF8E53" stroke-width="12"/>
+    <path d="M1322 467v-40" fill="none" stroke="#FF8E53" stroke-width="12"/>
+    <path d="M1407 447q26-34 48 0t43 0" fill="none" stroke="#4AADEB" stroke-width="13"/>
+  </g>
+
+  <!-- lower confetti -->
+  <g class="thin">
+    <path d="M355 690l32-20 25 31-32 21z" fill="#67CFF1"/>
+    <path d="M518 716l13-35 35 13-14 35z" fill="#FFD83D"/>
+    <path d="M827 698l14-34 38 15-14 34z" fill="#73DCC4"/>
+    <path d="M1028 720q22-31 44 0t43 0" fill="none" stroke="#FF9A63" stroke-width="11"/>
+  </g>
 </svg>
