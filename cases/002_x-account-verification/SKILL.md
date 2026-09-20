@@ -317,3 +317,10 @@
 ## One-line workflow
 
 **任意来源 → 提取人物/账号 → 角色识别 → 实体解析 → 候选账号 → 身份核验 → 30D统计 → 内容分类 → 信息源筛选 → 审计**
+
+
+## 30D Activity Audit Dataset
+
+Case 002 includes a real evaluation dataset at `evaluation/30d-activity-audit.md`. It distinguishes observed posts from complete 30-day totals and preserves identity evidence, source type, classification, and completeness.
+
+A complete 30D number may only be written when the entire target window is auditable. Partial timeline snapshots must use **Unverified** for totals and **Partial** for topic ratios.
