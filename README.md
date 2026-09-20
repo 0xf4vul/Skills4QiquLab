@@ -16,44 +16,28 @@
 
 > 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Skills4QiquLab
+## What is it?
 
-<table>
-<tr>
-<td align="center" width="20%"><h2>⚡</h2><b>Core Skills</b><br><sub>Reusable methods</sub></td>
-<td align="center" width="20%"><h2>▣</h2><b>Skill Cases</b><br><sub>Applied workflows</sub></td>
-<td align="center" width="20%"><h2>▤</h2><b>Templates</b><br><sub>Reusable structures</sub></td>
-<td align="center" width="20%"><h2>💡</h2><b>Examples</b><br><sub>Practical references</sub></td>
-<td align="center" width="20%"><h2>▥</h2><b>Evaluation</b><br><sub>Quality checks</sub></td>
-</tr>
-</table>
+Reusable AI Skills, practical cases, templates, and evaluation resources.
 
-## 🚀 Quick Start
+## How to use
 
-**Explore** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
-**Build** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
+**Find a Skill → read its SKILL.md → use its templates → check examples/evaluation → adapt and reuse**
 
-### Featured Cases
+## Important entry points
 
-| Case | Focus | Entry |
-|---|---|---|
-| **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [Open Case](cases/001_video-prompt-compression/) |
-| **002 · Source-to-KOL Research** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [Open Case](cases/002_source-to-kol-research/) |
+[Skill Index](skills.md) · [Core Skills](skills/) · [Skill Cases](cases/) · [Skill Template](templates/skill-template.md)
 
-## 📁 Repository Structure
+## Important structure
 
-~~~text
-Skills4QiquLab/
-├── README.md / README.zh-CN.md / README.zh-TW.md — project overview
-├── skills.md — skill index
-├── skills/ — reusable core skills
-├── templates/ — shared templates
-├── assets/ — project and case assets
-└── cases/ — applied skill cases
-~~~
+`skills.md` — index · `skills/` — Skills · `templates/` — templates · `cases/` — applied cases
 
-## 📄 License
+## Cases
+
+**001 · Video Prompt Compression** — compress video prompts while preserving action and temporal semantics. [Open](cases/001_video-prompt-compression/)
+
+**002 · Source-to-KOL Research** — turn arbitrary sources into verifiable KOL / information-source research. [Open](cases/002_source-to-kol-research/)
+
+## License
 
 [MIT License](LICENSE)
-
-<div align="center"><sub>Build → test → iterate → reuse.</sub></div>

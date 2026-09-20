@@ -16,34 +16,28 @@
 
 > 🌐 **其他语言：** 🇬🇧 [English](README.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Skills4QiquLab
+## 是什么？
 
-## 🚀 快速开始
+可复用的 AI Skills、实践案例、模板与评测资源。
 
-**探索** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
-**创建** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
+## 怎么用？
 
-### 精选 Cases
+**找到 Skill → 阅读 SKILL.md → 使用模板 → 查看示例/评测 → 修改复用**
 
-| Case | 重点 | 入口 |
-|---|---|---|
-| **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [打开 Case](cases/001_video-prompt-compression/) |
-| **002 · Source-to-KOL Research** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [打开 Case](cases/002_source-to-kol-research/) |
+## 重要入口
 
-## 📁 仓库结构
+[Skill 索引](skills.md) · [核心 Skills](skills/) · [Skill Cases](cases/) · [Skill 模板](templates/skill-template.md)
 
-~~~text
-Skills4QiquLab/
-├── README.md / README.zh-CN.md / README.zh-TW.md — 项目说明
-├── skills.md — Skill 索引
-├── skills/ — 可复用核心 Skills
-├── templates/ — 通用模板
-├── assets/ — 项目与 Case 资源
-└── cases/ — 实践型 Skill Cases
-~~~
+## 重要结构
 
-## 📄 许可
+`skills.md` — 索引 · `skills/` — Skills · `templates/` — 模板 · `cases/` — 实践案例
+
+## Cases
+
+**001 · Video Prompt Compression** — 压缩视频提示词，同时保留动作与时间语义。[打开](cases/001_video-prompt-compression/)
+
+**002 · Source-to-KOL Research** — 将任意信息源转化为可验证的 KOL / 信息源研究流程。[打开](cases/002_source-to-kol-research/)
+
+## 许可
 
 [MIT 许可](LICENSE)
-
-<div align="center"><sub>创建 → 测试 → 迭代 → 复用。</sub></div>

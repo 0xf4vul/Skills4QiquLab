@@ -9,41 +9,35 @@
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/commits/main"><img src="https://img.shields.io/github/last-commit/0xf4vul/Skills4QiquLab?style=flat-square&label=last%20commit"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/issues"><img src="https://img.shields.io/github/issues/0xf4vul/Skills4QiquLab?style=flat-square&label=issues"></a>
-<a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/issues/0xf4vul/Skills4QiquLab?style=flat-square&label=issues"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=license"></a>
 </p>
 
 </div>
 
 > 🌐 **其他語言：** 🇬🇧 [English](README.md) &nbsp;|&nbsp; 🇨🇳 [简体中文](README.zh-CN.md)
 
-# Skills4QiquLab
+## 是什麼？
 
-## 🚀 快速開始
+可複用的 AI Skills、實踐案例、範本與評測資源。
 
-**探索** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
-**建立** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
+## 怎麼用？
 
-### 精選 Cases
+**找到 Skill → 閱讀 SKILL.md → 使用範本 → 查看範例/評測 → 修改複用**
 
-| Case | 重點 | 入口 |
-|---|---|---|
-| **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [開啟 Case](cases/001_video-prompt-compression/) |
-| **002 · Source-to-KOL Research** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [開啟 Case](cases/002_source-to-kol-research/) |
+## 重要入口
 
-## 📁 儲存庫結構
+[Skill 索引](skills.md) · [核心 Skills](skills/) · [Skill Cases](cases/) · [Skill 範本](templates/skill-template.md)
 
-~~~text
-Skills4QiquLab/
-├── README.md / README.zh-CN.md / README.zh-TW.md — 專案說明
-├── skills.md — Skill 索引
-├── skills/ — 可複用核心 Skills
-├── templates/ — 通用範本
-├── assets/ — 專案與 Case 資源
-└── cases/ — 實踐型 Skill Cases
-~~~
+## 重要結構
 
-## 📄 許可
+`skills.md` — 索引 · `skills/` — Skills · `templates/` — 範本 · `cases/` — 實踐案例
+
+## Cases
+
+**001 · Video Prompt Compression** — 壓縮影片提示詞，同時保留動作與時間語義。[開啟](cases/001_video-prompt-compression/)
+
+**002 · Source-to-KOL Research** — 將任意資訊源轉化為可驗證的 KOL / 資訊源研究流程。[開啟](cases/002_source-to-kol-research/)
+
+## 授權
 
 [MIT 授權](LICENSE)
-
-<div align="center"><sub>建立 → 測試 → 迭代 → 複用。</sub></div>

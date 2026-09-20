@@ -6,28 +6,18 @@
 
 </div>
 
-> Case ID: 001_video-prompt-compression
-
 > 🌐 **其他語言：** 🇬🇧 [English](README.md) &nbsp;|&nbsp; 🇨🇳 [简体中文](README.zh-CN.md)
 
-將影片提示詞壓縮為更短、更高密度的表達，同時保護動作鏈、時間關係、鏡頭邏輯與主體連續性。
+將影片提示詞壓縮為更短、更高密度的表達，同時保留動作鏈、時間關係、鏡頭邏輯與主體連續性。
 
-## Case 結構
+## 怎麼用？
 
-~~~text
-001_video-prompt-compression/
-├── README.md / README.zh-CN.md / README.zh-TW.md — Case 說明
-├── SKILL.md — 核心方法
-├── templates/ — 可複用提示詞範本
-├── examples/ — 範例與失敗案例
-├── evaluation/ — 評測與反向展開檢查
-└── assets/svg/case-logo.svg — Case Logo
-~~~
+**閱讀 SKILL.md → 選擇範本 → 參考範例 → 執行評測 → 複用**
 
-## 使用
+## 重要結構
 
-直接閱讀 SKILL.md；需要範本時進入 templates/；需要測試時進入 examples/ 與 evaluation/。
+`SKILL.md` — 核心方法 · `templates/` — 提示詞範本 · `examples/` — 範例 / 失敗案例 · `evaluation/` — 評測
 
-## 核心邊界
+## 邊界
 
-不要將連續動作簡單折疊成一個結果動詞。壓縮的是表達方式，而不是影片需要表達的動作語義。
+不要壓縮掉影片保持連貫所必需的動作語義。

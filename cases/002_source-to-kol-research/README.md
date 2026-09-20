@@ -6,34 +6,18 @@
 
 </div>
 
-> Case ID: 002_source-to-kol-research
-
 > 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-Turn a person list, URL, article, social post, video, podcast, PDF, image, file, or pasted content into a verifiable and auditable KOL / information-source research pipeline.
-
-## Case structure
-
-~~~text
-002_source-to-kol-research/
-├── README.md / README.zh-CN.md / README.zh-TW.md — case overview
-├── SKILL.md — research methodology
-├── templates/ — reusable research templates
-├── examples/ — reference research case
-├── evaluation/ — audit and quality checks
-└── assets/svg/case-logo.svg — case logo
-~~~
+Turn arbitrary inputs into a verifiable and auditable KOL / information-source research workflow.
 
 ## Use
 
-Read SKILL.md for the methodology; use templates/ for repeatable research; use examples/ for reference inputs and outputs; use evaluation/ for quality checks.
+**Read SKILL.md → choose a template → reference examples → run evaluation → reuse**
 
-## Input scope
+## Important structure
 
-The Case is source-agnostic. Inputs may come from X, LinkedIn, YouTube, Reddit, Instagram, Threads, GitHub, websites, articles, podcasts, PDFs, images, files, or direct user input.
+`SKILL.md` — research method · `templates/` — research templates · `examples/` — reference cases · `evaluation/` — quality checks
 
-## Core principle
+## Principle
 
-**Verify the source role first, verify the person second, verify the account third, then measure activity and content signals.**
-
-Do not treat every mentioned person as a KOL. Do not force an account match just to complete a table.
+**Verify the source role → verify the person → verify the account → measure activity and content signals**
