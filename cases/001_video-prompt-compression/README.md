@@ -8,6 +8,8 @@
 
 > Case ID: 001_video-prompt-compression
 
+> 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
+
 Compress video prompts into shorter, denser expressions while preserving action chains, temporal relationships, camera logic, and subject continuity.
 
 ## Case structure
@@ -20,7 +22,7 @@ Read SKILL.md for the methodology; use templates/ for repeatable prompt structur
 
 ## Naming & architecture
 
-This Case lives at cases/001_video-prompt-compression/. All Cases use **three-digit sequential numbering + kebab-case names**, such as 001_video-prompt-compression, 002_xxx, and 003_xxx. The number indicates creation order and does not change the semantic name of the Skill.
+**Case directory:** `cases/001_video-prompt-compression/`. All Cases use **three-digit sequential numbering + kebab-case names**. The number indicates creation order and does not change the semantic name of the Skill.
 
 ## Core boundary
 

@@ -37,7 +37,7 @@
 | Case | Focus | Entry |
 |---|---|---|
 | **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [Open Case](cases/001_video-prompt-compression/) |
-| **002 · Source-to-KOL Discovery & Account Verification** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [Open Case](cases/002_x-account-verification/) |
+| **002 · Source-to-KOL Research** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [Open Case](cases/002_source-to-kol-research/) |
 
 ## 📁 Repository Structure
 
@@ -52,7 +52,7 @@ Skills4QiquLab/
 ├── assets/
 └── cases/
     ├── 001_video-prompt-compression/
-    └── 002_x-account-verification/
+    └── 002_source-to-kol-research/
 ~~~
 
 > **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the root repository logo is reserved for repository branding.

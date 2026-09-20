@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logo-en.svg" alt="Skills4QiquLab" width="720">
+<img src="assets/logo-zh-CN.svg" alt="Skills4QiquLab" width="720">
 
 <p><strong>Skills4QiquLab</strong><br><sub>一个面向实践的 AI Skill 仓库，将有效的 AI 工作方法整理为可复用的 Skills 与配套资源。</sub></p>
 
@@ -29,15 +29,15 @@
 
 ## 🚀 快速开始
 
-**探索** → [Core Skills](skills/) · [Skill 索引](skills.md) · [Cases](cases/)  
+**探索** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
 **创建** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
 ### 精选 Cases
 
 | Case | 重点 | 入口 |
 |---|---|---|
-| **001 · Video Prompt Compression** | 压缩视频提示词，同时保护动作、时间、镜头与连续性语义。 | [打开 Case](cases/001_video-prompt-compression/) |
-| **002 · Source-to-KOL Discovery & Account Verification** | 从任意来源发现人物与信息源，核验账号身份，统计近 30 天活跃度并分析内容信号。 | [打开 Case](cases/002_x-account-verification/) |
+| **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [打开 Case](cases/001_video-prompt-compression/) |
+| **002 · Source-to-KOL Research** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [Open Case](cases/002_source-to-kol-research/) |
 
 ## 📁 仓库结构
 
@@ -52,10 +52,10 @@ Skills4QiquLab/
 ├── assets/
 └── cases/
     ├── 001_video-prompt-compression/
-    └── 002_x-account-verification/
+    └── 002_source-to-kol-research/
 ~~~
 
-> **Case 编号与 Logo 规则：** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；根仓库 Logo 仅用于仓库品牌识别。
+> **Case 编号与 Logo 规则:** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；根仓库 Logo 仅用于仓库品牌识别。
 
 ## 📄 许可
 

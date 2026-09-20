@@ -1,14 +1,16 @@
 <div align="center">
 
-<img src="assets/svg/case-logo.svg" alt="002 — Source-to-KOL Discovery & Account Verification" width="620">
+<img src="assets/svg/case-logo.svg" alt="002 — Source-to-KOL Research" width="620">
 
-# 002 — Source-to-KOL Discovery & Account Verification
+# 002 — Source-to-KOL Research
 
 </div>
 
-> Case ID: 002_x-account-verification
+> Case ID: 002_source-to-kol-research
 
-Turn a person list, URL, article, social post, video, podcast, PDF, image, file, or pasted content into a verifiable and auditable KOL / information-source list.
+> 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
+
+Turn a person list, URL, article, social post, video, podcast, PDF, image, file, or pasted content into a verifiable and auditable KOL / information-source research pipeline.
 
 ## Case structure
 
