@@ -8,20 +8,20 @@
 
 > Case ID: 001_video-prompt-compression
 
-将视频提示词压缩为更短、更高密度的表达，同时保护动作链、时间关系、镜头逻辑与主体连续性。
+Compress video prompts into shorter, denser expressions while preserving action chains, temporal relationships, camera logic, and subject continuity.
 
-## Case 结构
+## Case structure
 
 **SKILL.md → templates → examples → evaluation → assets**
 
-## 使用
+## Use
 
-直接阅读 SKILL.md；需要模板时进入 templates/；需要测试时进入 examples/ 与 evaluation/。
+Read SKILL.md for the methodology; use templates/ for repeatable prompt structures; use examples/ for reference cases; use evaluation/ for testing and failure analysis.
 
-## 命名与架构
+## Naming & architecture
 
-本 Case 位于 cases/001_video-prompt-compression/。仓库所有 Case 均采用 **三位顺序编号 + kebab-case 名称**，例如 001_video-prompt-compression、002_xxx、003_xxx。编号表示建立顺序，不改变 Skill 本身的语义名称。
+This Case lives at cases/001_video-prompt-compression/. All Cases use **three-digit sequential numbering + kebab-case names**, such as 001_video-prompt-compression, 002_xxx, and 003_xxx. The number indicates creation order and does not change the semantic name of the Skill.
 
-## 核心边界
+## Core boundary
 
-不要把连续动作简单折叠成一个结果动词。压缩的是表达方式，而不是视频需要表达的动作语义。
+Do not collapse a continuous action sequence into a single result verb. The goal is to compress the expression, not to remove the action semantics the video needs to convey.
