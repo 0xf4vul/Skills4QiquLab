@@ -25,7 +25,7 @@
 
 所有 Case 目录统一采用：
 
-```text
+~~~text
 cases/
 └── NNN_skill-name/
     ├── README.md
@@ -34,9 +34,15 @@ cases/
     ├── examples/
     ├── evaluation/
     └── assets/
-```
+        └── svg/
+            └── case-logo.svg
+~~~
 
-其中 `NNN` 为三位顺序编号，从 `001` 开始，按 Case 首次建立的顺序递增；名称主体使用稳定的 kebab-case。**今后新增 Case 自动使用下一个编号。**
+其中 NNN 为三位顺序编号，从 001 开始，按 Case 首次建立的顺序递增；名称主体使用稳定的 kebab-case。**今后新增 Case 自动使用下一个编号。**
+
+## Case 标识规则
+
+每个 Case 必须提供一个**独立的 Case Logo**，用于表达该 Case 的核心主题；Case Logo 不得使用 Qiqu.Lab 根 Logo 替代。根目录 README 的 Featured Case 区域应展示对应 Case Logo。
 
 ## Case 标准结构
 
@@ -44,4 +50,4 @@ cases/
 
 ## 如何选择
 
-**理解方法 → `skills/`；直接使用完整 Skill → `cases/`；创建新的 Skill → `skills/skill-builder.md` + `templates/skill-template.md`。**
+**理解方法 → skills/；直接使用完整 Skill → cases/；创建新的 Skill → skills/skill-builder.md + templates/skill-template.md。**

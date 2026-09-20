@@ -2,7 +2,7 @@
 
 <img src="assets/logo-en.svg" alt="Qiqu.Lab" width="720">
 
-<p><strong>A Creative AI Prompt Engineering Playground</strong><br><sub>Practical Skills, Cases, Templates, and evaluation methods for building reusable AI workflows.</sub></p>
+<p><strong>A Practical AI Skill Repository</strong><br><sub>Reusable Skills and supporting resources for effective AI working methods.</sub></p>
 
 <p>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
@@ -13,11 +13,11 @@
 
 </div>
 
-> 🌐 **Read this in other languages:** <img src="assets/logo-zh-CN.svg" width="76" alt="简体中文"> [简体中文](README.zh-CN.md) &nbsp;|&nbsp; <img src="assets/logo-zh-TW.svg" width="76" alt="繁體中文"> [繁體中文](README.zh-TW.md)
+> 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Qiqu.Lab — A Creative AI Prompt Engineering Playground
+# Qiqu.Lab — A Practical AI Skill Repository
 
-Qiqu.Lab is a compact, practical repository for **reusable AI Skills and their supporting resources**.
+Qiqu.Lab is a practice-oriented AI Skill repository, dedicated to organizing effective AI working methods into **reusable Skills and supporting resources**.
 
 <table>
 <tr>
@@ -34,7 +34,11 @@ Qiqu.Lab is a compact, practical repository for **reusable AI Skills and their s
 **Explore** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
 **Build** → [Skill Builder](skills/skill-builder.md) · [Global Template](templates/skill-template.md)
 
-### Current Case
+### Featured Case
+
+<div align="center">
+<a href="cases/001_video-prompt-compression/"><img src="cases/001_video-prompt-compression/assets/svg/case-logo.svg" alt="001 — Video Prompt Compression" width="620"></a>
+</div>
 
 **001 · Video Prompt Compression** → [Open Case](cases/001_video-prompt-compression/)
 
@@ -53,7 +57,7 @@ Skills4QiquLab/
     └── 001_video-prompt-compression/
 ~~~
 
-> **Case naming:** every Case under cases/ uses NNN_skill-name/ — e.g. 001_video-prompt-compression → 002_xxx → 003_xxx → …
+> **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the Qiqu.Lab logo is reserved for repository branding.
 
 ## 📚 Index
 
