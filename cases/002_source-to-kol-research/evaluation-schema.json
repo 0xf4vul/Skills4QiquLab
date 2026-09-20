@@ -1,0 +1,14 @@
+{
+  "case": "002",
+  "version": "1.1.0",
+  "type": "source-to-kol-research",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"source_traceability","label":"Source traceability","weight":35,"checks":["source","verify","verified"]},
+    {"id":"evidence_separation","label":"Evidence separation","weight":35,"checks":["evidence","fact","interpretation"]},
+    {"id":"confidence","label":"Confidence handling","weight":30,"checks":["confidence","high","medium","low","pending"]}
+  ],
+  "failure_modes": ["Source not traceable","Evidence mixed with interpretation","Confidence unsupported"],
+  "repair": "Add the missing source, evidence distinction, or confidence signal before publishing."
+}
