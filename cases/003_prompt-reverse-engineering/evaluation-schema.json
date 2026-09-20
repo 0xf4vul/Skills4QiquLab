@@ -1,0 +1,15 @@
+{
+  "case": "003",
+  "version": "1.1.0",
+  "type": "prompt-reverse-engineering",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"intent","label":"Intent clarity","weight":30,"checks":["intent","purpose","goal"]},
+    {"id":"variables","label":"Variable transferability","weight":30,"checks":["variable","variables","placeholder"]},
+    {"id":"constraints","label":"Constraint control","weight":20,"checks":["constraint","constraints"]},
+    {"id":"evaluation","label":"Evaluation rules","weight":20,"checks":["evaluation","criteria","failure"]}
+  ],
+  "failure_modes": ["Intent hidden","Variables hardcoded","Constraints implicit","Evaluation omitted"],
+  "repair": "Expose the missing reusable structure instead of copying surface wording."
+}
