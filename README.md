@@ -44,19 +44,13 @@
 
 ~~~text
 Skills4QiquLab/
-├── README.md
-├── README.zh-CN.md
-├── README.zh-TW.md
-├── skills.md
-├── skills/
-├── templates/
-├── assets/
-└── cases/
-    ├── 001_video-prompt-compression/
-    └── 002_source-to-kol-research/
+├── README.md / README.zh-CN.md / README.zh-TW.md — project overview
+├── skills.md — skill index
+├── skills/ — reusable core skills
+├── templates/ — shared templates
+├── assets/ — project and case assets
+└── cases/ — applied skill cases
 ~~~
-
-> **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the root repository logo is reserved for repository branding.
 
 ## 📄 License
 

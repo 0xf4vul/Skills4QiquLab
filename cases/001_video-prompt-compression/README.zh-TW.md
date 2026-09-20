@@ -14,15 +14,19 @@
 
 ## Case 結構
 
-**SKILL.md → templates → examples → evaluation → assets**
+~~~text
+001_video-prompt-compression/
+├── README.md / README.zh-CN.md / README.zh-TW.md — Case 說明
+├── SKILL.md — 核心方法
+├── templates/ — 可複用提示詞範本
+├── examples/ — 範例與失敗案例
+├── evaluation/ — 評測與反向展開檢查
+└── assets/svg/case-logo.svg — Case Logo
+~~~
 
 ## 使用
 
 直接閱讀 SKILL.md；需要範本時進入 templates/；需要測試時進入 examples/ 與 evaluation/。
-
-## 命名與架構
-
-本 Case 位於 cases/001_video-prompt-compression/。儲存庫所有 Case 均採用 **三位順序編號 + kebab-case 名稱**，例如 001_video-prompt-compression、002_xxx、003_xxx。編號表示建立順序，不改變 Skill 本身的語義名稱。
 
 ## 核心邊界
 

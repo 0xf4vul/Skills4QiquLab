@@ -14,7 +14,15 @@
 
 ## Case 結構
 
-**SKILL.md → templates → examples → evaluation → assets**
+~~~text
+002_source-to-kol-research/
+├── README.md / README.zh-CN.md / README.zh-TW.md — Case 說明
+├── SKILL.md — 核心研究方法
+├── templates/ — 可複用研究範本
+├── examples/ — 參考研究案例
+├── evaluation/ — 稽核與品質檢查
+└── assets/svg/case-logo.svg — Case Logo
+~~~
 
 ## 使用
 
@@ -22,7 +30,7 @@
 
 ## 輸入範圍
 
-本 Case **不綁定單一平台**。輸入可以來自 X、LinkedIn、YouTube、Reddit、Instagram、Threads、GitHub、網頁、文章、Podcast、PDF、圖片、檔案或使用者直接提供的內容。
+本 Case 不綁定單一平台。輸入可以來自 X、LinkedIn、YouTube、Reddit、Instagram、Threads、GitHub、網頁、文章、Podcast、PDF、圖片、檔案或使用者直接提供的內容。
 
 ## 核心原則
 

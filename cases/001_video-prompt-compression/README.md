@@ -14,15 +14,19 @@ Compress video prompts into shorter, denser expressions while preserving action 
 
 ## Case structure
 
-**SKILL.md → templates → examples → evaluation → assets**
+~~~text
+001_video-prompt-compression/
+├── README.md / README.zh-CN.md / README.zh-TW.md — case overview
+├── SKILL.md — core methodology
+├── templates/ — reusable prompt templates
+├── examples/ — examples and failure cases
+├── evaluation/ — evaluation and reverse-expansion checks
+└── assets/svg/case-logo.svg — case logo
+~~~
 
 ## Use
 
 Read SKILL.md for the methodology; use templates/ for repeatable prompt structures; use examples/ for reference cases; use evaluation/ for testing and failure analysis.
-
-## Naming & architecture
-
-**Case directory:** `cases/001_video-prompt-compression/`. All Cases use **three-digit sequential numbering + kebab-case names**. The number indicates creation order and does not change the semantic name of the Skill.
 
 ## Core boundary
 

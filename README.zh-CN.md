@@ -18,16 +18,6 @@
 
 # Skills4QiquLab
 
-<table>
-<tr>
-<td align="center" width="20%"><h2>⚡</h2><b>Core Skills</b><br><sub>Reusable methods</sub></td>
-<td align="center" width="20%"><h2>▣</h2><b>Skill Cases</b><br><sub>Applied workflows</sub></td>
-<td align="center" width="20%"><h2>▤</h2><b>Templates</b><br><sub>Reusable structures</sub></td>
-<td align="center" width="20%"><h2>💡</h2><b>Examples</b><br><sub>Practical references</sub></td>
-<td align="center" width="20%"><h2>▥</h2><b>Evaluation</b><br><sub>Quality checks</sub></td>
-</tr>
-</table>
-
 ## 🚀 快速开始
 
 **探索** → [Core Skills](skills/) · [Skill Index](skills.md) · [Cases](cases/)  
@@ -44,19 +34,13 @@
 
 ~~~text
 Skills4QiquLab/
-├── README.md
-├── README.zh-CN.md
-├── README.zh-TW.md
-├── skills.md
-├── skills/
-├── templates/
-├── assets/
-└── cases/
-    ├── 001_video-prompt-compression/
-    └── 002_source-to-kol-research/
+├── README.md / README.zh-CN.md / README.zh-TW.md — 项目说明
+├── skills.md — Skill 索引
+├── skills/ — 可复用核心 Skills
+├── templates/ — 通用模板
+├── assets/ — 项目与 Case 资源
+└── cases/ — 实践型 Skill Cases
 ~~~
-
-> **Case 编号与 Logo 规则:** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；根仓库 Logo 仅用于仓库品牌识别。
 
 ## 📄 许可
 

@@ -9,7 +9,7 @@
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/commits/main"><img src="https://img.shields.io/github/last-commit/0xf4vul/Skills4QiquLab?style=flat-square&label=last%20commit"></a>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/issues"><img src="https://img.shields.io/github/issues/0xf4vul/Skills4QiquLab?style=flat-square&label=issues"></a>
-<a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=license"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/issues/0xf4vul/Skills4QiquLab?style=flat-square&label=issues"></a>
 </p>
 
 </div>
@@ -17,16 +17,6 @@
 > 🌐 **其他語言：** 🇬🇧 [English](README.md) &nbsp;|&nbsp; 🇨🇳 [简体中文](README.zh-CN.md)
 
 # Skills4QiquLab
-
-<table>
-<tr>
-<td align="center" width="20%"><h2>⚡</h2><b>Core Skills</b><br><sub>Reusable methods</sub></td>
-<td align="center" width="20%"><h2>▣</h2><b>Skill Cases</b><br><sub>Applied workflows</sub></td>
-<td align="center" width="20%"><h2>▤</h2><b>Templates</b><br><sub>Reusable structures</sub></td>
-<td align="center" width="20%"><h2>💡</h2><b>Examples</b><br><sub>Practical references</sub></td>
-<td align="center" width="20%"><h2>▥</h2><b>Evaluation</b><br><sub>Quality checks</sub></td>
-</tr>
-</table>
 
 ## 🚀 快速開始
 
@@ -44,19 +34,13 @@
 
 ~~~text
 Skills4QiquLab/
-├── README.md
-├── README.zh-CN.md
-├── README.zh-TW.md
-├── skills.md
-├── skills/
-├── templates/
-├── assets/
-└── cases/
-    ├── 001_video-prompt-compression/
-    └── 002_source-to-kol-research/
+├── README.md / README.zh-CN.md / README.zh-TW.md — 專案說明
+├── skills.md — Skill 索引
+├── skills/ — 可複用核心 Skills
+├── templates/ — 通用範本
+├── assets/ — 專案與 Case 資源
+└── cases/ — 實踐型 Skill Cases
 ~~~
-
-> **Case 編號與 Logo 規則:** cases/ 下統一使用 NNN_skill-name/。每個 Case 提供與自身核心主題對應的專屬 Logo；根儲存庫 Logo 僅用於儲存庫品牌識別。
 
 ## 📄 許可
 

@@ -14,7 +14,15 @@ Turn a person list, URL, article, social post, video, podcast, PDF, image, file,
 
 ## Case structure
 
-**SKILL.md → templates → examples → evaluation → assets**
+~~~text
+002_source-to-kol-research/
+├── README.md / README.zh-CN.md / README.zh-TW.md — case overview
+├── SKILL.md — research methodology
+├── templates/ — reusable research templates
+├── examples/ — reference research case
+├── evaluation/ — audit and quality checks
+└── assets/svg/case-logo.svg — case logo
+~~~
 
 ## Use
 
@@ -22,7 +30,7 @@ Read SKILL.md for the methodology; use templates/ for repeatable research; use e
 
 ## Input scope
 
-The Case is **source-agnostic**. Inputs may come from X, LinkedIn, YouTube, Reddit, Instagram, Threads, GitHub, websites, articles, podcasts, PDFs, images, files, or direct user input.
+The Case is source-agnostic. Inputs may come from X, LinkedIn, YouTube, Reddit, Instagram, Threads, GitHub, websites, articles, podcasts, PDFs, images, files, or direct user input.
 
 ## Core principle
 
