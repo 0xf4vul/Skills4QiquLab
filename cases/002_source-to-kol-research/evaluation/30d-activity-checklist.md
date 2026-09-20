@@ -23,10 +23,5 @@
 - [x] Search-result counts, follower counts, blog dates, and third-party summaries are never used as posting estimates.
 - [x] Missing values remain missing rather than being fabricated.
 
-## Final-source gate
-- [x] Information-source value is not inferred from posting frequency alone.
-- [x] PROBABLE accounts remain outside a strict confirmed-only shortlist.
-- [x] Identity status and 30D verification status remain separate.
-
 ## Acceptance criterion
 **Only 30D_VERIFIED may output an exact posts_30d / original_30d / repost_30d / quote_30d / reply_30d count.** Otherwise use Unverified or Partial.

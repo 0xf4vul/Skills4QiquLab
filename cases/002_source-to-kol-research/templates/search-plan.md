@@ -1,4 +1,4 @@
-# X Account Verification Search Plan
+# Source-to-KOL Research Search Plan
 
 ## Input
 
@@ -10,16 +10,16 @@
 
 ## Per-person search
 
-1. "FULL NAME" X Twitter
-2. "FULL NAME" COMPANY X
-3. "FULL NAME" ROLE X
-4. "FULL NAME" WEBSITE X
-5. site:x.com "FULL NAME"
+1. "FULL NAME" platform
+2. "FULL NAME" COMPANY platform
+3. "FULL NAME" ROLE platform
+4. "FULL NAME" WEBSITE
+5. site:TARGET_PLATFORM "FULL NAME"
 
 ## Evidence checklist
 
 - [ ] Official source links the account
-- [ ] X bio matches role/organization
+- [ ] Account bio matches role/organization
 - [ ] Location or career history matches
 - [ ] Recent posts match the person's field
 - [ ] No evidence indicates another person

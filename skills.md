@@ -20,7 +20,7 @@
 | 编号 | Case | 状态 | 入口 |
 |---:|---|---|---|
 | 001 | Video Prompt Compression | Active | [001_video-prompt-compression/](cases/001_video-prompt-compression/) |
-| 002 | X Account Verification | Active | [002_x-account-verification/](cases/002_x-account-verification/) |
+| 002 | Source-to-KOL Research | Active | [002_source-to-kol-research/](cases/002_source-to-kol-research/) |
 
 ## Case 命名规则
 
@@ -43,7 +43,7 @@ cases/
 
 ## Case 标识规则
 
-每个 Case 必须提供一个**独立的 Case Logo**，用于表达该 Case 的核心主题；Case Logo 不得使用 Qiqu.Lab 根 Logo 替代。根目录 README 的 Featured Case 区域应展示对应 Case Logo。
+每个 Case 必须提供一个**独立的 Case Logo**，用于表达该 Case 的核心主题；Case Logo 不得使用根仓库 Logo 替代。
 
 ## Case 标准结构
 
