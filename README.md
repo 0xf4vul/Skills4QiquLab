@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo-en.svg" alt="Qiqu.Lab" width="720">
+<img src="assets/logo-en.svg" alt="Skills4QiquLab" width="720">
 
-<p><strong>A Practical AI Skill Repository</strong><br><sub>Reusable Skills and supporting resources for effective AI working methods.</sub></p>
+<p><strong>Skills4QiquLab</strong><br><sub>A practical AI Skill repository for turning effective AI working methods into reusable Skills and supporting resources.</sub></p>
 
 <p>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
@@ -15,9 +15,7 @@
 
 > 🌐 **Read this in other languages:** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Qiqu.Lab — A Practical AI Skill Repository
-
-Qiqu.Lab is a practice-oriented AI Skill repository, dedicated to organizing effective AI working methods into **reusable Skills and supporting resources**.
+# Skills4QiquLab
 
 <table>
 <tr>
@@ -39,7 +37,7 @@ Qiqu.Lab is a practice-oriented AI Skill repository, dedicated to organizing eff
 | Case | Focus | Entry |
 |---|---|---|
 | **001 · Video Prompt Compression** | Compress video prompts while preserving action, time, camera, and continuity semantics. | [Open Case](cases/001_video-prompt-compression/) |
-| **002 · X Account Verification** | Verify X account identity, measure 30-day activity, and filter practical information sources. | [Open Case](cases/002_x-account-verification/) |
+| **002 · Source-to-KOL Discovery & Account Verification** | Discover people and information sources from arbitrary inputs, verify account identity, measure 30-day activity, and analyze content signals. | [Open Case](cases/002_x-account-verification/) |
 
 ## 📁 Repository Structure
 
@@ -57,14 +55,10 @@ Skills4QiquLab/
     └── 002_x-account-verification/
 ~~~
 
-> **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the Qiqu.Lab logo is reserved for repository branding.
-
-## 📚 Index
-
-[Skills Index](skills.md) · [Core Skills](skills/) · [Skill Cases](cases/) · [Global Templates](templates/)
+> **Case naming & logo:** every Case under cases/ uses NNN_skill-name/. Each Case provides its own topic-specific logo; the root repository logo is reserved for repository branding.
 
 ## 📄 License
 
-MIT License · [LICENSE](LICENSE)
+[MIT License](LICENSE)
 
 <div align="center"><sub>Build → test → iterate → reuse.</sub></div>

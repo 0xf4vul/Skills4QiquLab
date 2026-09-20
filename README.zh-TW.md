@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo-en.svg" alt="Qiqu.Lab" width="720">
+<img src="assets/logo-en.svg" alt="Skills4QiquLab" width="720">
 
-<p><strong>一個面向實踐的 AI Skill 儲存庫</strong><br><sub>將有效的 AI 工作方法整理為可複用的 Skills 與配套資源。</sub></p>
+<p><strong>Skills4QiquLab</strong><br><sub>一個面向實踐的 AI Skill 儲存庫，將有效的 AI 工作方法整理為可複用的 Skills 與配套資源。</sub></p>
 
 <p>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
@@ -15,9 +15,7 @@
 
 > 🌐 **其他語言：** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Qiqu.Lab — 一個面向實踐的 AI Skill 儲存庫
-
-Qiqu.Lab 是一個面向實踐的 AI Skill 儲存庫，用於將有效的 AI 工作方法整理為**可複用的 Skill 與配套資源**。
+# Skills4QiquLab
 
 <table>
 <tr>
@@ -39,7 +37,7 @@ Qiqu.Lab 是一個面向實踐的 AI Skill 儲存庫，用於將有效的 AI 工
 | Case | 重點 | 入口 |
 |---|---|---|
 | **001 · Video Prompt Compression** | 壓縮影片提示詞，同時保護動作、時間、鏡頭與連續性語義。 | [開啟 Case](cases/001_video-prompt-compression/) |
-| **002 · X Account Verification** | 核驗 X 帳號身份、統計近 30 天活躍度，並篩選實用資訊源。 | [開啟 Case](cases/002_x-account-verification/) |
+| **002 · Source-to-KOL Discovery & Account Verification** | 從任意來源發現人物與資訊源，核驗帳號身份，統計近 30 天活躍度並分析內容訊號。 | [開啟 Case](cases/002_x-account-verification/) |
 
 ## 📁 儲存庫結構
 
@@ -57,14 +55,10 @@ Skills4QiquLab/
     └── 002_x-account-verification/
 ~~~
 
-> **Case 編號與 Logo 規則：** cases/ 下統一使用 NNN_skill-name/。每個 Case 提供與自身核心主題對應的專屬 Logo；Qiqu.Lab Logo 僅用於儲存庫品牌識別。
-
-## 📚 索引
-
-[Skills 索引](skills.md) · [Core Skills](skills/) · [Skill Cases](cases/) · [Global Templates](templates/)
+> **Case 編號與 Logo 規則：** cases/ 下統一使用 NNN_skill-name/。每個 Case 提供與自身核心主題對應的專屬 Logo；根儲存庫 Logo 僅用於儲存庫品牌識別。
 
 ## 📄 許可
 
-MIT 許可 · [LICENSE](LICENSE)
+[MIT 授權](LICENSE)
 
-<div align="center"><sub>建立 → test → iterate → reuse.</sub></div>
+<div align="center"><sub>建立 → 測試 → 迭代 → 複用。</sub></div>

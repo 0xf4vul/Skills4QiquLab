@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/logo-en.svg" alt="Qiqu.Lab" width="720">
+<img src="assets/logo-en.svg" alt="Skills4QiquLab" width="720">
 
-<p><strong>一个面向实践的 AI Skill 仓库</strong><br><sub>将有效的 AI 工作方法整理为可复用的 Skills 与配套资源。</sub></p>
+<p><strong>Skills4QiquLab</strong><br><sub>一个面向实践的 AI Skill 仓库，将有效的 AI 工作方法整理为可复用的 Skills 与配套资源。</sub></p>
 
 <p>
 <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars"></a>
@@ -15,9 +15,7 @@
 
 > 🌐 **其他语言：** 🇨🇳 [简体中文](README.zh-CN.md) &nbsp;|&nbsp; 🇹🇼 [繁體中文](README.zh-TW.md)
 
-# Qiqu.Lab — 一个面向实践的 AI Skill 仓库
-
-Qiqu.Lab 是一个面向实践的 AI Skill 仓库，用于将有效的 AI 工作方法整理为**可复用的 Skill 与配套资源**。
+# Skills4QiquLab
 
 <table>
 <tr>
@@ -39,7 +37,7 @@ Qiqu.Lab 是一个面向实践的 AI Skill 仓库，用于将有效的 AI 工作
 | Case | 重点 | 入口 |
 |---|---|---|
 | **001 · Video Prompt Compression** | 压缩视频提示词，同时保护动作、时间、镜头与连续性语义。 | [打开 Case](cases/001_video-prompt-compression/) |
-| **002 · X Account Verification** | 核验 X 账号身份、统计近 30 天活跃度，并筛选实用信息源。 | [打开 Case](cases/002_x-account-verification/) |
+| **002 · Source-to-KOL Discovery & Account Verification** | 从任意来源发现人物与信息源，核验账号身份，统计近 30 天活跃度并分析内容信号。 | [打开 Case](cases/002_x-account-verification/) |
 
 ## 📁 仓库结构
 
@@ -57,14 +55,10 @@ Skills4QiquLab/
     └── 002_x-account-verification/
 ~~~
 
-> **Case 编号与 Logo 规则：** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；Qiqu.Lab Logo 仅用于仓库品牌识别。
-
-## 📚 索引
-
-[Skills 索引](skills.md) · [Core Skills](skills/) · [Skill Cases](cases/) · [Global Templates](templates/)
+> **Case 编号与 Logo 规则：** cases/ 下统一使用 NNN_skill-name/。每个 Case 提供与自身核心主题对应的专属 Logo；根仓库 Logo 仅用于仓库品牌识别。
 
 ## 📄 许可
 
-MIT 许可 · [LICENSE](LICENSE)
+[MIT 许可](LICENSE)
 
-<div align="center"><sub>创建 → test → iterate → reuse.</sub></div>
+<div align="center"><sub>创建 → 测试 → 迭代 → 复用。</sub></div>
