@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
 <rect width="1400" height="900" fill="#fff"/>
-<text x="70" y="72" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#172033">Video Prompt Compression — Case Architecture</text>
+<text x="70" y="72" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#172033">001 — Video Prompt Compression — Case Architecture</text>
 <text x="70" y="112" font-family="Arial,sans-serif" font-size="20" fill="#536176">A self-contained Skill Case: execute → examples → evaluate → iterate</text>
 <rect x="70" y="160" width="1260" height="90" rx="14" fill="#eef5ff" stroke="#b8cff5"/>
-<text x="100" y="195" font-family="monospace" font-size="24" fill="#173b70">cases/video-prompt-compression/</text>
+<text x="100" y="195" font-family="monospace" font-size="24" fill="#173b70">cases/001_video-prompt-compression/</text>
 <text x="100" y="228" font-family="monospace" font-size="18" fill="#43546b">README.md   SKILL.md</text>
 <rect x="70" y="285" width="390" height="430" rx="14" fill="#f7f2ff" stroke="#cdb8f5"/>
 <text x="100" y="325" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#7040b8">templates/</text>

@@ -17,24 +17,31 @@
 
 ## Skill Cases
 
-| Case | 状态 | 入口 |
-|---|---|---|
-| Video Prompt Compression | Active | [cases/video-prompt-compression/](cases/video-prompt-compression/) |
+| 编号 | Case | 状态 | 入口 |
+|---|---|---|---|
+| 001 | Video Prompt Compression | Active | [001_video-prompt-compression/](cases/001_video-prompt-compression/) |
+
+## Case 命名规则
+
+所有 Case 目录统一采用：
+
+```text
+cases/
+└── NNN_skill-name/
+    ├── README.md
+    ├── SKILL.md
+    ├── templates/
+    ├── examples/
+    ├── evaluation/
+    └── assets/
+```
+
+其中 `NNN` 为三位顺序编号，从 `001` 开始，按 Case 首次建立的顺序递增；名称主体使用稳定的 kebab-case。**今后新增 Case 自动使用下一个编号。**
+
+## Case 标准结构
+
+一个 Case 应当能够独立完成：**理解 → 执行 → 示例 → 评测 → 迭代**。
 
 ## 如何选择
 
 **理解方法 → `skills/`；直接使用完整 Skill → `cases/`；创建新的 Skill → `skills/skill-builder.md` + `templates/skill-template.md`。**
-
-## Case 标准结构
-
-```text
-Case/
-├── README.md
-├── SKILL.md
-├── templates/
-├── examples/
-├── evaluation/
-└── assets/
-```
-
-一个 Case 应当能够独立完成：**理解 → 执行 → 示例 → 评测 → 迭代**。
