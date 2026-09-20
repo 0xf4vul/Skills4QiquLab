@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/qiqulab-logo.svg" alt="Qiqu.Lab — 奇趣实验室" width="760">
+<img src="assets/qiqulab-logo.png" alt="Qiqu.Lab — 奇趣实验室" width="760">
 
 # Skills4QiquLab
 
