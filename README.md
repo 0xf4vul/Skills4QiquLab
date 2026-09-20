@@ -1,84 +1,123 @@
-# Skills4QiquLab
+<div align="center">
 
-> 一个面向 AI 工作流的可复用 Skill 实验室：将重复任务沉淀为可执行、可复用、可评测、可迭代的工程资产。
+<img src="assets/logo.svg" alt="Qiqu.Lab — 奇趣实验室" width="760">
 
-**Core Skill → Case → Template → Example → Evaluation → Iteration**
+<p>
+<strong>A Creative AI Prompt Engineering Playground</strong><br>
+<sub>A curated collection of practical AI Skills, Case Studies, templates, examples, and evaluation methods.</sub>
+</p>
 
-## 项目结构
+<p>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers"><img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&logo=github&label=stars" alt="GitHub stars"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/commits/main"><img src="https://img.shields.io/github/last-commit/0xf4vul/Skills4QiquLab?style=flat-square&label=last%20commit" alt="Last commit"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/issues"><img src="https://img.shields.io/github/issues/0xf4vul/Skills4QiquLab?style=flat-square&label=issues" alt="Issues"></a>
+<a href="https://github.com/0xf4vul/Skills4QiquLab/blob/main/LICENSE"><img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=license" alt="License"></a>
+</p>
 
-```text
+</div>
+
+> 🌐 **Read this in other languages:** [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
+
+# Qiqu.Lab — A Creative AI Prompt Engineering Playground
+
+Qiqu.Lab is an open, practical laboratory for turning AI workflows into **reusable Skills, complete Cases, ready-to-use Templates, examples, and evaluation methods**.
+
+The goal is simple: **capture what works → structure it → test it → iterate it → reuse it.**
+
+<table>
+<tr>
+<td align="center" width="20%"><h2>⚡</h2><b>Core Skills</b><br><sub>Reusable methods</sub></td>
+<td align="center" width="20%"><h2>▣</h2><b>Skill Cases</b><br><sub>Complete workflows</sub></td>
+<td align="center" width="20%"><h2>▤</h2><b>Templates</b><br><sub>Ready to use</sub></td>
+<td align="center" width="20%"><h2>💡</h2><b>Examples</b><br><sub>Practical patterns</sub></td>
+<td align="center" width="20%"><h2>▥</h2><b>Evaluation</b><br><sub>Test & improve</sub></td>
+</tr>
+</table>
+
+## 🚀 Quick Start
+
+**1. Explore a methodology** → open [skills/](skills/) or [skills.md](skills.md)
+
+**2. Use a complete Skill Case** → open [cases/](cases/) and choose the numbered Case
+
+**3. Build your own** → start with [skills/skill-builder.md](skills/skill-builder.md) and [templates/skill-template.md](templates/skill-template.md)
+
+### Featured Case
+
+**001 · Video Prompt Compression**  
+Compress video prompts while protecting **action chains, temporal relationships, camera logic, and subject continuity**.
+
+→ [cases/001_video-prompt-compression/](cases/001_video-prompt-compression/)
+
+## 🧩 Architecture
+
+~~~text
+Core Skill
+   ↓
+Skill Case
+   ↓
+Template → Example → Evaluation
+   ↓
+Iteration
+~~~
+
+- **Core Skills** — portable methodology
+- **Skill Cases** — complete, self-contained implementations
+- **Templates** — reusable structures
+- **Examples** — practical and failure cases
+- **Evaluation** — semantic fidelity, execution quality, and regression checks
+
+## 📁 Repository Structure
+
+~~~text
 Skills4QiquLab/
 ├── README.md
-├── LICENSE
+├── README.zh-CN.md
+├── README.zh-TW.md
 ├── skills.md
-│
-├── skills/                         # Core Skills：通用方法论
-│   ├── prompt-compression.md
-│   ├── prompt-optimization.md
-│   ├── prompt-reverse-engineering.md
-│   ├── video-prompt-compression.md
-│   ├── video-prompt-optimization.md
-│   ├── web-research.md
-│   ├── x-research.md
-│   └── skill-builder.md
-│
-├── templates/                      # 全仓库通用模板
-│   └── skill-template.md
-│
-└── cases/                          # 完整、可独立维护的 Skill Case
+├── skills/
+├── templates/
+└── cases/
     └── 001_video-prompt-compression/
         ├── README.md
         ├── SKILL.md
         ├── templates/
-        │   ├── skill-template.md
-        │   └── video-prompt-template.md
         ├── examples/
-        │   ├── basic.md
-        │   ├── continuous-action.md
-        │   └── failure-cases.md
         ├── evaluation/
-        │   ├── evaluation-rubric.md
-        │   └── reverse-expansion.md
         └── assets/
-            └── svg/
-                ├── video-prompt-compression.svg
-                └── template.svg
-```
+~~~
 
-## Case 命名规则
+### Case Naming Convention
 
-`cases/` 下的所有 Case **必须按 Skill 建立顺序使用三位数字前缀**：
+All Cases under cases/ use:
+
+~~~text
+NNN_skill-name/
+~~~
 
 **001_video-prompt-compression → 002_xxx → 003_xxx → …**
 
-数字代表 Case 的创建顺序；名称主体保持简洁、稳定、可读。今后新增 Case 自动沿用该规则，不再创建无序或无编号目录。
+The three-digit prefix records creation order and is mandatory for every new Case.
 
-## 两层架构
+## 🛠 Design Principles
 
-**skills/** 只负责可迁移的 Core Skill 方法论；**cases/** 负责将一个成熟 Skill 完整落地为可使用、可测试、可评测、可迭代的项目。
+**Methodology ↔ Implementation** — keep portable Skills separate from concrete Cases.  
+**Meaning before compression** — never shorten a prompt by deleting essential semantic constraints.  
+**Evaluation first** — examples and failure cases are part of the engineering loop.  
+**Iterate continuously** — every Case should remain testable and improvable.
 
-Case 目录使用顺序编号，使 Skill 的演进顺序、项目索引与长期维护路径保持一致。Case 内的模板、示例、评测和视觉资产保持自包含。
+## 📚 Index
 
-## 使用方式
+- [Skills Index](skills.md)
+- [Core Skills](skills/)
+- [Skill Cases](cases/)
+- [Global Templates](templates/)
+- [001 · Video Prompt Compression](cases/001_video-prompt-compression/)
 
-查找方法论 → `skills.md` → 进入对应 Core Skill。
+## 📄 License
 
-直接使用完整项目 → `cases/` → 按编号找到 Case → 阅读对应 Case 的 `README.md` / `SKILL.md`。
+MIT License — see [LICENSE](LICENSE).
 
-创建新的 Skill → `skills/skill-builder.md` + `templates/skill-template.md` → 按下一个顺序编号建立新的 Case。
-
-## 设计原则
-
-- **方法论与案例分离**：Core Skill 保持抽象，Case 负责具体落地。
-- **Case 顺序稳定**：Case 目录统一采用 `NNN_skill-name`，编号只表示建立顺序，不承担语义分类。
-- **语义与结果优先**：不要为了形式上的压缩或简化破坏任务本身的关键约束。
-- **可评测**：通过示例、失败案例和 Evaluation 验证 Skill，而不是只看文档是否完整。
-- **可迭代**：Case 是持续测试和升级的最小工程单元。
-
-## 路线图
-
-**V1** Core Skills + Cases → **V2** Skill Registry → **V3** Evaluation / Benchmark → **V4** Web Interface → **V5** Skill Ecosystem
-
-## License
-
-[MIT](LICENSE)
+<div align="center">
+<sub>Built as an experimental, practical AI Skill laboratory.</sub>
+</div>
