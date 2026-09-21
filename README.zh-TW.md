@@ -9,7 +9,7 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-8-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
 </p>
@@ -24,6 +24,8 @@
 
 ## 新增 Skill
 
+- **NEW** [Pencil Sketch Art · 鉛筆素描手繪圖](skills/pencil-sketch-art.md)（[Case 004](cases/004_pencil-sketch-art/)） — 把任意主題或抽象概念，生成一張石墨鉛筆素描手繪插畫，配 prompt 組裝與墨量裁切腳本。
+- **NEW** [Golden Quote Miner · 金句提煉](skills/golden-quote-miner.md)（[Case 005](cases/005_golden-quote-miner/)） — 把長內容提煉為 5-12 句能脫離原文單獨活下來的句子，四層漏斗 + 八型句式骨架。
 - [Video Prompt Compression](skills/video-prompt-compression.md) — 壓縮影片 Prompt，同時保護動作順序、時間關係、鏡頭行為與主體連續性。
 - [Video Prompt Optimization](skills/video-prompt-optimization.md) — 優化影片 Prompt 的動作、時間、鏡頭與主體連續性。
 - [X Research](skills/x-research.md) — 以可複現、基於證據的方式研究 X 帳號與資訊源。
@@ -96,6 +98,8 @@
 | Web Research | 從開放問題產生可追溯答案 | 範圍 → 搜尋 → 篩選 → 交叉驗證 → 綜合 → 引用 | 相關性 / 來源品質 / 新鮮度 / 引用 |
 | X Research | 按明確標準核驗並分析 X 活動 | 發現 → 核驗 → 檢查 → 篩選 → 比較 | 身份 / 時效 / 證據 / 一致性 |
 | Skill Builder | 將重複工作沉澱為可維護 Skill | 觸發 → 邊界 → Workflow → 輸出契約 → 測試 → 迭代 | 一致性 / 可遷移 / 可檢查 |
+| Pencil Sketch Art | 把主題或抽象概念轉成一張讀起來像手繪的素描 | 命名主體 → 選畫幅 → 選筆觸 → 組裝 prompt → 生成 → 墨量裁切 → 自檢 | 手繪感 / 紙張色調 / 主體清晰度 / 標題區留白 |
+| Golden Quote Miner | 提煉能脫離原文獨立傳播的句子 | 候選掃描 → 密度過濾 → 張力打分 → 脫離測試 → 人工掃句 | 資訊密度 / 情緒張力 / 結構節奏 / 脫離度 / 句式覆蓋 |
 
 需要完整實戰流程時進入 [cases/](cases/)；需要建立新 Skill 時，從 [Skill Builder](skills/skill-builder.md) 與 [templates/skill-template.md](templates/skill-template.md) 開始。
 

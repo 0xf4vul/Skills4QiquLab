@@ -9,7 +9,7 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-8-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
 </p>
@@ -28,6 +28,8 @@ No standalone public group is currently listed. Use [Issues](https://github.com/
 
 ## New Skills
 
+- **NEW** [Pencil Sketch Art](skills/pencil-sketch-art.md) ([Case 004](cases/004_pencil-sketch-art/)) — turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
+- **NEW** [Golden Quote Miner](skills/golden-quote-miner.md) ([Case 005](cases/005_golden-quote-miner/)) — turn long content into 5-12 sentences that survive on their own, via a four-stage funnel and eight sentence skeletons.
 - [Video Prompt Compression](skills/video-prompt-compression.md) — compress video prompts while preserving action order, temporal relationships, camera behavior, and continuity.
 - [Video Prompt Optimization](skills/video-prompt-optimization.md) — improve video prompt execution across action, timing, camera, and subject continuity.
 - [X Research](skills/x-research.md) — make X-account and information-source research reproducible and evidence-based.
@@ -100,6 +102,8 @@ Every Skill should expose the same practical contract:
 | Web Research | Produce traceable answers from open questions | Scope → search → filter → cross-check → synthesize → cite | Relevance / source quality / freshness / citation |
 | X Research | Verify and analyze X activity with explicit criteria | Discover → verify → inspect → filter → compare | Identity / recency / evidence / consistency |
 | Skill Builder | Turn repeated work into maintainable Skills | Trigger → boundaries → workflow → contract → tests → iterate | Consistency / transferability / inspectability |
+| Pencil Sketch Art | Turn a subject or abstract concept into a sketch that reads as hand-drawn | Name subject → pick aspect → pick stroke preset → assemble prompt → generate → crop by ink density → self-check | Hand-drawn feel / paper tone / subject clarity / safe title area |
+| Golden Quote Miner | Distill lines that survive detached from the source | Candidate scan → density filter → tension scoring → detachment test → manual sweep | Density / tension / rhythm / detachment / skeleton coverage |
 
 For a complete applied workflow, go to [cases/](cases/). For creating a new Skill, start with [Skill Builder](skills/skill-builder.md) and [templates/skill-template.md](templates/skill-template.md).
 
