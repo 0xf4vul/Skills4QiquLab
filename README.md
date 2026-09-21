@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
   <img src="https://img.shields.io/badge/Skills-8-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-2-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
 </p>
 
@@ -47,6 +47,20 @@ Compress video prompts without collapsing meaningful action chains, temporal rel
 <br><strong>Source-to-KOL Research</strong><br>
 Turn arbitrary inputs into a verifiable, auditable research workflow for KOLs and information sources.
 <br><a href="cases/002_source-to-kol-research/">Case</a> · <a href="skills/x-research.md">Skill</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/004_pencil-sketch-art/"><img src="cases/004_pencil-sketch-art/assets/svg/case-logo.svg" alt="Pencil Sketch Art" width="88%"></a>
+<br><strong>Pencil Sketch Art</strong><br>
+Turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
+<br><a href="cases/004_pencil-sketch-art/">Case</a>
+</td>
+<td width="50%" valign="top" align="center">
+<a href="cases/005_golden-quote-miner/"><img src="cases/005_golden-quote-miner/assets/svg/case-logo.svg" alt="Golden Quote Miner" width="88%"></a>
+<br><strong>Golden Quote Miner</strong><br>
+Turn long content into 5-12 sentences that survive on their own, via a four-stage funnel and eight sentence skeletons.
+<br><a href="cases/005_golden-quote-miner/">Case</a>
 </td>
 </tr>
 </table>

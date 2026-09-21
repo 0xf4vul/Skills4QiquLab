@@ -1,0 +1,30 @@
+{
+  "case": "005",
+  "version": "1.0.0",
+  "type": "golden-quote-miner",
+  "mode": "heuristic-local",
+  "threshold": 75,
+  "criteria": [
+    {"id":"density","label":"Carries one clear judgment","weight":13,"checks":["judgment","claim","assert","not describing state"]},
+    {"id":"tension","label":"Emotional tension","weight":13,"checks":["reversal","sting","resonance","aftertaste"]},
+    {"id":"rhythm","label":"Structural rhythm","weight":12,"checks":["parallelism","contrast","progression","half-line"]},
+    {"id":"standalone","label":"Survives without context","weight":12,"checks":["standalone","detached","no pronoun dependency"]},
+    {"id":"no_cliche","label":"No cliche or filler","weight":12,"checks":["no cliche","no empty uplift","no motivational"]},
+    {"id":"no_ai_flavor","label":"No AI flavor","weight":12,"checks":["no triad","no symmetry addiction","no forced elevation","no summary tic"]},
+    {"id":"length","label":"12-40 characters","weight":13,"checks":["length","compressed","short"]},
+    {"id":"sourced","label":"No fabricated attribution","weight":13,"checks":["sourced","attribution","verified"]}
+  ],
+  "failure_modes": [
+    "Empty uplift or motivational filler",
+    "AI triad parallelism",
+    "Symmetry addiction",
+    "Forced elevation at the end",
+    "Exclamation-mark padding",
+    "Aphorism or faux-quote voice",
+    "Unsourced attributed quote",
+    "Over 40 characters, not compressed",
+    "Transitional sentence selected as a quote",
+    "Parallel-construction line missed by the scanner"
+  ],
+  "repair": "After the script runs, manually sweep for parallel constructions (不是…是 / 你看到的…后台发生的是 / 有人…有人). The scanner cannot see them. Cut to 12-40 characters using 砍→换→短→收→读."
+}

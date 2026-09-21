@@ -1,0 +1,33 @@
+{
+  "name": "golden-quote-miner",
+  "display_name": "金句提炼",
+  "display_name_en": "Golden Quote Miner",
+  "version": "1.0.0",
+  "license": "MIT",
+  "agent_created": true,
+  "derived_from": "infographic-maker（观点蒸馏层提纯）",
+  "tags": ["text", "writing", "quote", "金句", "文案", "提炼", "社媒"],
+  "entry": {
+    "skill": "SKILL.md",
+    "scripts": ["scripts/scan.py"],
+    "references": [
+      "references/quote-patterns.md",
+      "references/scoring-rubric.md",
+      "references/ai-flavor-blacklist.md"
+    ],
+    "examples": [
+      "examples/01-article-extract.md",
+      "examples/02-original-mode.md"
+    ]
+  },
+  "runtime": {
+    "python": ">=3.8",
+    "deps": []
+  },
+  "hard_constraints": [
+    "单句 12-40 字，必须有观点",
+    "全文感叹号 ≤ 1",
+    "同骨架最多用 2 次",
+    "查不到出处的名人语录一律不用"
+  ]
+}

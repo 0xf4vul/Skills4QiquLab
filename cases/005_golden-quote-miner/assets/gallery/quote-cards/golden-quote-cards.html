@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>金句卡 · 实测 Step 5 Preview</title>
+<style>
+  :root{
+    --paper:#F5F1E7;
+    --paper-deep:#E8E3D9;
+    --ink:#2B2B28;
+    --graphite:#6B6B66;
+    --graphite-soft:#A8A296;
+    --rule:#D8D2C4;
+    --accent:#A86B3C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--paper-deep);
+    color:var(--ink);
+    font-family:"Noto Serif SC","Source Han Serif SC","Songti SC","SimSun",Georgia,serif;
+    padding:40px 28px 64px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:1280px;margin:0 auto}
+
+  header{margin-bottom:32px;border-bottom:1px solid var(--rule);padding-bottom:20px}
+  h1{font-size:20px;font-weight:500;letter-spacing:.02em}
+  .meta{margin-top:8px;font-size:13px;color:var(--graphite);line-height:1.8}
+  .meta span{margin-right:18px}
+
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(276px,1fr));
+    gap:26px;
+  }
+
+  .card{
+    position:relative;
+    aspect-ratio:2/3;
+    background:
+      repeating-linear-gradient(0deg, rgba(0,0,0,.014) 0 1px, rgba(0,0,0,0) 1px 3px),
+      repeating-linear-gradient(90deg, rgba(0,0,0,.009) 0 1px, rgba(0,0,0,0) 1px 4px),
+      radial-gradient(120% 90% at 30% 0%, #FAF7EF 0%, var(--paper) 60%, #EFE9DC 100%);
+    border:1px solid var(--rule);
+    border-radius:3px;
+    padding:30px 26px 22px;
+    display:flex;flex-direction:column;
+    transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .card:hover{transform:translateY(-3px);box-shadow:0 10px 22px rgba(43,43,40,.10)}
+
+  .num{
+    font-family:Georgia,"Times New Roman",serif;
+    font-size:34px;line-height:1;color:var(--graphite-soft);
+    letter-spacing:-.02em;
+  }
+  .num::after{
+    content:"";display:block;width:26px;height:1px;
+    background:var(--graphite-soft);margin-top:10px;opacity:.6;
+  }
+
+  .art{
+    flex:1 1 auto;min-height:130px;
+    margin:16px 0 10px;
+    display:flex;align-items:center;justify-content:center;
+    overflow:hidden;
+  }
+  .art img{
+    width:100%;height:100%;object-fit:cover;border-radius:2px;
+    -webkit-mask-image:radial-gradient(ellipse at center,#000 76%,rgba(0,0,0,0) 100%);
+    mask-image:radial-gradient(ellipse at center,#000 76%,rgba(0,0,0,0) 100%);
+  }
+
+  .quote{
+    font-size:21px;line-height:1.95;letter-spacing:.02em;
+    color:var(--ink);
+  }
+  .quote em{font-style:normal;color:var(--accent)}
+
+  .squiggle{display:block;width:100%;height:8px;margin:20px 0 12px}
+
+  .foot{display:flex;align-items:center;justify-content:space-between;gap:10px}
+  .type{
+    font-size:12px;color:var(--graphite);
+    border:1px solid var(--rule);border-radius:2px;
+    padding:3px 8px;background:rgba(255,255,255,.45);
+  }
+  .use{font-size:12px;color:var(--graphite-soft);text-align:right;line-height:1.5}
+
+  footer{
+    margin-top:36px;padding-top:18px;border-top:1px solid var(--rule);
+    font-size:12.5px;color:var(--graphite-soft);line-height:1.9;
+  }
+
+  @media print{
+    body{background:#fff;padding:0}
+    .grid{grid-template-columns:repeat(2,1fr);gap:16px}
+    .card{break-inside:avoid;box-shadow:none;transform:none}
+    .card:hover{transform:none;box-shadow:none}
+    header,footer{break-inside:avoid}
+  }
+  @media (max-width:520px){
+    body{padding:24px 16px 48px}
+    .grid{grid-template-columns:1fr}
+    .card{aspect-ratio:auto;min-height:470px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>金句卡 · 实测 Step 5 Preview，这次真的实力上桌了</h1>
+    <div class="meta">
+      <span>来源：公众号「欧巴聊AI」· 2026-09-21</span>
+      <span>提炼：golden-quote-miner</span>
+      <span>候选 40 → 过线 13 → 终选 8</span>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <article class="card">
+      <div class="num">01</div>
+      <div class="art"><img src="images/01.png" alt="掌心托着一枚硬币，旁边一把倒扣的算盘" loading="lazy"></div>
+      <p class="quote">所谓真正到手，是便宜到你不再算它的价钱。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 5 C 34 2, 62 7, 100 4 S 168 7, 198 3" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">定义重构</span><span class="use">金句卡<br>社媒单发</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">02</div>
+      <div class="art"><img src="images/02.png" alt="手在老式水龙头下接水，没有水表" loading="lazy"></div>
+      <p class="quote">自来水最了不起的地方，是你洗手时不会去想这一捧水多少钱。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 4 C 30 7, 66 2, 100 5 S 170 2, 198 6" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">本质揭露</span><span class="use">金句卡<br>封面文案</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">03</div>
+      <div class="art"><img src="images/03.png" alt="伏案工作的背影，身后管道里 token 持续流动" loading="lazy"></div>
+      <p class="quote">你看到的是它在埋头干活，后台发生的是 Token 在持续流动。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 5 C 36 3, 60 7, 100 4 S 166 6, 198 3" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">对比落差</span><span class="use">金句卡</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">04</div>
+      <div class="art"><img src="images/04.png" alt="关掉的台灯、指向六点的挂钟、空咖啡杯" loading="lazy"></div>
+      <p class="quote">炫酷只让人感叹厉害，Bug 修好了才让人早下班。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 4 C 32 7, 64 2, 100 5 S 168 3, 198 6" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">痛点戳心</span><span class="use">社媒单发<br>评论区互动</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">05</div>
+      <div class="art"><img src="images/05.png" alt="一级级小台阶通向窗口的夕阳，一道长斜影" loading="lazy"></div>
+      <p class="quote">每一步都不难，凑在一起，就是一个下午。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 5 C 34 2, 66 7, 100 4 S 170 6, 198 3" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">痛点戳心</span><span class="use">金句卡<br>社媒单发</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">06</div>
+      <div class="art"><img src="images/06.png" alt="桌上三样东西：锤子、硬币、针线卷" loading="lazy"></div>
+      <p class="quote">留下一个模型只看三件事：能不能做完、要花多少钱、会不会自己修。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 4 C 30 6, 62 3, 100 5 S 168 2, 198 5" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">数字压缩</span><span class="use">标题<br>金句卡</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">07</div>
+      <div class="art"><img src="images/07.png" alt="老天平，一端一枚硬币，另一端一只大灯泡" loading="lazy"></div>
+      <p class="quote">花同样的钱，买到更聪明的智能。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 5 C 36 3, 60 7, 100 4 S 166 7, 198 4" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">反常识反转</span><span class="use">封面文案</span></div>
+    </article>
+
+    <article class="card">
+      <div class="num">08</div>
+      <div class="art"><img src="images/08.png" alt="双手捧着一只碗，热气用细排线升起" loading="lazy"></div>
+      <p class="quote">端起一碗属于自己的，热气腾腾的未来。</p>
+      <svg class="squiggle" viewBox="0 0 200 8" preserveAspectRatio="none"><path d="M2 4 C 32 7, 64 3, 100 5 S 168 6, 198 3" fill="none" stroke="#A8A296" stroke-width="1"/></svg>
+      <div class="foot"><span class="type">留白余味</span><span class="use">结尾<br>金句卡</span></div>
+    </article>
+
+  </div>
+
+  <footer>
+    改写痕迹：01 原文 27 字→20 字，套定义重构骨架 ｜ 04 原文 38 字→20 字，删解释性从句 ｜ 06 三个问句压成一个判断句<br>
+    03 由人工补入——脚本第一层只给 1.5 分（无判断词、段中），靠对仗与画面取胜，属第一层已知盲区。<br>
+    骨架分布：痛点戳心 ×2，其余各 ×1 · 全部 15–35 字 · 感叹号 0 个 · 无鸡汤空话 · 无编造语录
+    配图：pencil-sketch-art · 单色石墨 · 1024² · 概念隐喻预设（01/02/03/04/05/07）+ 排线明暗预设（06/08）· 图内零文字，文字走排版叠加
+  </footer>
+
+</div>
+</body>
+</html>

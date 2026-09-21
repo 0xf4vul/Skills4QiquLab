@@ -1,0 +1,29 @@
+{
+  "case": "004",
+  "version": "1.1.0",
+  "type": "pencil-sketch-art",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"hand_drawn","label":"Reads as hand-drawn","weight":13,"checks":["graphite","pencil","sketch","hand-drawn","hand drawn"]},
+    {"id":"hatching","label":"Visible hatching","weight":13,"checks":["hatch","cross-hatch","cross hatch","strokes","shading"]},
+    {"id":"paper_grain","label":"Paper grain, not white","weight":12,"checks":["paper","grain","cream","off-white","texture"]},
+    {"id":"wobbly_lines","label":"Imperfect outlines","weight":12,"checks":["wobbly","imperfect","expressive","slightly imperfect","outline"]},
+    {"id":"no_render","label":"No render / gloss","weight":12,"checks":["no photorealistic","no 3d","no cgi","no oil painting","no glossy","no plastic"]},
+    {"id":"single_hue","label":"At most one hue","weight":12,"checks":["monochrome","no full saturated color","one accent"]},
+    {"id":"text_budget","label":"In-image text under 9 chars","weight":13,"checks":["no text","text budget","8"]},
+    {"id":"overlay_space","label":"Space reserved for overlay","weight":13,"checks":["empty","reserved for","upper third","lower third","clean paper"]}
+  ],
+  "failure_modes": [
+    "Looks photorealistic",
+    "3D or CGI surface",
+    "Oil-painting or plastic gloss",
+    "Flat gray, no deep blacks",
+    "Vector-clean lines, no hand wobble",
+    "Pure white background",
+    "Garbled baked-in text",
+    "No clear area left for title overlay",
+    "Over-saturated or multi-hue color"
+  ],
+  "repair": "Add stroke tokens before adding negative tokens. Change one bucket per iteration; if two attempts fail, switch preset instead. Text problems always move to layout overlay, never back into the prompt."
+}

@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
   <img src="https://img.shields.io/badge/Skills-8-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-2-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
 </p>
 
@@ -43,6 +43,20 @@
 <br><strong>Source-to-KOL Research</strong><br>
 將任意輸入轉化為可驗證、可稽核的 KOL / 資訊源研究流程。
 <br><a href="cases/002_source-to-kol-research/">Case</a> · <a href="skills/x-research.md">Skill</a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/004_pencil-sketch-art/"><img src="cases/004_pencil-sketch-art/assets/svg/case-logo.svg" alt="鉛筆素描手繪圖" width="88%"></a>
+<br><strong>鉛筆素描手繪圖</strong><br>
+把任意主題或抽象概念，生成一張石墨鉛筆素描手繪插畫，配 prompt 組裝與墨量裁切腳本。
+<br><a href="cases/004_pencil-sketch-art/">Case</a>
+</td>
+<td width="50%" valign="top" align="center">
+<a href="cases/005_golden-quote-miner/"><img src="cases/005_golden-quote-miner/assets/svg/case-logo.svg" alt="金句提煉" width="88%"></a>
+<br><strong>金句提煉</strong><br>
+把長內容變成 5-12 句能脫離原文單獨活下來的句子，四層漏斗 + 八型句式骨架。
+<br><a href="cases/005_golden-quote-miner/">Case</a>
 </td>
 </tr>
 </table>

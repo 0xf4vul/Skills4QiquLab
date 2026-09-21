@@ -1,0 +1,25 @@
+# 复跑命令（改文案/配色后直接改参数重跑，不要手改脚本结构）
+# 依赖：Python + Pillow；字体 fonts/LXGWWenKai.ttf
+
+export BID_SHARED_DIR="C:/Users/Administrator/WorkBuddy/20260919/bid-shared"
+
+python "C:/Users/Administrator/.workbuddy/plugins/cache/experts/cover-designer/1.0.0/skills/bid-pipeline/scripts/build_covers.py" \
+  --date 20260922 --theme "Step5实力上桌" \
+  --deep "#0E1A2E" --accent "#E8A33D" \
+  --series "AI 模型实测" \
+  --tagline "实测 · 帕累托前沿" \
+  --h1 "花更少的钱，买到更聪明的智能" --h1_hi "更聪明" \
+  --info "同样的预算，智能密度更高了" \
+  --seal "实力上桌" \
+  --sub "Step 5 Preview 实测报告" \
+  --cards "能不能做完,要花多少钱,会不会自己修" \
+  --wechat "上桌了" \
+  --big_a "更便宜" --big_b "也更聪明" --big_b_hi "更聪明" \
+  --big_q "便宜到你不再算它的价钱？" --big_q_hi "不再算" \
+  --cover_mid "Step 5 Preview 实测：这次真的实力上桌了" \
+  --cover_mid2 "帕累托前沿上，一个点正踩在线上" \
+  --cta "关注我" --cta_sub "每天一条 AI 实测" \
+  --toutiao_info "国产模型进入性价比之战"
+
+# 输出 5 张：公众号头图 900x383 · 今日头条 900x500 · 横版 1125x450 · 竖版 1080x1920 · 小红书 1242x1660
+# 注意：专家说明里的 --mode light 参数在脚本中不存在，脚本用 --deep/--accent 控色（深色/浅色由模板本身决定）

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>公众号配图三件套 · 实测 Step 5 Preview</title>
+<style>
+  :root{
+    --bg:#161513; --panel:#1E1C1A; --line:#33302B;
+    --txt:#EDE9E0; --dim:#9A958C; --gold:#C9915C;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);
+    font-family:"Noto Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    padding:44px 30px 70px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto}
+
+  h1{font-size:19px;font-weight:500;letter-spacing:.02em}
+  .meta{margin-top:9px;font-size:13px;color:var(--dim);line-height:1.9}
+  .meta span{margin-right:20px}
+
+  .block{margin-top:38px;padding-top:26px;border-top:1px solid var(--line)}
+  .tag{display:inline-block;font-size:12px;color:var(--gold);
+    border:1px solid var(--gold);border-radius:2px;padding:2px 9px;margin-right:10px}
+  .ttl{font-size:16px;display:inline-block;vertical-align:middle}
+  .spec{margin-top:8px;font-size:12.5px;color:var(--dim);line-height:1.8}
+  .spec b{color:var(--txt);font-weight:500}
+
+  .stage{margin-top:16px;background:var(--panel);border:1px solid var(--line);
+    border-radius:4px;padding:22px;display:flex;justify-content:center}
+  .stage img{max-width:100%;height:auto;display:block;border-radius:2px;
+    box-shadow:0 8px 26px rgba(0,0,0,.45)}
+
+  /* 封面标题叠加模拟（公众号大图封面：标题压在图片底部） */
+  .cover-mock{position:relative;width:100%;max-width:900px}
+  .cover-mock img{width:100%;display:block;border-radius:2px}
+  .cover-mock .cap{
+    position:absolute;left:0;right:0;bottom:0;
+    padding:0 26px 22px;
+    font-size:26px;line-height:1.35;font-weight:600;color:#fff;
+    text-shadow:0 2px 10px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.4);
+  }
+  .cover-mock .sub{position:absolute;left:26px;bottom:8px;font-size:12px;color:#fff;
+    opacity:.72;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+
+  .two{display:grid;grid-template-columns:1.5fr 1fr;gap:18px;margin-top:16px}
+  @media(max-width:760px){.two{grid-template-columns:1fr}}
+
+  footer{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--dim);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>公众号配图三件套 · 《实测 Step 5 Preview，这次真的实力上桌了》</h1>
+  <div class="meta">
+    <span>来源：公众号「欧巴聊AI」· 2026-09-21</span>
+    <span>配图：pencil-sketch-art</span>
+    <span>单色石墨 ×2 + 淡彩赭石 ×1</span>
+  </div>
+
+  <!-- 封面 -->
+  <section class="block">
+    <span class="tag">封面图</span><span class="ttl">帕累托前沿：一个点正踩在曲线上</span>
+    <div class="spec">
+      <b>2.35 : 1</b> · 1536×654（另存微信标准 900×383）· 概念隐喻预设 · 单色石墨<br>
+      底部 170px 为纯纸面区，专供微信标题叠加 —— 下图为叠加效果模拟
+    </div>
+    <div class="stage" style="padding:0;background:none;border:none">
+      <div class="cover-mock">
+        <img src="cover-2.35-1.png" alt="封面：手绘坐标系上的帕累托前沿曲线">
+        <div class="cap">实测 Step 5 Preview，这次真的实力上桌了</div>
+        <div class="sub">封面标题模拟 · 非图中文字</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 主图 + 次图 -->
+  <section class="block">
+    <span class="tag">主图</span><span class="ttl">深夜工作台：屏幕微亮，台灯还开着</span>
+    <div class="spec">
+      <b>3 : 2</b> · 1200×800 · 场景透视速写预设 · 单色石墨<br>
+      对应文章里「实测」的过程感；也呼应金句「炫酷只让人感叹厉害，Bug 修好了才让人早下班」
+    </div>
+    <div class="two">
+      <div class="stage"><img src="main-1200x800.png" alt="主图：深夜工作台"></div>
+      <div class="stage" style="flex-direction:column;align-items:center">
+        <div style="width:100%;text-align:left;margin-bottom:12px">
+          <span class="tag">次图</span><span class="ttl">一碗面，筷子刚搁下</span>
+        </div>
+        <img src="sub-800x800.png" alt="次图：碗与筷子" style="width:100%">
+        <div class="spec" style="margin-top:12px">
+          <b>1 : 1</b> · 800×800 · 淡彩素描预设 + 赭石<br>
+          收尾用，对应「端起一碗属于自己的，热气腾腾的未来」
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    三张均为无字底图，标题与正文文字一律走排版叠加，不烘焙进图片。<br>
+    裁切用 <code>scripts/crop.py</code> 按行墨量自动定位主体（看不到图也能安全裁），未凭肉眼猜测。<br>
+    原始未裁切图在 <code>article-art/raw/</code>，需要其他比例可随时重裁。
+  </footer>
+
+</div>
+</body>
+</html>

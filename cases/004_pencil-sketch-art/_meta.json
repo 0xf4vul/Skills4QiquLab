@@ -1,0 +1,43 @@
+{
+  "name": "pencil-sketch-art",
+  "display_name": "铅笔素描手绘图",
+  "display_name_en": "Pencil Sketch Art",
+  "version": "1.1.0",
+  "license": "MIT",
+  "agent_created": true,
+  "derived_from": "infographic-maker（手绘风格层提纯）",
+  "tags": ["image", "illustration", "sketch", "pencil", "手绘", "配图", "金句卡", "概念隐喻", "公众号封面"],
+  "entry": {
+    "skill": "SKILL.md",
+    "scripts": ["scripts/build_prompt.py", "scripts/crop.py"],
+    "references": [
+      "references/prompt-library.md",
+      "references/style-tokens.md",
+      "references/troubleshooting.md"
+    ],
+    "examples": [
+      "examples/01-concept-metaphor.md",
+      "examples/02-column-illustration.md",
+      "examples/03-urban-scene.md",
+      "examples/04-quote-card-series.md"
+    ]
+  },
+  "runtime": {
+    "python": ">=3.8",
+    "deps": ["pillow", "numpy"],
+    "venv": "~/.workbuddy/binaries/python/envs/default"
+  },
+  "hard_constraints": [
+    "图内文字 ≤ 8 字",
+    "色彩 ≤ 1 个低饱和色相",
+    "背景必须纸色，禁用纯白 #ffffff",
+    "quality=high, style=natural"
+  ],
+  "publish_ratios": {
+    "公众号封面": "2.35（900x383）",
+    "公众号正文图": "3:2 或 16:9，宽 ≤1080",
+    "小红书": "3:4",
+    "视频号封面": "9:16",
+    "金句卡": "2:3"
+  }
+}

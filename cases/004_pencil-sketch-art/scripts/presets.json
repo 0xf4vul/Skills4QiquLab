@@ -1,0 +1,120 @@
+{
+  "version": "1.0.0",
+  "presets": {
+    "line-art": {
+      "id": 1,
+      "name_zh": "纯线稿速写",
+      "best_for": "图标、小插图、流程图元素、装饰性小图",
+      "default_aspect": "square",
+      "medium": "HB pencil on off-white sketchbook paper, thin broken lines, slightly wobbly hand-drawn strokes, visible paper grain, faint construction lines left visible",
+      "shading": "contour only, no shading, no fill",
+      "composition": "empty paper background, generous negative space, 30-second quick sketch feel",
+      "lock_lighting": true
+    },
+    "hatched-tonal": {
+      "id": 2,
+      "name_zh": "排线明暗素描",
+      "best_for": "通用配图，绝大多数场景的默认选择",
+      "default_aspect": "square",
+      "medium": "2B graphite pencil on cream paper, dense cross-hatching in shadow areas, sparse hatching in midtones, paper white reserved for highlights, thick slightly imperfect outlines, visible paper grain texture, subtle smudging",
+      "shading": "clear three-tone structure (light / midtone / shadow), cast shadow grounding the subject",
+      "composition": "mostly empty cream paper with a faint horizon line"
+    },
+    "charcoal-rough": {
+      "id": 3,
+      "name_zh": "炭笔粗粝",
+      "best_for": "沉重、冲突、批判性主题；人物肖像特写",
+      "default_aspect": "portrait",
+      "medium": "charcoal stick and 6B pencil on textured paper, broad smudged shadow masses, aggressive hatching, dusty paper grain, edges dissolving into the paper, visible eraser lift-outs in highlight areas",
+      "shading": "dramatic single light source, deep dark shadows, high contrast, raw unfinished tonal masses with visible midtone hatching",
+      "composition": "near-empty textured paper, a few scattered charcoal dust specks, raw and unfinished feel",
+      "lock_lighting": true
+    },
+    "pencil-wash": {
+      "id": 4,
+      "name_zh": "淡彩素描",
+      "best_for": "生活化、温暖、怀旧内容；食物、家居、旅途",
+      "default_aspect": "square",
+      "medium": "graphite line work with visible hatching, overlaid by one soft {accent} watercolor wash that bleeds outside the lines, cream watercolor paper texture, slightly wobbly hand-drawn outlines",
+      "shading": "soft diffused daylight, gentle shading, paper white as highlight",
+      "composition": "pale wash fading into empty paper at the edges",
+      "lock_lighting": true
+    },
+    "urban-sketch": {
+      "id": 5,
+      "name_zh": "建筑/场景透视速写",
+      "best_for": "地点、空间、流程场景、建筑、街景",
+      "default_aspect": "landscape",
+      "medium": "fine liner and graphite pencil on cream sketchbook paper, loose hatching for shade under eaves and objects, wobbly architectural lines, visible paper grain, a few annotation marks and arrows in the margins",
+      "shading": "soft daylight with cast shadows, light gray washes",
+      "composition": "one-point perspective, eye-level viewpoint, foreground detail fading to simplified background shapes, small human figures for scale"
+    },
+    "conceptual": {
+      "id": 6,
+      "name_zh": "概念隐喻素描",
+      "best_for": "金句卡底图、观点配图、抽象主题",
+      "default_aspect": "portrait",
+      "medium": "graphite pencil on cream paper, cross-hatched shading, thick expressive outlines, visible paper grain, subtle smudging",
+      "shading": "strong directional light from upper left, deep blacks in shadow, crisp midtone hatching, paper white as the brightest highlight, cast shadow grounding the subject",
+      "composition": "single centered subject anchored in the lower two thirds of the frame, the upper third is completely empty paper with absolutely no objects, props or clock, no decoration at the top, minimal environment, one small symbolic prop kept below the upper third",
+      "lock_lighting": true
+    }
+  },
+  "aspects": {
+    "square": {
+      "size": "1024x1024",
+      "zh": "方形",
+      "use": "文章内嵌配图 / 头像 / 方形卡片",
+      "en": "square"
+    },
+    "landscape": {
+      "size": "1536x1024",
+      "zh": "横版 16:9",
+      "use": "封面 / banner / PPT / 横版底图",
+      "en": "landscape 16:9"
+    },
+    "portrait": {
+      "size": "1024x1536",
+      "zh": "竖版 9:16",
+      "use": "小红书 / 手机壁纸 / 金句卡",
+      "en": "portrait 9:16"
+    },
+    "wide": {
+      "size": "1536x1024",
+      "zh": "宽幅",
+      "use": "横向流程图 / 全景速写",
+      "en": "wide panoramic"
+    }
+  },
+  "accents": {
+    "none": {
+      "zh": "全单色石墨",
+      "token": ""
+    },
+    "sepia": {
+      "zh": "赭石",
+      "token": "sepia"
+    },
+    "indigo": {
+      "zh": "淡靛蓝",
+      "token": "muted indigo"
+    },
+    "red": {
+      "zh": "暗红",
+      "token": "dusty red"
+    }
+  },
+  "lighting": {
+    "upper-left": "single soft light source from upper left",
+    "upper-right": "single soft light source from upper right",
+    "dramatic": "dramatic single light source, deep dark shadows, high contrast",
+    "diffuse": "soft diffused daylight, gentle shading"
+  },
+  "color_rules": {
+    "default": "monochrome graphite",
+    "with_accent": "monochrome graphite with one muted {accent} accent color",
+    "background": "cream / off-white / light gray paper (never pure white #ffffff)"
+  },
+  "negative_block": "no photorealistic rendering, no 3D render, no CGI, no oil painting, no plastic or glossy surface, no neon colors, no hard gradients, no airbrushed smoothness, no stock photo look, no heavy digital filters, no full saturated color, no comic-book flat color fill, no watermark, no garbled text",
+  "quality_block": "hand-drawn sketchbook illustration, clean composition, balanced visual weight, editorial illustration quality"
+}

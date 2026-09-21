@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>小绿书套图 · 实测 Step 5 Preview</title>
+<style>
+  :root{
+    --bg:#161513; --panel:#1E1C1A; --line:#33302B;
+    --txt:#EDE9E0; --dim:#9A958C; --gold:#C9915C; --ink:#2B2B28;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);
+    font-family:"Noto Serif SC","Songti SC","PingFang SC","Microsoft YaHei",serif;
+    padding:44px 30px 70px;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1000px;margin:0 auto}
+
+  h1{font-size:19px;font-weight:500;letter-spacing:.02em}
+  .meta{margin-top:9px;font-size:13px;color:var(--dim);line-height:1.9}
+  .meta span{margin-right:20px}
+
+  .feed{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
+  @media(max-width:720px){.feed{grid-template-columns:1fr}}
+
+  .post{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:16px}
+  .ph{display:flex;align-items:center;justify-content:space-between;
+      font-size:12px;color:var(--dim);margin-bottom:12px}
+  .ph .idx{color:var(--gold);border:1px solid var(--gold);border-radius:2px;padding:1px 7px}
+
+  .frame{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:3px}
+  .frame img{width:100%;height:100%;object-fit:cover;display:block}
+  .frame .cap{
+    position:absolute;left:8%;right:8%;
+    font-weight:600;color:var(--ink);line-height:1.42;
+    text-shadow:0 1px 0 rgba(255,255,255,.45);
+  }
+  .frame .cap small{display:block;font-weight:400;font-size:12px;
+    color:#5C574E;margin-top:10px;text-shadow:none}
+  /* 标题位置按墨量测得的干净带定位，不是猜的 */
+  .frame.main .cap{top:21%;font-size:29px}
+  .frame.sub  .cap{top:17%;font-size:25px}
+
+  .note{margin-top:14px;font-size:12.5px;color:var(--dim);line-height:1.85}
+  .note b{color:var(--txt);font-weight:500}
+
+  .block{margin-top:40px;padding-top:26px;border-top:1px solid var(--line)}
+  .block h2{font-size:15px;font-weight:500;margin-bottom:12px}
+  .block img.combo{width:100%;border-radius:3px;border:1px solid var(--line);display:block}
+
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:12.5px}
+  th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--dim);font-weight:500;width:96px}
+  td{color:var(--txt)}
+  code{font-family:ui-monospace,Consolas,monospace;font-size:11.5px;color:var(--gold)}
+
+  footer{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);
+    font-size:12.5px;color:var(--dim);line-height:1.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>小绿书套图 · 《实测 Step 5 Preview，这次真的实力上桌了》</h1>
+  <div class="meta">
+    <span>来源：公众号「欧巴聊AI」· 2026-09-21</span>
+    <span>配图：pencil-sketch-art</span>
+    <span>3:4 竖版 1080×1440 · 两张一组</span>
+  </div>
+
+  <div class="feed">
+
+    <div class="post">
+      <div class="ph"><span class="idx">主图</span><span>1 / 2 · 钩子</span></div>
+      <div class="frame main">
+        <img src="main-1080x1440.png" alt="主图：拉线开关绳尾坠着一枚硬币，灯泡刚亮">
+        <div class="cap">花同样的钱，<br>买到更聪明的智能
+          <small>一枚硬币坠在灯绳上，灯刚亮</small>
+        </div>
+      </div>
+      <div class="note">
+        <b>意象</b>：拉线开关的绳尾坠着一枚硬币，下面的灯泡刚被拉亮，光用细排线放射出去。<br>
+        对应全文最硬的那句论证——投入极小，换来的光很实在。
+      </div>
+    </div>
+
+    <div class="post">
+      <div class="ph"><span class="idx">次图</span><span>2 / 2 · 余味</span></div>
+      <div class="frame sub">
+        <img src="sub-1080x1440.png" alt="次图：灯下的小桌，一碗面，筷子搁在碗沿">
+        <div class="cap">端起一碗属于<br>自己的，热气腾腾的未来
+          <small>灯下的小桌，热气用细排线升起</small>
+        </div>
+      </div>
+      <div class="note">
+        <b>意象</b>：同一盏灯照下来，桌上摆着一碗面，筷子刚搁下。<br>
+        与主图共用同一盏灯、同一左上光源——两张合起来是「投入一枚硬币 → 灯亮 → 有饭吃」的连续叙事。
+      </div>
+    </div>
+
+  </div>
+
+  <section class="block">
+    <h2>成套效果（两张拼排）</h2>
+    <img class="combo" src="set-combined-2up.png" alt="两张拼排的套图">
+  </section>
+
+  <section class="block">
+    <h2>这两张是怎么定下来的（数据，不是眼估）</h2>
+    <table>
+      <tr><th>统一项</th><td>同为<b>排线明暗预设</b>、同为 2B 石墨单色、同为<b>左上单一光源</b>、同为纸色底 —— 这四项一致才成套</td></tr>
+      <tr><th>裁切</th><td>生成尺寸 1024×1536（9:16）→ <code>crop.py --ratio 0.75</code> 裁成 3:4 → 输出 1080×1440</td></tr>
+      <tr><th>主图定位</th><td>逐行墨量测得干净带在 <b>19%–41%</b> 高度，标题放在 21% 处，不会压到灯绳与灯泡</td></tr>
+      <tr><th>次图定位</th><td>主体居中（33%–69%），上下皆空，标题放在上部 17% 处</td></tr>
+      <tr><th>一处意外</th><td>主图顶部只有 125px 空白——模型把灯绳从画面顶端垂了下来（物理上合理）。所以标题没放最顶上，而是按墨量下移到干净带</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    两张均为无字底图，标题一律走排版叠加，不烘焙进图片。<br>
+    拆成单张发也可以：主图作首图，次图作第二张；两张同发时叙事连贯。<br>
+    原始未裁切图在 <code>generated-images/</code>，要 1:1 或 16:9 版本可随时重裁，不用重新生图。
+  </footer>
+
+</div>
+</body>
+</html>

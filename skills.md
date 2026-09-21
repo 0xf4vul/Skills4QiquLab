@@ -21,6 +21,8 @@
 |---:|---|---|---|
 | 001 | Video Prompt Compression | Active | [001_video-prompt-compression/](cases/001_video-prompt-compression/) |
 | 002 | Source-to-KOL Research | Active | [002_source-to-kol-research/](cases/002_source-to-kol-research/) |
+| 004 | Pencil Sketch Art | Active | [004_pencil-sketch-art/](cases/004_pencil-sketch-art/) |
+| 005 | Golden Quote Miner | Active | [005_golden-quote-miner/](cases/005_golden-quote-miner/) |
 
 ## Case 命名规则
 
