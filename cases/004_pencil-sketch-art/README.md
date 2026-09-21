@@ -35,6 +35,8 @@ Turn any subject, description, or abstract concept into a graphite pencil sketch
 
 ## How to use
 
+Requires Python 3. `build_prompt.py` has no third-party dependencies; `crop.py` needs `pip install pillow numpy`.
+
 **Name the subject → pick an aspect → pick a stroke → build the prompt → generate → crop → self-check.**
 
 ```bash

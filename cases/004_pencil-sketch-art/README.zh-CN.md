@@ -24,7 +24,7 @@
 |---|---|
 | `SKILL.md` | 完整方法：主体决策、画幅规则、笔触预设、prompt 组装、8 条自检清单 |
 | `scripts/build_prompt.py` | prompt 构造器，`--list` 查预设，校验文字长度 / 画幅 / 点缀色 / 光源 |
-| `scripts/crop.py` | 墨量裁切器，支持 `--ratio` `--top-safe` `--bottom-safe` `--dry-run` |
+| `scripts/crop.py` | 墨量裁切器，支持 `--in` `--ratio` `--out` `--width` `--top-safe` `--bottom-safe` `--dry-run` |
 | `scripts/presets.json` | 预设数据：笔触 / 媒介 / 明暗 / 构图 / 负面词。改数据不改代码 |
 | `references/prompt-library.md` | 概念转译表 + 分主体 prompt 范式 |
 | `references/style-tokens.md` | 9 个 token 桶：媒介 / 笔触 / 光影 / 纸 / 色 / 质量 / 负面 / 画幅 / 参数 |
@@ -34,6 +34,8 @@
 | `assets/gallery/` | 已发布成品 |
 
 ## 库用法
+
+环境：Python 3。`build_prompt.py` 零依赖；`crop.py` 需要 `pip install pillow numpy`。
 
 **定主体 → 选画幅 → 选笔触 → 构造 prompt → 出图 → 裁切 → 自检**
 

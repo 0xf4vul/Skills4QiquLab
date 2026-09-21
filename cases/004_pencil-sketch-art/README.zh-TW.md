@@ -35,6 +35,8 @@
 
 ## 庫用法
 
+環境：Python 3。`build_prompt.py` 零依賴；`crop.py` 需要 `pip install pillow numpy`。
+
 **定主體 → 選畫幅 → 選筆觸 → 建構 prompt → 出圖 → 裁切 → 自檢**
 
 ```bash

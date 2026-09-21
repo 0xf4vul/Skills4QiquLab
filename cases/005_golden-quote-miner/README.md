@@ -36,6 +36,8 @@ Turn a long piece of content into 5-12 sentences that **survive on their own, se
 
 ## How to use
 
+Requires Python 3, no third-party dependencies.
+
 **Locate the core conflict → run the funnel → rewrite against a skeleton → tag each line → sort by spread.**
 
 ```bash
