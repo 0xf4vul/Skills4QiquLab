@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
+  <a href="https://github.com/sponsors/0xf4vul"><img src="https://img.shields.io/badge/Sponsor-0xf4vul-EA4AAA?style=flat-square&logo=githubsponsors"></a>
 </p>
 
 [English](README.md) · **简体中文** · [繁體中文](README.zh-TW.md)
@@ -110,6 +111,33 @@
 ## Star 趋势
 
 [![Star History](https://api.star-history.com/svg?repos=0xf4vul/Skills4QiquLab&type=Date)](https://star-history.com/#0xf4vul/Skills4QiquLab&Date)
+
+---
+
+## 支持这个项目
+
+如果 Skills4QiquLab 帮你省了时间、做出了东西，或者悄悄变成了你日常工作流的一部分，欢迎支持这份独立、开源的长期维护：
+
+<p align="left">
+  <a href="https://github.com/sponsors/0xf4vul" target="_blank">
+    <img src="https://img.shields.io/badge/Sponsor-0xf4vul-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="在 GitHub Sponsors 上赞助 0xf4vul" />
+  </a>
+  <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers" target="_blank">
+    <img src="https://img.shields.io/badge/Star-这个仓库-FFDD00?style=for-the-badge&logo=github&logoColor=black" alt="给仓库点 Star" />
+  </a>
+</p>
+
+不花钱的支持方式，按影响力大致排序：
+
+- ⭐ **给仓库点 Star** — 成本最低，也是最直接的"这个库值得活下去"的信号。
+- 🔗 **引用与分享** — 复用 Skill 或改造 Case 时附上仓库链接；被引用，仓库才会变成参考源。
+- 🐛 **提 Issue** — 一个真实的失败案例比一句夸奖值钱。每个 Skill 都写了「失败模式」，就是为了接住它。
+- 🤝 **提 Pull Request** — 新 Skill、新 Case、更锋利的评测规则，甚至只是改个错别字，都算数。
+- 🍴 **Fork 后改造** — 把方法搬进你自己的领域，然后把改了什么公开出来。
+
+这里的每个 Skill，都来自某个人把一件重复做的事沉淀成了可复用的方法。贡献和赞助指向同一个地方：让这件事继续发生。
+
+---
 
 ## 开源协议
 

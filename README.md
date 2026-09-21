@@ -12,6 +12,7 @@
   <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
+  <a href="https://github.com/sponsors/0xf4vul"><img src="https://img.shields.io/badge/Sponsor-0xf4vul-EA4AAA?style=flat-square&logo=githubsponsors"></a>
 </p>
 
 **English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
@@ -114,6 +115,33 @@ This repository is for learning, experimentation, and reusable AI workflow pract
 ## Star History
 
 [![Star History](https://api.star-history.com/svg?repos=0xf4vul/Skills4QiquLab&type=Date)](https://star-history.com/#0xf4vul/Skills4QiquLab&Date)
+
+---
+
+## Support the Project
+
+If Skills4QiquLab saves you time, ships something for you, or quietly becomes part of your daily workflow, consider supporting independent, open work:
+
+<p align="left">
+  <a href="https://github.com/sponsors/0xf4vul" target="_blank">
+    <img src="https://img.shields.io/badge/Sponsor-0xf4vul-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor 0xf4vul on GitHub Sponsors" />
+  </a>
+  <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers" target="_blank">
+    <img src="https://img.shields.io/badge/Star-this%20repo-FFDD00?style=for-the-badge&logo=github&logoColor=black" alt="Star Skills4QiquLab" />
+  </a>
+</p>
+
+Free ways to help, roughly in order of impact:
+
+- ⭐ **Star the repository** — the cheapest signal that this library is worth keeping alive.
+- 🔗 **Cite and share it** — link back when you reuse a Skill or remix a Case; attribution is what turns a repo into a reference.
+- 🐛 **Open an issue** — a real failure case is worth more than praise. Every Skill has a *Failure modes* section for exactly this.
+- 🤝 **Send a pull request** — new Skills, new Cases, sharper evaluation rubrics, even typo fixes. All of it counts.
+- 🍴 **Fork and remix** — adapt a method to your own domain, then publish what changed.
+
+Every Skill here exists because someone turned a repeated piece of work into a reusable method. Contributions and sponsorship both go to the same place: more of that.
+
+---
 
 ## License
 
