@@ -50,13 +50,13 @@
 <a href="cases/004_pencil-sketch-art/"><img src="cases/004_pencil-sketch-art/assets/svg/case-logo.svg" alt="铅笔素描手绘图" width="88%"></a>
 <br><strong>铅笔素描手绘图</strong><br>
 把任意主题或抽象概念，生成一张石墨铅笔素描手绘插画，配 prompt 拼装与墨量裁切脚本。
-<br><a href="cases/004_pencil-sketch-art/">Case</a>
+<br><a href="cases/004_pencil-sketch-art/">Case</a> · <a href="skills/pencil-sketch-art.md">Skill</a>
 </td>
 <td width="50%" valign="top" align="center">
 <a href="cases/005_golden-quote-miner/"><img src="cases/005_golden-quote-miner/assets/svg/case-logo.svg" alt="金句提炼" width="88%"></a>
 <br><strong>金句提炼</strong><br>
 把长内容变成 5-12 句能脱离原文单独活下来的句子，四层漏斗 + 八型句式骨架。
-<br><a href="cases/005_golden-quote-miner/">Case</a>
+<br><a href="cases/005_golden-quote-miner/">Case</a> · <a href="skills/golden-quote-miner.md">Skill</a>
 </td>
 </tr>
 </table>
@@ -73,6 +73,8 @@
 | 🌐 | [Web Research](skills/web-research.md) | 将开放问题转化为可追溯、可交叉验证的证据 |
 | 𝕏 | [X Research](skills/x-research.md) | 研究 X 账号、人物、帖子与近期活动 |
 | 🛠️ | [Skill Builder](skills/skill-builder.md) | 将重复工作沉淀为可复用、可测试的 Skill |
+| ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | 把主题或抽象概念转为石墨铅笔素描手绘插画 |
+| 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | 把长内容提炼为能脱离原文独立传播的金句 |
 
 → [完整 Skill 索引](skills.md)
 

@@ -54,13 +54,13 @@ Turn arbitrary inputs into a verifiable, auditable research workflow for KOLs an
 <a href="cases/004_pencil-sketch-art/"><img src="cases/004_pencil-sketch-art/assets/svg/case-logo.svg" alt="Pencil Sketch Art" width="88%"></a>
 <br><strong>Pencil Sketch Art</strong><br>
 Turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
-<br><a href="cases/004_pencil-sketch-art/">Case</a>
+<br><a href="cases/004_pencil-sketch-art/">Case</a> · <a href="skills/pencil-sketch-art.md">Skill</a>
 </td>
 <td width="50%" valign="top" align="center">
 <a href="cases/005_golden-quote-miner/"><img src="cases/005_golden-quote-miner/assets/svg/case-logo.svg" alt="Golden Quote Miner" width="88%"></a>
 <br><strong>Golden Quote Miner</strong><br>
 Turn long content into 5-12 sentences that survive on their own, via a four-stage funnel and eight sentence skeletons.
-<br><a href="cases/005_golden-quote-miner/">Case</a>
+<br><a href="cases/005_golden-quote-miner/">Case</a> · <a href="skills/golden-quote-miner.md">Skill</a>
 </td>
 </tr>
 </table>
@@ -77,6 +77,8 @@ Turn long content into 5-12 sentences that survive on their own, via a four-stag
 | 🌐 | [Web Research](skills/web-research.md) | Turn open questions into traceable, cross-checked evidence |
 | 𝕏 | [X Research](skills/x-research.md) | Research X accounts, people, posts, and recent activity |
 | 🛠️ | [Skill Builder](skills/skill-builder.md) | Turn repeated work into reusable, testable Skills |
+| ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | Turn a subject or abstract concept into a graphite pencil sketch |
+| 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | Distill long content into lines that survive on their own |
 
 → [Full Skill Index](skills.md)
 

@@ -13,6 +13,8 @@
 | Video Prompt Optimization | 优化视频 Prompt 的动作、镜头与执行清晰度 | [skills/video-prompt-optimization.md](skills/video-prompt-optimization.md) |
 | Web Research | 将开放式搜索转化为结构化证据研究 | [skills/web-research.md](skills/web-research.md) |
 | X Research | 对 X 账号、人物、主题进行检索、核验与分析 | [skills/x-research.md](skills/x-research.md) |
+| Pencil Sketch Art | 把主题或抽象概念转为石墨铅笔素描手绘插画 | [skills/pencil-sketch-art.md](skills/pencil-sketch-art.md) |
+| Golden Quote Miner | 把长内容提炼为可脱离原文独立传播的金句 | [skills/golden-quote-miner.md](skills/golden-quote-miner.md) |
 | Skill Builder | 把重复工作抽象为可测试、可迭代的 Skill | [skills/skill-builder.md](skills/skill-builder.md) |
 
 ## Skill Cases
