@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
-  <a href="https://buymeacoffee.com/virsmsorgv"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
+  <a href="https://buymeacoffee.com/qiqu.lab"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
 
 [English](README.md) · [简体中文](README.zh-CN.md) · **繁體中文**
@@ -133,15 +133,19 @@
 如果 Skills4QiquLab 幫你省下時間、做出了東西，或悄悄變成你日常工作流的一部分，歡迎支持這份獨立、開源的長期維護：
 
 <p align="left">
-  <a href="https://buymeacoffee.com/virsmsorgv" target="_blank">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=virsmsorgv&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
+  <a href="https://buymeacoffee.com/qiqu.lab" target="_blank">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=qiqu.lab&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
   </a>
   <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers" target="_blank">
     <img src="https://img.shields.io/badge/Star-這個儲存庫-FFDD00?style=for-the-badge&logo=github&logoColor=black" alt="給儲存庫點 Star" />
   </a>
 </p>
 
-<small>Buy Me a Coffee 走 Stripe 結算，需要外幣卡；使用下面這些方式支持也一樣有效。</small>
+<small>Buy Me a Coffee 走 Stripe 結算，需要外幣卡。若你沒有外幣卡，可直接掃下面的微信贊賞碼，金額隨意。</small>
+
+<p align="left">
+  <img src="assets/support/wechat-reward-qr.png" alt="微信贊賞碼 · Qiqu.Lab" width="150" />
+</p>
 
 不用花錢的支持方式，按影響力大致排序：
 

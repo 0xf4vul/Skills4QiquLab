@@ -12,7 +12,7 @@
   <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
   <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
-  <a href="https://buymeacoffee.com/virsmsorgv"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
+  <a href="https://buymeacoffee.com/qiqu.lab"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
 
 **English** · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md)
@@ -137,12 +137,18 @@ This repository is for learning, experimentation, and reusable AI workflow pract
 If Skills4QiquLab saves you time, ships something for you, or quietly becomes part of your daily workflow, consider supporting independent, open work:
 
 <p align="left">
-  <a href="https://buymeacoffee.com/virsmsorgv" target="_blank">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=virsmsorgv&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
+  <a href="https://buymeacoffee.com/qiqu.lab" target="_blank">
+    <img src="https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=qiqu.lab&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" alt="Buy Me A Coffee" />
   </a>
   <a href="https://github.com/0xf4vul/Skills4QiquLab/stargazers" target="_blank">
     <img src="https://img.shields.io/badge/Star-this%20repo-FFDD00?style=for-the-badge&logo=github&logoColor=black" alt="Star Skills4QiquLab" />
   </a>
+</p>
+
+Buy Me a Coffee settles through Stripe, so it needs a foreign-currency card. If that is a blocker, tip through WeChat instead — any amount, no card needed:
+
+<p align="left">
+  <img src="assets/support/wechat-reward-qr.png" alt="WeChat reward code · Qiqu.Lab" width="150" />
 </p>
 
 Free ways to help, roughly in order of impact:
