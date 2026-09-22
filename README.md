@@ -29,6 +29,7 @@ No standalone public group is currently listed. Use [Issues](https://github.com/
 
 ## New Skills
 
+- **NEW** [X Cover & Copy Studio](skills/x-cover-copy-studio.md) ([Case 007](cases/007_x-cover-copy-studio/)) — one listy tweet in, two launch-ready ratio-locked posters + a variant copy line out, with hard row caps and a forced QA loop.
 - **NEW** [Textless Backdrop](skills/imagegen-textless-composite.md) ([Case 006](cases/006_imagegen-textless-composite/)) — generate a wordless backdrop with an image model, then overlay Chinese headlines and key numbers with Pillow for pixel-perfect accuracy.
 - **NEW** [Pencil Sketch Art](skills/pencil-sketch-art.md) ([Case 004](cases/004_pencil-sketch-art/)) — turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
 - **NEW** [Golden Quote Miner](skills/golden-quote-miner.md) ([Case 005](cases/005_golden-quote-miner/)) — turn long content into 5-12 sentences that survive on their own, via a four-stage funnel and eight sentence skeletons.
@@ -78,6 +79,15 @@ Generate a wordless backdrop with an image model, then overlay Chinese headlines
 <a href="docs/index.html"><strong>View the interactive Showcase →</strong></a>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/007_x-cover-copy-studio/"><img src="cases/007_x-cover-copy-studio/assets/svg/case-logo.svg" alt="X Cover & Copy Studio" width="88%"></a>
+<br><strong>X Cover & Copy Studio</strong><br>
+Turn one listy tweet into two launch-ready X.com posters + a variant copy line. Hard row contracts, forced QA loop.
+<br><a href="cases/007_x-cover-copy-studio/">Case</a> · <a href="skills/x-cover-copy-studio.md">Skill</a>
+</td>
+<td width="50%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ## Skill Entry
@@ -95,6 +105,7 @@ Generate a wordless backdrop with an image model, then overlay Chinese headlines
 | ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | Turn a subject or abstract concept into a graphite pencil sketch |
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | Distill long content into lines that survive on their own |
 | 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | Generate a wordless backdrop, then overlay Chinese headlines and numbers with Pillow |
+| 📰 | [X Cover & Copy Studio](skills/x-cover-copy-studio.md) | Turn a listy tweet into two X-launch posters plus a near-style variant |
 
 → [Full Skill Index](skills.md)
 
@@ -119,6 +130,7 @@ Every Skill should expose the same practical contract:
 | Pencil Sketch Art | Turn a subject or abstract concept into a sketch that reads as hand-drawn | Name subject → pick aspect → pick stroke preset → assemble prompt → generate → crop by ink density → self-check | Hand-drawn feel / paper tone / subject clarity / safe title area |
 | Golden Quote Miner | Distill lines that survive detached from the source | Candidate scan → density filter → tension scoring → detachment test → manual sweep | Density / tension / rhythm / detachment / skeleton coverage |
 | Textless Backdrop | Generate a wordless base, then overlay type with Pillow | Lock palette → generate wordless base → strip watermark → overlay type → verify | Wordless base / number accuracy / font integrity / palette anchoring / no overflow |
+| X Cover & Copy Studio | Listy tweet → poster pair + variant copy, zero silent clipping | Fit-gate → deconstruct refs → payload → render(2x) → crop QA loop → deliver | Row completeness / footer / occlusion / tofu / font weight / fact fidelity / ad-law |
 
 For a complete applied workflow, go to [cases/](cases/). For creating a new Skill, start with [Skill Builder](skills/skill-builder.md) and [templates/skill-template.md](templates/skill-template.md).
 

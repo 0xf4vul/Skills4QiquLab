@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&family=IBM+Plex+Mono:wght@500;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EFE8D6;
+    --ink:#141210;
+    --red:#C8321E;
+    --amber:#E8B830;
+    --faint:rgba(20,18,16,.14);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{background:#b9b2a0;}
+  .canvas{
+    position:relative;width:2000px;height:830px;overflow:hidden;
+    background:
+      radial-gradient(1200px 600px at 85% -10%, rgba(200,50,30,.06), transparent 60%),
+      var(--paper);
+    font-family:'Noto Sans SC',sans-serif;color:var(--ink);
+    padding:40px 56px 34px;
+    display:flex;flex-direction:column;
+  }
+  .canvas::after{ /* paper grain */
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.55;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0.08 0 0 0 0 0.07 0 0 0 0 0.06 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .meta{display:flex;justify-content:space-between;align-items:center;
+    font-size:15px;letter-spacing:.22em;font-weight:700;
+    border-bottom:2px solid var(--ink);padding-bottom:14px;}
+  .main{flex:0 0 auto;height:610px;display:grid;grid-template-columns:46fr 54fr;gap:48px;padding-top:20px;overflow:hidden;}
+  .kick{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:var(--paper);
+    font-size:19px;font-weight:900;letter-spacing:.08em;padding:7px 16px;}
+  .kick b{color:var(--amber);}
+  h1{font-weight:900;font-size:54px;line-height:1.16;letter-spacing:.01em;margin-top:14px;}
+  h1 .pin{position:relative;display:inline-block;background:var(--ink);color:var(--paper);
+    padding:0 12px;transform:rotate(-1.2deg);}
+  h1 .pin::after{content:"";position:absolute;left:-2%;right:-2%;top:52%;height:8px;
+    background:var(--red);transform:rotate(-2deg);}
+  .take{display:flex;align-items:center;gap:16px;margin-top:16px;}
+  .take .t{font-size:31px;font-weight:900;letter-spacing:.02em;}
+  .take .t em{font-style:normal;color:var(--red);}
+  .hand{width:56px;height:56px;border-radius:50%;background:var(--ink);display:flex;
+    align-items:center;justify-content:center;font-size:29px;flex:0 0 auto;
+    box-shadow:5px 5px 0 var(--red);transform:rotate(-8deg);}
+  .specs{margin-top:14px;border-top:2px dashed var(--faint);padding-top:10px;
+    display:grid;grid-template-columns:1fr 1fr;gap:7px 22px;font-size:15px;font-weight:700;}
+  .specs div{display:flex;gap:8px;align-items:baseline;}
+  .specs i{font-style:normal;color:var(--red);font-size:13px;}
+  .cornerword{margin-top:12px;font-size:14px;letter-spacing:.3em;font-weight:700;color:rgba(20,18,16,.55);}
+  .list{display:flex;flex-direction:column;justify-content:space-between;min-height:0;}
+  .row{display:grid;grid-template-columns:50px 1fr auto;gap:14px;align-items:center;
+    border:2px solid var(--ink);background:rgba(255,252,244,.6);padding:4px 12px 4px 4px;}
+  .num{width:40px;height:40px;background:var(--ink);color:var(--paper);display:flex;
+    align-items:center;justify-content:center;font-size:17px;font-weight:700;
+    box-shadow:4px 4px 0 var(--red);}
+  .row:nth-child(even) .num{box-shadow:4px 4px 0 var(--amber);}
+  .dom{font-size:20px;font-weight:700;letter-spacing:-.01em;}
+  .desc{font-size:14.5px;font-weight:700;color:rgba(20,18,16,.98);white-space:nowrap;}
+  .desc em{font-style:normal;background:var(--amber);padding:2px 6px;}
+  .arr{font-size:20px;font-weight:700;color:var(--red);transform:rotate(-45deg);}
+  .foot{margin-top:auto;border-top:2px solid var(--ink);padding-top:16px;
+    display:flex;justify-content:space-between;align-items:center;}
+  .tags{display:flex;gap:10px;flex-wrap:wrap;}
+  .tag{border:2px solid var(--ink);border-radius:999px;padding:5px 14px;font-size:15px;font-weight:900;}
+  .tag.hot{background:var(--red);color:var(--paper);border-color:var(--red);}
+  .save{background:var(--red);color:#FFF6E6;font-size:21px;font-weight:900;letter-spacing:.04em;
+    padding:12px 22px;box-shadow:6px 6px 0 var(--ink);}
+  .save .mono{font-size:14px;font-weight:700;opacity:.85;margin-left:12px;letter-spacing:.1em;}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="meta">
+    <div class="l mono">{{META_L}}</div>
+    <div class="r mono">{{META_R}}</div>
+  </div>
+  <div class="main">
+    <div class="left">
+      <span class="kick">{{KICK}}</span>
+      <h1>{{TITLE}}</h1>
+      <div class="take"><div class="t">{{TAKE}}</div><div class="hand">{{HAND}}</div></div>
+      <div class="specs">{{SPECS}}</div>
+      <div class="cornerword mono">{{CORNER}}</div>
+    </div>
+    <div class="list">{{ROWS}}</div>
+  </div>
+  <div class="foot">
+    <div class="tags">{{TAGS}}</div>
+    <div class="save">{{SAVE}}<span class="mono">{{SAVE_EN}}</span></div>
+  </div>
+</div>
+</body>
+</html>

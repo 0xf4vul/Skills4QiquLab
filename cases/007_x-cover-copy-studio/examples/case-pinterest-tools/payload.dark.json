@@ -1,0 +1,24 @@
+{
+  "theme": "dark",
+  "meta_l": "🍟 <span>X</span> / DESIGN TOOLKIT · 灵感情报",
+  "meta_r": "NO.07 — 2026",
+  "title_html": "别再刷 <span class=\"strike\">Pinterest</span> 了<br>设计灵感<span class=\"hl\">换库了</span> 🤫",
+  "sub_html": "7 个宝藏站：<em>提示词</em> · <em>CTA</em> · <em>移动端</em> · <em>微动效</em> · <em>导航栏</em>，一键收藏 👇",
+  "watermark": "07",
+  "ws": "TK",
+  "cards": [
+    {"n": "01", "dom": "motionsites.ai", "desc_html": "<i>500+</i> 网站设计提示词 · 3D / 渐变 / 动态背景"},
+    {"n": "02", "dom": "cta.gallery", "desc_html": "真正<i>能吸引点击</i>的行动号召设计"},
+    {"n": "03", "dom": "loadmo.re", "desc_html": "风格大胆、<i>视觉冲击</i>的移动端站点库"},
+    {"n": "04", "dom": "60fps.design", "desc_html": "瞬间提升质感的<i>微动效</i>细节"},
+    {"n": "05", "dom": "recent.design", "desc_html": "<i>每日</i>精选最新发布设计佳作"},
+    {"n": "06", "dom": "posts.design", "desc_html": "最出色的<i>社媒帖子</i>设计合集"},
+    {"n": "07", "dom": "navbar.gallery", "desc_html": "值得抄的<i>导航栏</i>设计范式"}
+  ],
+  "bonus": {"mark": "BONUS", "dom_unused": "", "desc_html": "全部免费 · 建议搭配<i>收藏夹</i>使用"},
+  "tags": [
+    {"t": "PROMPT-DRIVEN"}, {"t": "3D"}, {"t": "GRADIENT"}, {"t": "MOBILE"},
+    {"t": "MOTION"}, {"t": "DAILY"}, {"t": "NAVBAR"}
+  ],
+  "save": "先 🧷 收藏，再慢慢看完"
+}

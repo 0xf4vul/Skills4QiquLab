@@ -16,6 +16,7 @@
 | Pencil Sketch Art | 把主题或抽象概念转为石墨铅笔素描手绘插画 | [skills/pencil-sketch-art.md](skills/pencil-sketch-art.md) |
 | Golden Quote Miner | 把长内容提炼为可脱离原文独立传播的金句 | [skills/golden-quote-miner.md](skills/golden-quote-miner.md) |
 | Skill Builder | 把重复工作抽象为可测试、可迭代的 Skill | [skills/skill-builder.md](skills/skill-builder.md) |
+| X Cover & Copy Studio | 清单体推文 → X 双比例投放级封面 + 近似风格文案变体 | [skills/x-cover-copy-studio.md](skills/x-cover-copy-studio.md) |
 | Textless Backdrop | 生成无字底图，再用 Pillow 精确叠加中文与大字 | [skills/imagegen-textless-composite.md](skills/imagegen-textless-composite.md) |
 
 ## Skill Cases
@@ -27,6 +28,7 @@
 | 004 | Pencil Sketch Art | Active | [004_pencil-sketch-art/](cases/004_pencil-sketch-art/) |
 | 005 | Golden Quote Miner | Active | [005_golden-quote-miner/](cases/005_golden-quote-miner/) |
 | 006 | Textless Backdrop | Active | [006_imagegen-textless-composite/](cases/006_imagegen-textless-composite/) |
+| 007 | X Cover & Copy Studio | Active | [007_x-cover-copy-studio/](cases/007_x-cover-copy-studio/) |
 
 ## Case 命名规则
 

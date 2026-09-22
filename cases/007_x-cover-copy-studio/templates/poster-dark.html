@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&family=IBM+Plex+Mono:wght@500;700&family=Noto+Color+Emoji&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --inkbg:#141210;
+    --paper:#EFE8D6;
+    --red:#E04428;
+    --amber:#E8B830;
+    --dim:rgba(239,232,214,.6);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  .canvas{
+    position:relative;width:1600px;height:900px;overflow:hidden;
+    background:
+      radial-gradient(900px 500px at 88% 108%, rgba(224,68,40,.22), transparent 60%),
+      radial-gradient(700px 420px at 8% -12%, rgba(232,184,48,.10), transparent 60%),
+      var(--inkbg);
+    font-family:'Noto Sans SC',sans-serif;color:var(--paper);
+    padding:44px 56px 40px;display:flex;flex-direction:column;
+  }
+  .canvas::after{ /* grain */
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.4;mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.08 0'/%3E%3C/filter%3E%3Crect width='240' height='240' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  .meta{display:flex;justify-content:space-between;font-size:13.5px;letter-spacing:.24em;
+    font-weight:700;color:var(--dim);border-bottom:1.5px solid rgba(239,232,214,.25);padding-bottom:12px;}
+  .meta b{color:var(--red);}
+  .head{display:grid;grid-template-columns:1fr 240px;align-items:end;padding-top:22px;}
+  h1{font-weight:900;font-size:54px;line-height:1.2;}
+  h1 .strike{position:relative;display:inline-block;color:transparent;
+    -webkit-text-stroke:1.5px rgba(239,232,214,.5);padding:0 8px;}
+  h1 .strike::after{content:"";position:absolute;left:0;right:0;top:50%;height:7px;
+    background:var(--red);transform:rotate(-2deg);}
+  h1 .hl{background:var(--amber);color:var(--inkbg);padding:0 10px;
+    box-shadow:5px 5px 0 var(--red);display:inline-block;transform:rotate(1deg);}
+  .sub{margin-top:12px;font-size:20px;font-weight:700;color:var(--dim);}
+  .sub em{font-style:normal;color:var(--amber);}
+  .seven{font-family:'IBM Plex Mono',monospace;font-weight:700;font-size:225px;line-height:.85;
+    color:transparent;-webkit-text-stroke:2.5px var(--red);text-align:right;
+    transform:rotate(-4deg) translateY(-14px);}
+  .seven span{-webkit-text-stroke:2.5px var(--amber);font-size:58px;display:block;margin-top:8px;}
+  .grid{flex:1 1 auto;min-height:0;display:grid;grid-template-columns:1fr 1fr;
+    grid-auto-rows:1fr;gap:12px 18px;margin-top:24px;}
+  .card{border:2px solid rgba(239,232,214,.85);background:rgba(239,232,214,.05);
+    display:flex;align-items:center;gap:14px;padding:0 18px;min-height:64px;}
+  .n{font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:700;color:var(--inkbg);
+    background:var(--paper);width:40px;height:40px;display:flex;align-items:center;justify-content:center;flex:0 0 auto;
+    box-shadow:3px 3px 0 var(--red);}
+  .card:nth-child(even) .n{box-shadow:3px 3px 0 var(--amber);}
+  .info{flex:1;min-width:0;}
+  .d{font-family:'IBM Plex Mono',monospace;font-size:19px;font-weight:700;letter-spacing:-.02em;}
+  .t{font-size:13.5px;font-weight:700;color:var(--dim);margin-top:2px;white-space:nowrap;}
+  .t i{font-style:normal;color:var(--amber);}
+  .plus{font-family:'IBM Plex Mono',monospace;font-size:19px;color:var(--red);font-weight:700;}
+  .foot{flex:0 0 auto;margin-top:22px;display:flex;justify-content:space-between;align-items:center;
+    border-top:1.5px dashed rgba(239,232,214,.3);padding-top:16px;}
+  .foot .k{display:flex;gap:9px;flex-wrap:wrap;}
+  .foot .tag{border:1.5px solid rgba(239,232,214,.5);border-radius:999px;padding:4px 13px;
+    font-size:13px;font-weight:900;color:var(--dim);}
+  .save{background:var(--red);color:#FFF6E6;font-size:19px;font-weight:900;letter-spacing:.05em;
+    padding:11px 20px;box-shadow:5px 5px 0 var(--paper);}
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="meta mono">
+    <div>{{META_L}}</div>
+    <div>{{META_R}}</div>
+  </div>
+  <div class="head">
+    <div>
+      <h1>{{TITLE}}</h1>
+      <div class="sub">{{SUB}}</div>
+    </div>
+    <div class="seven">{{WATERMARK}}<span>{{WS}}</span></div>
+  </div>
+  <div class="grid">{{CARDS}}</div>
+  <div class="foot">
+    <div class="k">{{TAGS}}</div>
+    <div class="save">{{SAVE}}</div>
+  </div>
+</div>
+</body>
+</html>

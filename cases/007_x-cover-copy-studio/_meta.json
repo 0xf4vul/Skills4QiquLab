@@ -1,0 +1,69 @@
+{
+  "name": "x-cover-copy-studio",
+  "display_name": "X 推文封面 + 文案变体工坊",
+  "display_name_en": "X Cover & Copy Studio",
+  "version": "1.1.0",
+  "license": "Commercial outputs / source not for verbatim resale (LICENSE.md)",
+  "agent_created": true,
+  "derived_from": "2026-09-22 会话实战：7 张参考海报解构 → 双封面出图 → 文案变体，后封装为独立工程（L1-L5+幂等测试通过）",
+  "tags": [
+    "图像",
+    "海报",
+    "X.com",
+    "twitter",
+    "封面",
+    "推广",
+    "文案变体",
+    "playwright",
+    "poster"
+  ],
+  "entry": {
+    "skill": "SKILL.md",
+    "scripts": [
+      "scripts/render.py",
+      "scripts/qa_render.py"
+    ],
+    "references": [
+      "references/design-language.md",
+      "references/copy-formulas.md",
+      "references/fit-guide.md"
+    ],
+    "examples": [
+      "examples/case-pinterest-tools/payload.paper.json",
+      "examples/case-pinterest-tools/payload.dark.json"
+    ]
+  },
+  "runtime": {
+    "python": ">=3.8",
+    "deps": [
+      "pillow",
+      "playwright CLI + chromium"
+    ],
+    "font": "Noto Sans SC 900 / IBM Plex Mono / Noto Color Emoji（Google Fonts，emoji 族名必须显式声明）",
+    "verify": "python3 scripts/render.py examples/case-pinterest-tools/payload.paper.json /tmp/sk"
+  },
+  "hard_constraints": [
+    "paper 版式 ≤7 行、dark ≤7+1 卡（超限 render.py 必须 rc≠0 并给出拆分/换版式建议，禁止静默裁切）",
+    "渲染前 webfont 等待 ≥7s，否则标题可能回退细体",
+    "出图后强制质检：行数/footer 裁切/遮挡/tofu/字体权重，未 PASS 不得交付",
+    "域名/数量/功能事实不得改写；禁用广告法绝对化用语",
+    "包内禁止绝对路径，解压即用"
+  ],
+  "publish_ratios": {
+    "X 横幅封面": "2.41:1（4000x1660）",
+    "X/公众号安全比": "16:9（3200x1800）",
+    "逻辑画布": "2000x830 / 1600x900（body zoom:2 出 2x）"
+  },
+  "default_palette": {
+    "ink": "#141210",
+    "paper": "#EFE8D6",
+    "red": "#C8321E",
+    "amber": "#E8B830",
+    "dark_red": "#E04428"
+  },
+  "commercial": {
+    "commercial_use": true,
+    "redistribution": "仅同仓库内嵌入/链接; 独立打包源码不得转卖",
+    "attribution_required": false
+  }
+}

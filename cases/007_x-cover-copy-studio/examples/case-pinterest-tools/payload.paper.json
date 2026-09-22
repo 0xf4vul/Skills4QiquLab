@@ -1,0 +1,26 @@
+{
+  "theme": "paper",
+  "meta_l": "🍟 DESIGN-INSPIRATION / 工具情报站 · 07 SITES",
+  "meta_r": "2026 EDITION — X.COM POSTER",
+  "kick": "2026 年了 ⚡ <b>PINTEREST ❌</b>",
+  "title_html": "还在用<span class=\"pin\">Pinterest</span><br>找设计灵感？",
+  "take_html": "这 <em>7</em> 个工具，将取而代之",
+  "hand": "👇",
+  "specs": ["500+ 网站设计提示词", "100+ 3D 场景库", "100+ 交互式渐变", "300+ 动态背景版块"],
+  "corner": "EVERYTHING IS PROMPT-DRIVEN →",
+  "rows": [
+    {"n": "01", "dom": "motionsites.ai", "desc_html": "500+ 网站设计 <em>prompt</em> 库"},
+    {"n": "02", "dom": "cta.gallery", "desc_html": "真正吸引点击的 <em>CTA</em> 设计"},
+    {"n": "03", "dom": "loadmo.re", "desc_html": "风格大胆的 <em>移动端</em> 站点库"},
+    {"n": "04", "dom": "60fps.design", "desc_html": "高级感 <em>微动效</em> 与交互细节"},
+    {"n": "05", "dom": "recent.design", "desc_html": "<em>每日精选</em> 最新发布佳作"},
+    {"n": "06", "dom": "posts.design", "desc_html": "最佳 <em>社媒帖子</em> 设计合集"},
+    {"n": "07", "dom": "navbar.gallery", "desc_html": "<em>导航栏</em> 设计范式图鉴"}
+  ],
+  "tags": [
+    {"t": "提示词驱动"}, {"t": "3D 场景"}, {"t": "交互渐变"},
+    {"t": "CTA", "hot": true}, {"t": "移动端"}, {"t": "微动效"}, {"t": "导航栏"}
+  ],
+  "save": "记得先收藏，以免遗忘 🧷",
+  "save_en": "SAVE FIRST"
+}

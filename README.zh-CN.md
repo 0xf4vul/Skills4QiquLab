@@ -25,6 +25,7 @@
 
 ## 新增 Skill
 
+- **NEW** [X Cover & Copy Studio · 推文封面+文案变体](skills/x-cover-copy-studio.md)（[Case 007](cases/007_x-cover-copy-studio/)）— 一条清单体推文产出双比例投放级封面 + 近似风格变体；7 行硬上限 + 出图强制质检，杜绝静默裁切。
 - **NEW** [Textless Backdrop · 无字底图叠字](skills/imagegen-textless-composite.md)（[Case 006](cases/006_imagegen-textless-composite/)） — 让图像模型出无字底图，再用 Pillow 精确叠加中文标题与关键数字，数字 100% 准确、字体永不崩。
 - **NEW** [Pencil Sketch Art · 铅笔素描手绘图](skills/pencil-sketch-art.md)（[Case 004](cases/004_pencil-sketch-art/)） — 把任意主题或抽象概念，生成一张石墨铅笔素描手绘插画，配 prompt 拼装与墨量裁切脚本。
 - **NEW** [Golden Quote Miner · 金句提炼](skills/golden-quote-miner.md)（[Case 005](cases/005_golden-quote-miner/)） — 把长内容提炼为 5-12 句能脱离原文单独活下来的句子，四层漏斗 + 八型句式骨架。
@@ -74,6 +75,15 @@
 <a href="docs/index.html"><strong>查看交互展示页 →</strong></a>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/007_x-cover-copy-studio/"><img src="cases/007_x-cover-copy-studio/assets/svg/case-logo.svg" alt="X 推文封面 + 文案变体" width="88%"></a>
+<br><strong>X 推文封面 + 文案变体</strong><br>
+一条清单体推文 → 两张投放级 X 封面（2.41:1 / 16:9）+ 一条近似风格变体。硬上限拦截 + 强制质检回路。
+<br><a href="cases/007_x-cover-copy-studio/">Case</a> · <a href="skills/x-cover-copy-studio.md">Skill</a>
+</td>
+<td width="50%" valign="top" align="center"></td>
+</tr>
 </table>
 
 ## Skill 入口
@@ -91,6 +101,7 @@
 | ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | 把主题或抽象概念转为石墨铅笔素描手绘插画 |
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | 把长内容提炼为能脱离原文独立传播的金句 |
 | 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | 让图像模型出无字底图，再用 Pillow 精确叠加中文与大字 |
+| 📰 | [X Cover & Copy Studio](skills/x-cover-copy-studio.md) | 一条清单体推文 → 双比例 X 投放封面 + 近似风格文案变体 |
 
 → [完整 Skill 索引](skills.md)
 
@@ -115,6 +126,7 @@
 | Pencil Sketch Art | 把主题或抽象概念转成一张读起来像手绘的素描 | 命名主体 → 选画幅 → 选笔触 → 拼装 prompt → 生成 → 墨量裁切 → 自检 | 手绘感 / 纸张色调 / 主体清晰度 / 标题区留白 |
 | Golden Quote Miner | 提炼能脱离原文独立传播的句子 | 候选扫描 → 密度过滤 → 张力打分 → 脱离测试 → 人工扫句 | 信息密度 / 情绪张力 / 结构节奏 / 脱离度 / 句式覆盖 |
 | Textless Backdrop | 图像模型出无字底图，再用 Pillow 精确叠加中文与大字 | 定色板 → 出无字底图 → 去水印 → 叠字 → 校验 | 底图无字 / 数字准确 / 字体不崩 / 色板锚定 / 不溢出 |
+| X Cover & Copy Studio | Listy tweet → poster pair + variant copy, zero silent clipping | Fit-gate → deconstruct refs → payload → render(2x) → crop QA loop → deliver | Row completeness / footer / occlusion / tofu / font weight / fact fidelity / ad-law |
 
 需要完整实战流程时进入 [cases/](cases/)；需要创建新 Skill 时，从 [Skill Builder](skills/skill-builder.md) 与 [templates/skill-template.md](templates/skill-template.md) 开始。
 

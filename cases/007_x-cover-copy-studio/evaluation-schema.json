@@ -1,0 +1,90 @@
+{
+  "case": "007",
+  "version": "1.1.0",
+  "type": "x-cover-copy-studio",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {
+      "id": "row_completeness",
+      "label": "All rows/cards present",
+      "weight": 13,
+      "checks": [
+        "row count"
+      ]
+    },
+    {
+      "id": "footer_unclipped",
+      "label": "Footer & CTA not cut off",
+      "weight": 13,
+      "checks": [
+        "footer",
+        "bottom margin"
+      ]
+    },
+    {
+      "id": "no_occlusion",
+      "label": "No element overlap",
+      "weight": 12,
+      "checks": [
+        "banner vs rows",
+        "occlusion"
+      ]
+    },
+    {
+      "id": "no_tofu_emoji",
+      "label": "No tofu, emoji in color",
+      "weight": 12,
+      "checks": [
+        "emoji",
+        "glyph"
+      ]
+    },
+    {
+      "id": "display_weight",
+      "label": "Headline ultra-bold (900)",
+      "weight": 12,
+      "checks": [
+        "webfont loaded",
+        "not thin fallback"
+      ]
+    },
+    {
+      "id": "token_residue",
+      "label": "No {{TOKEN}} residue",
+      "weight": 12,
+      "checks": [
+        "{{"
+      ]
+    },
+    {
+      "id": "factual_fidelity",
+      "label": "Poster facts match tweet",
+      "weight": 13,
+      "checks": [
+        "domain",
+        "count",
+        "URL"
+      ]
+    },
+    {
+      "id": "ad_law_redlines",
+      "label": "No absolute claims",
+      "weight": 13,
+      "checks": [
+        "最",
+        "第一",
+        "唯一"
+      ]
+    }
+  ],
+  "failure_modes": [
+    "rows overflow .main and silently clip",
+    "footer pushed off canvas",
+    "webfont race to thin type",
+    "emoji tofu on Linux",
+    "factual drift in condensed value lines",
+    "absolute-term copywriting risk"
+  ],
+  "repair": "Fix layout budget in SKILL.md §6 (fixed .main height + row*54 fit), raise canvas before shrinking, hard-fail beyond the 7/8 contract, and always run the qa_render crop loop with --high-res vision checks before delivery."
+}
