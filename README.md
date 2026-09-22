@@ -9,8 +9,8 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
   <a href="https://buymeacoffee.com/virsmsorgv"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
@@ -29,6 +29,7 @@ No standalone public group is currently listed. Use [Issues](https://github.com/
 
 ## New Skills
 
+- **NEW** [Textless Backdrop](skills/imagegen-textless-composite.md) ([Case 006](cases/006_imagegen-textless-composite/)) — generate a wordless backdrop with an image model, then overlay Chinese headlines and key numbers with Pillow for pixel-perfect accuracy.
 - **NEW** [Pencil Sketch Art](skills/pencil-sketch-art.md) ([Case 004](cases/004_pencil-sketch-art/)) — turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
 - **NEW** [Golden Quote Miner](skills/golden-quote-miner.md) ([Case 005](cases/005_golden-quote-miner/)) — turn long content into 5-12 sentences that survive on their own, via a four-stage funnel and eight sentence skeletons.
 - [Video Prompt Compression](skills/video-prompt-compression.md) — compress video prompts while preserving action order, temporal relationships, camera behavior, and continuity.
@@ -66,6 +67,17 @@ Turn long content into 5-12 sentences that survive on their own, via a four-stag
 <br><a href="cases/005_golden-quote-miner/">Case</a> · <a href="skills/golden-quote-miner.md">Skill</a>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/006_imagegen-textless-composite/"><img src="cases/006_imagegen-textless-composite/assets/svg/case-logo.svg" alt="Textless Backdrop" width="88%"></a>
+<br><strong>Textless Backdrop</strong><br>
+Generate a wordless backdrop with an image model, then overlay Chinese headlines and key numbers with Pillow for pixel-perfect accuracy.
+<br><a href="cases/006_imagegen-textless-composite/">Case</a> · <a href="skills/imagegen-textless-composite.md">Skill</a>
+</td>
+<td width="50%" valign="top" align="center">
+<a href="docs/index.html"><strong>View the interactive Showcase →</strong></a>
+</td>
+</tr>
 </table>
 
 ## Skill Entry
@@ -82,6 +94,7 @@ Turn long content into 5-12 sentences that survive on their own, via a four-stag
 | 🛠️ | [Skill Builder](skills/skill-builder.md) | Turn repeated work into reusable, testable Skills |
 | ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | Turn a subject or abstract concept into a graphite pencil sketch |
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | Distill long content into lines that survive on their own |
+| 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | Generate a wordless backdrop, then overlay Chinese headlines and numbers with Pillow |
 
 → [Full Skill Index](skills.md)
 
@@ -105,6 +118,7 @@ Every Skill should expose the same practical contract:
 | Skill Builder | Turn repeated work into maintainable Skills | Trigger → boundaries → workflow → contract → tests → iterate | Consistency / transferability / inspectability |
 | Pencil Sketch Art | Turn a subject or abstract concept into a sketch that reads as hand-drawn | Name subject → pick aspect → pick stroke preset → assemble prompt → generate → crop by ink density → self-check | Hand-drawn feel / paper tone / subject clarity / safe title area |
 | Golden Quote Miner | Distill lines that survive detached from the source | Candidate scan → density filter → tension scoring → detachment test → manual sweep | Density / tension / rhythm / detachment / skeleton coverage |
+| Textless Backdrop | Generate a wordless base, then overlay type with Pillow | Lock palette → generate wordless base → strip watermark → overlay type → verify | Wordless base / number accuracy / font integrity / palette anchoring / no overflow |
 
 For a complete applied workflow, go to [cases/](cases/). For creating a new Skill, start with [Skill Builder](skills/skill-builder.md) and [templates/skill-template.md](templates/skill-template.md).
 

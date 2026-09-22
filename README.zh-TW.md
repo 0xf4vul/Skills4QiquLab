@@ -9,8 +9,8 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-10-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-4-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
   <a href="https://buymeacoffee.com/virsmsorgv"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
@@ -25,6 +25,7 @@
 
 ## 新增 Skill
 
+- **NEW** [Textless Backdrop · 無字底圖疊字](skills/imagegen-textless-composite.md)（[Case 006](cases/006_imagegen-textless-composite/)） — 讓圖像模型出無字底圖，再用 Pillow 精確疊加中文標題與關鍵數字，數字 100% 準確、字體永不崩。
 - **NEW** [Pencil Sketch Art · 鉛筆素描手繪圖](skills/pencil-sketch-art.md)（[Case 004](cases/004_pencil-sketch-art/)） — 把任意主題或抽象概念，生成一張石墨鉛筆素描手繪插畫，配 prompt 組裝與墨量裁切腳本。
 - **NEW** [Golden Quote Miner · 金句提煉](skills/golden-quote-miner.md)（[Case 005](cases/005_golden-quote-miner/)） — 把長內容提煉為 5-12 句能脫離原文單獨活下來的句子，四層漏斗 + 八型句式骨架。
 - [Video Prompt Compression](skills/video-prompt-compression.md) — 壓縮影片 Prompt，同時保護動作順序、時間關係、鏡頭行為與主體連續性。
@@ -62,6 +63,17 @@
 <br><a href="cases/005_golden-quote-miner/">Case</a> · <a href="skills/golden-quote-miner.md">Skill</a>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top" align="center">
+<a href="cases/006_imagegen-textless-composite/"><img src="cases/006_imagegen-textless-composite/assets/svg/case-logo.svg" alt="無字底圖疊字" width="88%"></a>
+<br><strong>無字底圖 + 精確疊字</strong><br>
+讓圖像模型出無字底圖，再用 Pillow 精確疊加中文標題與關鍵數字，數字 100% 準確、字體永不崩。
+<br><a href="cases/006_imagegen-textless-composite/">Case</a> · <a href="skills/imagegen-textless-composite.md">Skill</a>
+</td>
+<td width="50%" valign="top" align="center">
+<a href="docs/index.html"><strong>查看互動展示頁 →</strong></a>
+</td>
+</tr>
 </table>
 
 ## Skill 入口
@@ -78,6 +90,7 @@
 | 🛠️ | [Skill Builder](skills/skill-builder.md) | 將重複工作沉澱為可複用、可測試的 Skill |
 | ✏️ | [Pencil Sketch Art](skills/pencil-sketch-art.md) | 把主題或抽象概念轉為石墨鉛筆素描手繪插畫 |
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | 把長內容提煉為能脫離原文獨立傳播的金句 |
+| 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | 讓圖像模型出無字底圖，再用 Pillow 精確疊加中文與大字 |
 
 → [完整 Skill 索引](skills.md)
 
@@ -101,6 +114,7 @@
 | Skill Builder | 將重複工作沉澱為可維護 Skill | 觸發 → 邊界 → Workflow → 輸出契約 → 測試 → 迭代 | 一致性 / 可遷移 / 可檢查 |
 | Pencil Sketch Art | 把主題或抽象概念轉成一張讀起來像手繪的素描 | 命名主體 → 選畫幅 → 選筆觸 → 組裝 prompt → 生成 → 墨量裁切 → 自檢 | 手繪感 / 紙張色調 / 主體清晰度 / 標題區留白 |
 | Golden Quote Miner | 提煉能脫離原文獨立傳播的句子 | 候選掃描 → 密度過濾 → 張力打分 → 脫離測試 → 人工掃句 | 資訊密度 / 情緒張力 / 結構節奏 / 脫離度 / 句式覆蓋 |
+| Textless Backdrop | 圖像模型出無字底圖，再用 Pillow 精確疊加中文與大字 | 定色板 → 出無字底圖 → 去水印 → 疊字 → 校驗 | 底圖無字 / 數字準確 / 字體不崩 / 色板錨定 / 不溢出 |
 
 需要完整實戰流程時進入 [cases/](cases/)；需要建立新 Skill 時，從 [Skill Builder](skills/skill-builder.md) 與 [templates/skill-template.md](templates/skill-template.md) 開始。
 
