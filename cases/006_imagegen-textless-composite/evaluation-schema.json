@@ -1,0 +1,28 @@
+{
+  "case": "006",
+  "version": "1.1.0",
+  "type": "imagegen-textless-composite",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"no_baked_text","label":"Backdrop is wordless","weight":13,"checks":["no text","no letters","no words","no numbers","no watermark","no logo"]},
+    {"id":"accurate_numbers","label":"Overlaid numbers match source","weight":13,"checks":["number","digit","source","verify"]},
+    {"id":"font_ok","label":"Real font, no tofu","weight":12,"checks":["font","tofu","glyph","CJK"]},
+    {"id":"palette_anchored","label":"Colors match palette","weight":12,"checks":["palette","hex","#0E1A2E","#E8A33D","accent"]},
+    {"id":"watermark_removed","label":"No watermark visible","weight":12,"checks":["watermark","crop","patch","clean"]},
+    {"id":"contrast","label":"Text contrast sufficient","weight":12,"checks":["contrast","readable","dark band","legible"]},
+    {"id":"no_overflow","label":"Text within canvas","weight":13,"checks":["overflow","fit","margin","within"]},
+    {"id":"set_consistent","label":"Consistent set styling","weight":13,"checks":["consistent","same palette","same font","same metaphor"]}
+  ],
+  "failure_modes": [
+    "Garbled baked-in text from model",
+    "Wrong number in card",
+    "Missing or tofu glyphs",
+    "Palette drift between base and overlay",
+    "Watermark still visible",
+    "Low-contrast text",
+    "Text overflows canvas",
+    "Inconsistent set styling"
+  ],
+  "repair": "Move all text to layout overlay, never back into the prompt. Verify every number against the source. Draw alpha elements on an RGBA layer then alpha_composite. Use solid color + alpha mask for darkening bands, never a dark-to-white gradient."
+}

@@ -1,0 +1,93 @@
+{
+  "canvas": {
+    "w": 1080,
+    "h": 1440,
+    "margin": 72,
+    "auto_flow": true
+  },
+  "bg": {
+    "type": "gradient",
+    "c1": "#0E1A2E",
+    "c2": "#070D18",
+    "grid": true,
+    "glow": {
+      "box": [
+        120,
+        780,
+        980,
+        1400
+      ],
+      "color": "#E8A33D",
+      "alpha": 30
+    }
+  },
+  "blocks": [
+    {
+      "kind": "pill",
+      "x": 72,
+      "y": 150,
+      "text": "AI 实测 · 第 5 期",
+      "size": 30,
+      "gap_after": 60
+    },
+    {
+      "kind": "title",
+      "x": 72,
+      "y": 260,
+      "size": 92,
+      "wrap": true,
+      "max_lines": 2,
+      "gap": 1.18,
+      "gap_after": 72,
+      "lines": [
+        [
+          "600B MoE，只激活 27B",
+          "ink"
+        ],
+        [
+          "100 万上下文，真的上桌了",
+          "accent"
+        ]
+      ]
+    },
+    {
+      "kind": "number",
+      "x": 72,
+      "y": 660,
+      "text": "$0.71",
+      "size": 116,
+      "color": "accent",
+      "gap_after": 26
+    },
+    {
+      "kind": "text",
+      "x": 72,
+      "y": 830,
+      "size": 31,
+      "color": "ink",
+      "gap_after": 72,
+      "text": "单任务平均成本，是 Opus 5 的 1/8"
+    },
+    {
+      "kind": "list",
+      "x": 72,
+      "y": 930,
+      "size": 30,
+      "gap": 64,
+      "bullet": "accent",
+      "items": [
+        "3D 火山喷发：一次直出",
+        "网页复刻 Windows：18 个应用",
+        "《牛来》三件套：PPT / Excel / Word"
+      ]
+    },
+    {
+      "kind": "footer",
+      "x": 72,
+      "y": 1328,
+      "size": 27,
+      "pin": true,
+      "text": "数据来源：官方技术报告 · 10 月 15 日权重开源"
+    }
+  ]
+}
