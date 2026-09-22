@@ -3,7 +3,7 @@ name: golden-quote-miner
 description: "从文章、稿件、访谈、书籍、报告、视频文案、聊天记录中提炼可直接截图传播的金句（golden quotes）。用四层漏斗筛选 + 八种句式骨架做改写打磨，输出带类型/情绪/推荐位置/适用场景标注的金句清单。同时支持反向能力：为指定主题原创金句。当用户说「提炼金句」「提取金句」「摘几句能传播的话」「找可截图的句子」「给这段文案加金句」「写几句金句」「quote extraction」「pull quotes」时使用。硬性排除鸡汤、空话、名人名言体堆砌、AI 排比腔。"
 display_name: "金句提炼"
 display_name_en: "Golden Quote Miner"
-version: 1.0.0
+version: 1.1.0
 agent_created: true
 ---
 

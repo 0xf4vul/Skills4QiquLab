@@ -2,14 +2,24 @@
   "name": "golden-quote-miner",
   "display_name": "金句提炼",
   "display_name_en": "Golden Quote Miner",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "agent_created": true,
   "derived_from": "infographic-maker（观点蒸馏层提纯）",
-  "tags": ["text", "writing", "quote", "金句", "文案", "提炼", "社媒"],
+  "tags": [
+    "text",
+    "writing",
+    "quote",
+    "金句",
+    "文案",
+    "提炼",
+    "社媒"
+  ],
   "entry": {
     "skill": "SKILL.md",
-    "scripts": ["scripts/scan.py"],
+    "scripts": [
+      "scripts/scan.py"
+    ],
     "references": [
       "references/quote-patterns.md",
       "references/scoring-rubric.md",

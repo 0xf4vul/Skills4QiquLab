@@ -1,5 +1,11 @@
 # Changelog · golden-quote-miner
 
+## 1.1.0 — 2026-09-22
+
+### 新增
+- 新增 `scripts/selftest.py`（示例长文跑通 / JSON 合法 / 边界输入不崩 / stdin 管道，共 11 项断言）与 `requirements.txt`（零第三方依赖，纯标准库）
+- 与 skills-export 商业化打包对齐版本号（功能脚本 `scan.py` 无改动）
+
 ## 1.0.0 — 2026-09-22
 
 ### 新增

@@ -2,14 +2,27 @@
   "name": "pencil-sketch-art",
   "display_name": "铅笔素描手绘图",
   "display_name_en": "Pencil Sketch Art",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "agent_created": true,
   "derived_from": "infographic-maker（手绘风格层提纯）",
-  "tags": ["image", "illustration", "sketch", "pencil", "手绘", "配图", "金句卡", "概念隐喻", "公众号封面"],
+  "tags": [
+    "image",
+    "illustration",
+    "sketch",
+    "pencil",
+    "手绘",
+    "配图",
+    "金句卡",
+    "概念隐喻",
+    "公众号封面"
+  ],
   "entry": {
     "skill": "SKILL.md",
-    "scripts": ["scripts/build_prompt.py", "scripts/crop.py"],
+    "scripts": [
+      "scripts/build_prompt.py",
+      "scripts/crop.py"
+    ],
     "references": [
       "references/prompt-library.md",
       "references/style-tokens.md",
@@ -24,7 +37,9 @@
   },
   "runtime": {
     "python": ">=3.8",
-    "deps": ["pillow", "numpy"],
+    "deps": [
+      "pillow"
+    ],
     "venv": "~/.workbuddy/binaries/python/envs/default"
   },
   "hard_constraints": [

@@ -22,39 +22,62 @@
 
 import argparse
 import os
+import statistics
 import sys
 
 try:
     from PIL import Image
-    import numpy as np
 except ImportError:
-    sys.exit("需要 Pillow 与 numpy：pip install pillow numpy")
+    sys.exit("需要 Pillow：pip install pillow")
 
 
 def ink_profile(path):
+    """
+    返回 (W, H, row_ink, col_ink, polarity)。
+
+    用 Pillow 的 BOX 缩放求「整行/整列平均」——等价于 numpy 的 mean(axis)，
+    但省掉 numpy 依赖，让本技能只需要 Pillow 一个包。
+
+    极性自动判定：铅笔画是「浅纸底 + 深墨迹」，但深色底图（如深蓝海报）
+    必须反过来算。这里用整图亮度中位数判断：亮底取 255-L（越暗越有墨），
+    暗底取 L（越亮越有内容）。否则深底图会被判成「整幅全是主体」。
+    """
     im = Image.open(path).convert("L")
-    a = np.asarray(im, dtype=np.float32)
-    ink = (255.0 - a) / 255.0
-    return im.size[0], im.size[1], ink.mean(axis=1), ink.mean(axis=0)
+    W, H = im.size
+    row_img = im.resize((1, H), Image.BOX)
+    col_img = im.resize((W, 1), Image.BOX)
+
+    lum = [row_img.getpixel((0, y)) for y in range(H)]
+    dark_bg = statistics.median(lum) < 128.0
+
+    if dark_bg:
+        row = [row_img.getpixel((0, y)) / 255.0 for y in range(H)]
+        col = [col_img.getpixel((x, 0)) / 255.0 for x in range(W)]
+        polarity = "dark-bg (明亮处视为内容)"
+    else:
+        row = [(255.0 - row_img.getpixel((0, y))) / 255.0 for y in range(H)]
+        col = [(255.0 - col_img.getpixel((x, 0))) / 255.0 for x in range(W)]
+        polarity = "light-bg (暗处视为内容)"
+    return W, H, row, col, polarity
 
 
 def content_span(profile, k=0.30):
     """用背景中位数做基准，避免把纸纹误判成墨迹。"""
-    bg = float(np.median(profile))
-    mx = float(profile.max())
+    bg = statistics.median(profile)
+    mx = max(profile)
     thr = bg + (mx - bg) * k
-    idx = np.where(profile > thr)[0]
-    if len(idx) == 0:
+    idx = [i for i, v in enumerate(profile) if v > thr]
+    if not idx:
         return 0, len(profile) - 1, bg, mx
-    return int(idx[0]), int(idx[-1]), bg, mx
+    return idx[0], idx[-1], bg, mx
 
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--in", dest="inp", required=True)
-    ap.add_argument("--ratio", type=float, required=True, help="目标 宽/高")
-    ap.add_argument("--out", default="")
-    ap.add_argument("--width", type=int, default=0)
+    ap.add_argument("--in", "-i", dest="inp", required=True, help="源图路径")
+    ap.add_argument("--ratio", "-r", type=float, required=True, help="目标 宽/高")
+    ap.add_argument("--out", "-o", default="", help="输出路径（--dry-run 时可省）")
+    ap.add_argument("--width", "-w", type=int, default=0, help="输出宽度，等比缩放")
     ap.add_argument("--bottom-safe", type=float, default=0.0)
     ap.add_argument("--top-safe", type=float, default=0.0, help="顶部必须保留的空白比例，用于顶部叠加标题")
     ap.add_argument("--top-pad", type=int, default=40)
@@ -64,7 +87,7 @@ def main():
     if not os.path.exists(args.inp):
         sys.exit("找不到文件: %s" % args.inp)
 
-    W, H, row, col = ink_profile(args.inp)
+    W, H, row, col, polarity = ink_profile(args.inp)
     top, bot, bg, mx = content_span(row)
 
     # 目标框：在原始尺寸内取满足比例的最大框
@@ -98,6 +121,7 @@ def main():
     left = max(0, min(cx - tw // 2, W - tw))
 
     print("源图 %dx%d  目标比例 %.2f  目标框 %dx%d" % (W, H, args.ratio, tw, th))
+    print("极性: %s" % polarity)
     print("墨量: bg=%.3f max=%.3f  主体纵向 %d-%d (高 %d)" % (bg, mx, top, bot, content_h))
     print("决策: 裁切窗口 x=%d..%d  y=%d..%d  顶部留白 %dpx / 底部留白 %dpx" % (
         left, left + tw, start, start + th, max(0, top - start), max(0, (start + th) - bot)))
@@ -112,7 +136,7 @@ def main():
         step = max(H // 12, 1)
         print("--- 纵向墨量剖面 ---")
         for i in range(0, H, step):
-            seg = float(row[i:i + step].mean())
+            seg = sum(row[i:i + step]) / max(1, len(row[i:i + step]))
             bar = "#" * int((seg - bg) / max(mx - bg, 1e-6) * 40)
             print("  %4d %-40s %.3f" % (i, bar, seg))
         return

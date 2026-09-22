@@ -1,5 +1,13 @@
 # Changelog · pencil-sketch-art
 
+## 1.2.0 — 2026-09-22
+
+### 修正
+- `scripts/crop.py` 移除 numpy 依赖：改用 Pillow `Image.resize(..., Image.BOX)` 求逐行/逐列平均墨量，等价 numpy 的 `mean(axis)` 但只需 Pillow 一个包
+- 墨量极性自动判定：用整图亮度中位数判断亮底/暗底，深底图（如深蓝海报）不会被判成「整幅全是主体」
+- 新增 `scripts/selftest.py`（环境/裁切 14 项断言）与 `requirements.txt`（pillow>=9.0）
+- `_meta.json` 运行依赖移除 numpy，仅留 pillow
+
 ## 1.0.0 — 2026-09-22
 
 ### 新增

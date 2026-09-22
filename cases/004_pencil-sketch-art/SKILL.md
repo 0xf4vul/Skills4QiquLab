@@ -3,7 +3,7 @@ name: pencil-sketch-art
 description: "把任意主题、文字描述、概念或参考图，生成一张铅笔素描手绘风插画/配图。石墨铅笔排线、纸张纹理、手绘抖动线条、明确明暗调子，单色为主、可淡彩点缀。用于文章配图、金句卡底图、人物/物品/场景速写、概念隐喻图、封面与社媒配图。当用户说「画一张素描」「手绘配图」「铅笔风插画」「素描示意图」「pencil sketch」「sketch illustration」「pencil drawing」「给这段话配个手绘图」「画张手绘封面」时使用。硬性排除写实渲染、3D、油画、照片感、塑料质感。"
 display_name: "铅笔素描手绘图"
 display_name_en: "Pencil Sketch Art"
-version: 1.1.0
+version: 1.2.0
 agent_created: true
 ---
 
@@ -151,7 +151,7 @@ pencil-sketch-art/
 ```
 
 只有需要改预设数据（新增笔触、调整负面词块）时才动 `scripts/presets.json`，改完跑一次 `--list` 验证。
-`crop.py` 依赖 Pillow + numpy（已装在 `~/.workbuddy/binaries/python/envs/default`）。
+`crop.py` 依赖 Pillow（已装在 `~/.workbuddy/binaries/python/envs/default`）。
 
 ---
 
