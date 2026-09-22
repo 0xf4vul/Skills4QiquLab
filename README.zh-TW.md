@@ -72,7 +72,7 @@
 <br><a href="cases/006_imagegen-textless-composite/">Case</a> · <a href="skills/imagegen-textless-composite.md">Skill</a>
 </td>
 <td width="50%" valign="top" align="center">
-<a href="docs/index.html"><strong>查看互動展示頁 →</strong></a>
+<a href="docs/index.html"><strong>查看互動展示頁 →</strong></a><br><a href="https://0xf4vul.github.io/Skills4QiquLab/zh-tw/"><strong>線上展示站（GitHub Pages）↗</strong></a><br><a href="https://0xf4vul.github.io/#log"><strong>線上站點「迭代日誌」↗</strong></a>
 </td>
 </tr>
 <tr>

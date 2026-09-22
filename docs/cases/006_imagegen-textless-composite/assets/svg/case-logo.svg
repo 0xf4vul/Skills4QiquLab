@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1240 420" width="1240" height="420" role="img" aria-label="006 — Textless Backdrop + Precise Type Overlay">
+  <rect x="0" y="0" width="1240" height="420" rx="28" fill="#0E1A2E"/>
+  <!-- left: wordless image tile -->
+  <rect x="90" y="120" width="220" height="200" rx="18" fill="#13233d" stroke="#2A3A57" stroke-width="3"/>
+  <circle cx="300" cy="180" r="20" fill="#E8A33D"/>
+  <polygon points="112,300 206,212 262,266 318,214 358,300" fill="#243650"/>
+  <!-- prohibition: no baked text -->
+  <circle cx="200" cy="220" r="74" fill="none" stroke="#5CD6A6" stroke-width="10"/>
+  <line x1="148" y1="168" x2="252" y2="272" stroke="#5CD6A6" stroke-width="12" stroke-linecap="round"/>
+  <!-- right: precise type specimen -->
+  <text x="700" y="330" font-family="Georgia, 'Times New Roman', serif" font-size="260" font-weight="700" fill="#E8A33D">A</text>
+  <rect x="690" y="350" width="180" height="10" rx="5" fill="#5CD6A6"/>
+  <text x="900" y="200" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="700" fill="#F4F6FA">a</text>
+  <text x="900" y="320" font-family="Georgia, 'Times New Roman', serif" font-size="120" font-weight="700" fill="#96A8C6">g</text>
+</svg>

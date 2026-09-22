@@ -76,7 +76,7 @@ Generate a wordless backdrop with an image model, then overlay Chinese headlines
 <br><a href="cases/006_imagegen-textless-composite/">Case</a> · <a href="skills/imagegen-textless-composite.md">Skill</a>
 </td>
 <td width="50%" valign="top" align="center">
-<a href="docs/index.html"><strong>View the interactive Showcase →</strong></a>
+<a href="docs/index.html"><strong>View the interactive Showcase →</strong></a><br><a href="https://0xf4vul.github.io/Skills4QiquLab/"><strong>Live Showcase (GitHub Pages) ↗</strong></a><br><a href="https://0xf4vul.github.io/#log"><strong>Live iteration log on the site ↗</strong></a>
 </td>
 </tr>
 <tr>
