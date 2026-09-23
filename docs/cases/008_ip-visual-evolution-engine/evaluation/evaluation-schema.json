@@ -1,0 +1,23 @@
+{
+  "case": "008",
+  "version": "1.0.0",
+  "type": "ip-visual-evolution-engine",
+  "mode": "heuristic-local",
+  "threshold": 80,
+  "criteria": [
+    {"id":"identity_continuity","label":"Identity continuity","weight":25,"checks":["same subject","same face","same silhouette","signature features","body proportions"]},
+    {"id":"narrative_continuity","label":"Narrative continuity","weight":20,"checks":["continuous","one world","state transformation","not poster","not panels"]},
+    {"id":"entropy_gradient","label":"Entropy gradient","weight":20,"checks":["reduce","information density","negative space","minimal","presence"]},
+    {"id":"platform_adaptation","label":"Platform adaptation","weight":20,"checks":["reference","keep exactly","frame","character name","3:4"]},
+    {"id":"banner_readiness","label":"Banner readiness","weight":15,"checks":["1500","safe zone","avatar","crop","horizontal"]}
+  ],
+  "failure_modes": [
+    "Six frames become six unrelated posters",
+    "Panel / seam / numbered-caption look",
+    "Character drift (fur color, glasses, face changed)",
+    "Final frame overexposed (brightness mistaken for power)",
+    "3:4 cropped into square",
+    "Chinese title looks like a floating UI label"
+  ],
+  "repair": "Locate the specific broken frame, then perform a local repair (regenerate only that frame keeping face/silhouette/world identical) instead of redoing the whole series."
+}

@@ -9,8 +9,8 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-13-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-7-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
   <a href="https://buymeacoffee.com/qiqu.lab"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
@@ -29,6 +29,7 @@ No standalone public group is currently listed. Use [Issues](https://github.com/
 
 ## New Skills
 
+- **NEW** [IP Visual Evolution Engine · 个人 IP 视觉进化引擎](skills/ip-visual-evolution-engine.md) ([Case 008](cases/008_ip-visual-evolution-engine/)) — turn a person's identity into a continuously-evolving visual IP, then compress it into a six-frame Xiaohongshu narrative + a portable X.com Banner; four fully self-contained platform adapters (Seedream / GPT / Grok / Gemini).
 - **NEW** [X Cover & Copy Studio](skills/x-cover-copy-studio.md) ([Case 007](cases/007_x-cover-copy-studio/)) — one listy tweet in, two launch-ready ratio-locked posters + a variant copy line out, with hard row caps and a forced QA loop.
 - **NEW** [Textless Backdrop](skills/imagegen-textless-composite.md) ([Case 006](cases/006_imagegen-textless-composite/)) — generate a wordless backdrop with an image model, then overlay Chinese headlines and key numbers with Pillow for pixel-perfect accuracy.
 - **NEW** [Pencil Sketch Art](skills/pencil-sketch-art.md) ([Case 004](cases/004_pencil-sketch-art/)) — turn any subject or abstract concept into a graphite pencil sketch, with scripts for prompt assembly and ink-density cropping.
@@ -86,7 +87,12 @@ Generate a wordless backdrop with an image model, then overlay Chinese headlines
 Turn one listy tweet into two launch-ready X.com posters + a variant copy line. Hard row contracts, forced QA loop.
 <br><a href="cases/007_x-cover-copy-studio/">Case</a> · <a href="skills/x-cover-copy-studio.md">Skill</a>
 </td>
-<td width="50%" valign="top" align="center"></td>
+<td width="50%" valign="top" align="center">
+<a href="cases/008_ip-visual-evolution-engine/"><img src="cases/008_ip-visual-evolution-engine/assets/svg/case-logo.svg" alt="IP Visual Evolution Engine" width="88%"></a>
+<br><strong>IP Visual Evolution Engine</strong><br>
+Turn a person's identity into a continuously-evolving visual IP, then compress it into a six-frame Xiaohongshu narrative + a portable X.com Banner. Four self-contained platform adapters.
+<br><a href="cases/008_ip-visual-evolution-engine/">Case</a> · <a href="skills/ip-visual-evolution-engine.md">Skill</a>
+</td>
 </tr>
 </table>
 
@@ -106,6 +112,7 @@ Turn one listy tweet into two launch-ready X.com posters + a variant copy line. 
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | Distill long content into lines that survive on their own |
 | 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | Generate a wordless backdrop, then overlay Chinese headlines and numbers with Pillow |
 | 📰 | [X Cover & Copy Studio](skills/x-cover-copy-studio.md) | Turn a listy tweet into two X-launch posters plus a near-style variant |
+| 🐾 | [IP Visual Evolution Engine](skills/ip-visual-evolution-engine.md) | Turn identity into a continuous visual IP, then a six-frame Xiaohongshu narrative + X Banner |
 
 → [Full Skill Index](skills.md)
 
@@ -131,6 +138,7 @@ Every Skill should expose the same practical contract:
 | Golden Quote Miner | Distill lines that survive detached from the source | Candidate scan → density filter → tension scoring → detachment test → manual sweep | Density / tension / rhythm / detachment / skeleton coverage |
 | Textless Backdrop | Generate a wordless base, then overlay type with Pillow | Lock palette → generate wordless base → strip watermark → overlay type → verify | Wordless base / number accuracy / font integrity / palette anchoring / no overflow |
 | X Cover & Copy Studio | Listy tweet → poster pair + variant copy, zero silent clipping | Fit-gate → deconstruct refs → payload → render(2x) → crop QA loop → deliver | Row completeness / footer / occlusion / tofu / font weight / fact fidelity / ad-law |
+| IP Visual Evolution Engine | Turn identity into a continuously-evolving visual IP | Fill DNA → pick adapter → frame-by-frame generate → Banner adapt → evaluate | Identity continuity / narrative continuity / entropy gradient / platform adaptation / banner readiness |
 
 For a complete applied workflow, go to [cases/](cases/). For creating a new Skill, start with [Skill Builder](skills/skill-builder.md) and [templates/skill-template.md](templates/skill-template.md).
 

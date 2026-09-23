@@ -17,6 +17,7 @@
 | Golden Quote Miner | 把长内容提炼为可脱离原文独立传播的金句 | [skills/golden-quote-miner.md](skills/golden-quote-miner.md) |
 | Skill Builder | 把重复工作抽象为可测试、可迭代的 Skill | [skills/skill-builder.md](skills/skill-builder.md) |
 | X Cover & Copy Studio | 清单体推文 → X 双比例投放级封面 + 近似风格文案变体 | [skills/x-cover-copy-studio.md](skills/x-cover-copy-studio.md) |
+| IP Visual Evolution Engine | 把身份转译为可持续演化的连续视觉 IP，再压成六镜小红书叙事与 X Banner | [skills/ip-visual-evolution-engine.md](skills/ip-visual-evolution-engine.md) |
 | Textless Backdrop | 生成无字底图，再用 Pillow 精确叠加中文与大字 | [skills/imagegen-textless-composite.md](skills/imagegen-textless-composite.md) |
 
 ## Skill Cases
@@ -29,6 +30,7 @@
 | 005 | Golden Quote Miner | Active | [005_golden-quote-miner/](cases/005_golden-quote-miner/) |
 | 006 | Textless Backdrop | Active | [006_imagegen-textless-composite/](cases/006_imagegen-textless-composite/) |
 | 007 | X Cover & Copy Studio | Active | [007_x-cover-copy-studio/](cases/007_x-cover-copy-studio/) |
+| 008 | IP Visual Evolution Engine | Active | [008_ip-visual-evolution-engine/](cases/008_ip-visual-evolution-engine/) |
 
 ## Case 命名规则
 

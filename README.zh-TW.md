@@ -9,8 +9,8 @@
 <p>
   <img src="https://img.shields.io/github/stars/0xf4vul/Skills4QiquLab?style=flat-square&label=Stars">
   <img src="https://img.shields.io/github/forks/0xf4vul/Skills4QiquLab?style=flat-square&label=Forks">
-  <img src="https://img.shields.io/badge/Skills-11-4c9aff?style=flat-square">
-  <img src="https://img.shields.io/badge/Cases-5-7c5cff?style=flat-square">
+  <img src="https://img.shields.io/badge/Skills-13-4c9aff?style=flat-square">
+  <img src="https://img.shields.io/badge/Cases-7-7c5cff?style=flat-square">
   <img src="https://img.shields.io/github/license/0xf4vul/Skills4QiquLab?style=flat-square&label=License">
   <a href="https://buymeacoffee.com/qiqu.lab"><img src="https://img.shields.io/badge/Buy%20Me%20A%20Coffee-Qiqu.Lab-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black"></a>
 </p>
@@ -19,12 +19,17 @@
 
 </div>
 
+## 視覺展示
+
+**[打開 Qiqu.Lab 展示站](docs/index.html)** —— 以互動式「展示層」瀏覽 Cases 與 Skills。儲存庫始終是唯一事實來源；視覺畫廊是發現與二次創作層。
+
 ## 交流群
 
 目前未公開獨立交流群。討論、回饋與需求可透過 [Issues](https://github.com/0xf4vul/Skills4QiquLab/issues) 進行；貢獻程式碼、文件或 Skill 請使用 [Pull Requests](https://github.com/0xf4vul/Skills4QiquLab/pulls)。
 
 ## 新增 Skill
 
+- **NEW** [IP Visual Evolution Engine · 個人 IP 視覺進化引擎](skills/ip-visual-evolution-engine.md)（[Case 008](cases/008_ip-visual-evolution-engine/)）— 把身份轉譯為可持續演化的連續視覺 IP，再壓成六鏡小紅書敘事 + 可遷移的 X Banner；四平台獨立自包含適配器（Seedream / GPT / Grok / Gemini）。
 - **NEW** [X Cover & Copy Studio · 推文封面+文案變體](skills/x-cover-copy-studio.md)（[Case 007](cases/007_x-cover-copy-studio/)）— 一條清單式推文產出雙比例投放級封面 + 近似風格變體；7 行硬上限 + 出圖強制品檢，杜絕靜默裁切。
 - **NEW** [Textless Backdrop · 無字底圖疊字](skills/imagegen-textless-composite.md)（[Case 006](cases/006_imagegen-textless-composite/)） — 讓圖像模型出無字底圖，再用 Pillow 精確疊加中文標題與關鍵數字，數字 100% 準確、字體永不崩。
 - **NEW** [Pencil Sketch Art · 鉛筆素描手繪圖](skills/pencil-sketch-art.md)（[Case 004](cases/004_pencil-sketch-art/)） — 把任意主題或抽象概念，生成一張石墨鉛筆素描手繪插畫，配 prompt 組裝與墨量裁切腳本。
@@ -82,7 +87,12 @@
 一條清單式推文 → 兩張投放級 X 封面（2.41:1 / 16:9）+ 一條近似風格變體。硬上限攔截 + 強制品檢迴路。
 <br><a href="cases/007_x-cover-copy-studio/">Case</a> · <a href="skills/x-cover-copy-studio.md">Skill</a>
 </td>
-<td width="50%" valign="top" align="center"></td>
+<td width="50%" valign="top" align="center">
+<a href="cases/008_ip-visual-evolution-engine/"><img src="cases/008_ip-visual-evolution-engine/assets/svg/case-logo.svg" alt="個人 IP 視覺進化引擎" width="88%"></a>
+<br><strong>個人 IP 視覺進化引擎</strong><br>
+把身份轉譯為可持續演化的連續視覺 IP，再壓成六鏡小紅書敘事 + 可遷移的 X Banner；四平台自包含適配器。
+<br><a href="cases/008_ip-visual-evolution-engine/">Case</a> · <a href="skills/ip-visual-evolution-engine.md">Skill</a>
+</td>
 </tr>
 </table>
 
@@ -102,6 +112,7 @@
 | 💬 | [Golden Quote Miner](skills/golden-quote-miner.md) | 把長內容提煉為能脫離原文獨立傳播的金句 |
 | 🖼️ | [Textless Backdrop](skills/imagegen-textless-composite.md) | 讓圖像模型出無字底圖，再用 Pillow 精確疊加中文與大字 |
 | 📰 | [X Cover & Copy Studio](skills/x-cover-copy-studio.md) | 一條清單式推文 → 雙比例 X 投放封面 + 近似風格文案變體 |
+| 🐾 | [IP Visual Evolution Engine · 個人 IP 視覺進化引擎](skills/ip-visual-evolution-engine.md) | 把身份轉譯為可持續演化的連續視覺 IP，再壓成六鏡小紅書敘事 + 可遷移的 X Banner |
 
 → [完整 Skill 索引](skills.md)
 
@@ -127,6 +138,7 @@
 | Golden Quote Miner | 提煉能脫離原文獨立傳播的句子 | 候選掃描 → 密度過濾 → 張力打分 → 脫離測試 → 人工掃句 | 資訊密度 / 情緒張力 / 結構節奏 / 脫離度 / 句式覆蓋 |
 | Textless Backdrop | 圖像模型出無字底圖，再用 Pillow 精確疊加中文與大字 | 定色板 → 出無字底圖 → 去水印 → 疊字 → 校驗 | 底圖無字 / 數字準確 / 字體不崩 / 色板錨定 / 不溢出 |
 | X Cover & Copy Studio | Listy tweet → poster pair + variant copy, zero silent clipping | Fit-gate → deconstruct refs → payload → render(2x) → crop QA loop → deliver | Row completeness / footer / occlusion / tofu / font weight / fact fidelity / ad-law |
+| IP Visual Evolution Engine | 把身份轉譯為可持續演化的連續視覺 IP | 填 DNA → 選適配器 → 逐幀生成 → Banner 適配 → 評測 | 身份連續性 / 敘事連續性 / 熵梯度 / 平台適配 / Banner 就緒度 |
 
 需要完整實戰流程時進入 [cases/](cases/)；需要建立新 Skill 時，從 [Skill Builder](skills/skill-builder.md) 與 [templates/skill-template.md](templates/skill-template.md) 開始。
 
